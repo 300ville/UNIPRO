@@ -477,7 +477,7 @@ main{
 
 <section class="foyer" id="foyer">
   <div class="foyer-card">
-    <div class="acronym-top">Eisner Advisory Group LLC · National Tax Office · Accounting Methods &amp; Periods</div>
+    <div class="acronym-top">Eisner Advisory Group LLC Â· National Tax Office Â· Accounting Methods &amp; Periods</div>
 
     <div class="foyer-screen" id="introScreen">
       <div class="hello">
@@ -500,6 +500,7 @@ main{
         <p>UNIPRO supports producer computations under the simplified production method and modified simplified production method without a historic absorption ratio election.</p>
         <p>Users paste account-level amounts, confirm what each account represents, and compare the amount of additional Section 263A costs capitalized to ending inventory under each method.</p>
         <p>UNIPRO is a computational workpaper. This version is built for the FIFO SPM and MSPM workflow and treats raw materials as one aggregate FIFO pool. It does not determine whether a taxpayer is required or permitted to use a method, whether a method change is required, or whether any election or procedural requirement has been satisfied.</p>
+        <p>Developed by <a href="mailto:jaime.garciadeparedes@eisneramper.com">Jaime Garcia de Paredes</a> and <a href="mailto:briauna.williams-henderson@eisneramper.com">Briauna Williams-Henderson</a>.</p>
       </div>
       <div class="bottom">
         <button class="secondary" type="button" onclick="showIntro()">Back</button>
@@ -744,8 +745,8 @@ main{
             <label for="mixedMspmSplitMethod">MSPM split of capitalizable MSC</label>
             <select id="mixedMspmSplitMethod">
               <option value="">Select MSPM split</option>
-              <option value="labor">Pre-production labor costs ÷ total labor costs</option>
-              <option value="materials">Direct material costs ÷ total Section 471 costs</option>
+              <option value="labor">Pre-production labor costs Ã· total labor costs</option>
+              <option value="materials">Direct material costs Ã· total Section 471 costs</option>
             </select>
           </div>
           <div id="mixedPreProductionLaborField">
@@ -864,7 +865,7 @@ main{
 
 <div id="terminologyOverlay" class="term-modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="terminologyTitle">
   <div class="term-modal">
-    <button class="term-close" type="button" onclick="closeTerminologyModal()" aria-label="Close terminology">×</button>
+    <button class="term-close" type="button" onclick="closeTerminologyModal()" aria-label="Close terminology">Ã—</button>
     <h2 id="terminologyTitle">Terminology</h2>
     <p>Definitions and authorities are limited to the selected calculation scope.</p>
     <div class="term-toolbar">
@@ -880,7 +881,7 @@ main{
 
 <div id="neededOverlay" class="term-modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="neededTitle">
   <div class="term-modal">
-    <button class="term-close" type="button" onclick="closeNeededModal()" aria-label="Close needed information">×</button>
+    <button class="term-close" type="button" onclick="closeNeededModal()" aria-label="Close needed information">Ã—</button>
     <h2 id="neededTitle">Information Needed</h2>
     <p>Obtain the following before completing the workpaper:</p>
     <ul class="validation-list">
@@ -897,7 +898,7 @@ main{
 
 <div id="requiredInputOverlay" class="term-modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="requiredInputTitle">
   <div class="term-modal">
-    <button class="term-close" type="button" onclick="closeRequiredInputModal()" aria-label="Close required inputs">×</button>
+    <button class="term-close" type="button" onclick="closeRequiredInputModal()" aria-label="Close required inputs">Ã—</button>
     <h2 id="requiredInputTitle">Required Inputs</h2>
     <p>Enter an amount for each missing item. Enter 0 when the taxpayer has no amount in that category.</p>
     <div id="requiredInputFields" class="required-input-list"></div>
@@ -955,7 +956,7 @@ const TERM_DEFINITIONS = {
     title:"Simplified Production Method (SPM)",
     definition:"SPM uses one absorption ratio: current-year additional Section 263A costs divided by current-year Section 471 costs. That single ratio is applied to current-year Section 471 costs remaining on hand at year end.",
     citation:"Treas. Reg. Section 1.263A-2(b)(3)(i)(A) and (b)(3)(ii)(A).",
-    example:"$1,000,000 additional Section 263A costs ÷ $10,000,000 Section 471 costs = 10%; 10% × $3,000,000 ending Section 471 costs = $300,000 add-on."
+    example:"$1,000,000 additional Section 263A costs Ã· $10,000,000 Section 471 costs = 10%; 10% Ã— $3,000,000 ending Section 471 costs = $300,000 add-on."
   },
   mspm:{
     category:"MSPM",
@@ -997,21 +998,21 @@ const TERM_DEFINITIONS = {
     title:"Pre-production absorption ratio",
     definition:"The MSPM pre-production ratio equals pre-production additional Section 263A costs divided by pre-production Section 471 costs.",
     citation:"Treas. Reg. Section 1.263A-2(c)(3)(ii)(B).",
-    example:"$200,000 ÷ $2,500,000 = 8%."
+    example:"$200,000 Ã· $2,500,000 = 8%."
   },
   productionAbsorptionRatio:{
     category:"MSPM",
     title:"Production absorption ratio",
     definition:"The MSPM production ratio equals production additional Section 263A costs plus residual pre-production additional Section 263A costs, divided by production Section 471 costs plus the direct materials adjustment.",
     citation:"Treas. Reg. Section 1.263A-2(c)(3)(ii)(D).",
-    example:"($800,000 + $120,000) ÷ ($7,500,000 + $1,500,000) = 10.22%."
+    example:"($800,000 + $120,000) Ã· ($7,500,000 + $1,500,000) = 10.22%."
   },
   residualPreProductionAdditional263A:{
     category:"MSPM",
     title:"Residual pre-production additional Section 263A costs",
     definition:"The part of current-year pre-production additional Section 263A costs not capitalized through the pre-production ratio. It is carried into the production ratio numerator.",
     citation:"Treas. Reg. Section 1.263A-2(c)(3)(ii)(D)(2).",
-    example:"$200,000 - (8% × $1,000,000) = $120,000."
+    example:"$200,000 - (8% Ã— $1,000,000) = $120,000."
   },
   directMaterialsAdjustment:{
     category:"MSPM",
@@ -1032,7 +1033,7 @@ const TERM_DEFINITIONS = {
     title:"Simplified service cost method",
     definition:"A simplified method for computing capitalizable mixed service costs. A producer may use either the labor-based allocation ratio or the production-cost allocation ratio. The selected ratio is a method of accounting that must be applied consistently within the trade or business.",
     citation:"Treas. Reg. Section 1.263A-1(h)(1) and (h)(3) through (5).",
-    example:"Capitalizable mixed service costs = total mixed service costs × the taxpayer's adopted allocation ratio."
+    example:"Capitalizable mixed service costs = total mixed service costs Ã— the taxpayer's adopted allocation ratio."
   },
   mixedServiceAccountBases:{
     category:"Mixed service",
@@ -1046,7 +1047,7 @@ const TERM_DEFINITIONS = {
     title:"Production-cost simplified service cost ratio",
     definition:"For a producer, Section 263A production costs divided by total trade or business costs. Both amounts exclude mixed service costs and interest. Total costs include production and non-production costs described in the regulation.",
     citation:"Treas. Reg. Section 1.263A-1(h)(5).",
-    example:"$10,000,000 Section 263A production costs ÷ $20,000,000 total costs = 50 percent."
+    example:"$10,000,000 Section 263A production costs Ã· $20,000,000 total costs = 50 percent."
   },
   directReallocationMethod:{
     category:"Mixed service",
@@ -1074,14 +1075,14 @@ const TERM_DEFINITIONS = {
     title:"Capitalizable mixed service costs",
     definition:"The portion of total mixed service costs allocable to property produced or acquired for resale under the taxpayer's adopted simplified or facts-and-circumstances allocation method.",
     citation:"Treas. Reg. Section 1.263A-1(g)(4) and (h)(3).",
-    example:"Under labor-based SSCM, $1,000,000 × ($5,000,000 Section 263A labor ÷ $10,000,000 total labor) = $500,000 capitalizable."
+    example:"Under labor-based SSCM, $1,000,000 Ã— ($5,000,000 Section 263A labor Ã· $10,000,000 total labor) = $500,000 capitalizable."
   },
   mixedServiceMspmSplit:{
     category:"Mixed service",
     title:"MSPM split of capitalizable mixed service costs",
     definition:"For MSPM, capitalizable mixed service costs determined under SSCM may be split using pre-production labor over total labor or current-year direct material costs over current-year total Section 471 costs. Detailed methods follow the supported allocation to pre-production and production activities.",
     citation:"Treas. Reg. Section 1.263A-2(c)(3)(iii)(B).",
-    example:"$200,000 × ($2,000,000 direct materials ÷ $8,000,000 total Section 471 costs) = $50,000 pre-production and $150,000 production."
+    example:"$200,000 Ã— ($2,000,000 direct materials Ã· $8,000,000 total Section 471 costs) = $50,000 pre-production and $150,000 production."
   },
   mixedServiceMspmNinetyElection:{
     category:"Mixed service",
@@ -1519,8 +1520,8 @@ function requiresDetailedCapitalizableInput(value){
 function mixedSplitLabel(c){
   if(isDetailedMixedMethod(c.mixedServiceMethod)) return "Detailed allocation workpaper";
   return c.mixedMspmSplitMethod === "materials"
-    ? "Direct material costs ÷ total Section 471 costs"
-    : "Pre-production labor costs ÷ total labor costs";
+    ? "Direct material costs Ã· total Section 471 costs"
+    : "Pre-production labor costs Ã· total labor costs";
 }
 
 const LABOR_BASE_OPTIONS = [
@@ -4192,7 +4193,7 @@ function renderDetail(c){
       ["",mixedMethodLabel(c.mixedServiceMethod),"msc-method","Taxpayer's selected mixed service allocation method",c.mixedCapitalizableRatioExact,"pct"],
       ["","Capitalizable mixed service costs","msc-cap","Selected mixed service method",c.mixedCapitalizable],
       ["",`MSPM pre-production split: ${mixedSplitLabel(c)}`,"msc-pre-ratio","Full-precision split, including the 90 percent election if applied",c.mixedPreProductionRatioExact,"pct"],
-      ["","Mixed service costs allocated to pre-production additional Section 263A costs","msc-pre","Capitalizable mixed service costs × full-precision pre-production share",c.mixedPre],
+      ["","Mixed service costs allocated to pre-production additional Section 263A costs","msc-pre","Capitalizable mixed service costs Ã— full-precision pre-production share",c.mixedPre],
       ["","Mixed service costs allocated to production additional Section 263A costs","msc-prod","Capitalizable mixed service costs less pre-production allocation",c.mixedProd],
 
       ["Incurred During Tax Year","Pre-production additional Section 263A costs","k","Direct mapping + book-tax adjustments + mixed service allocation",c.k],
@@ -4214,14 +4215,14 @@ function renderDetail(c){
       ["","Pre-production Section 471 costs","i","From current-year inputs",c.i],
       ["","Pre-production absorption ratio","u = k / i","Full-precision ratio applied; rounded for display",c.preRatioRaw,"pct"],
       ["","Pre-production Section 471 costs remaining on hand at year end","p","From ending inventory inputs",c.p],
-      ["","Pre-production additional Section 263A costs allocable to ending inventory","v = u × p","Derived",c.v],
+      ["","Pre-production additional Section 263A costs allocable to ending inventory","v = u Ã— p","Derived",c.v],
       ["","Production additional Section 263A costs","l","From current-year inputs",c.l],
       ["","Residual pre-production additional Section 263A costs","w = k - v","Derived",c.w],
       ["","Production Section 471 costs","j","From current-year inputs",c.j],
       ["","Direct materials adjustment","x = a + g - n","Derived",c.x],
       ["","Production absorption ratio","y = (l + w) / (j + x)","Full-precision ratio applied; rounded for display",c.prodRatioRaw,"pct"],
       ["","Production Section 471 costs remaining on hand at year end","q","From ending inventory inputs",c.q],
-      ["","Production additional Section 263A costs allocable to ending inventory","z = y × q","Derived",c.z],
+      ["","Production additional Section 263A costs allocable to ending inventory","z = y Ã— q","Derived",c.z],
 
       ["Summary","Pre-production additional Section 263A costs allocable to ending inventory","v","Derived",c.v],
       ["","Production additional Section 263A costs allocable to ending inventory","z","Derived",c.z],
@@ -4247,7 +4248,7 @@ function renderDetail(c){
       ["Ending Current-Year Layer","Section 471 costs remaining on hand","r","Current-year raw, resale, and production Section 471 costs",c.end471],
       ["Simplified Production Method","Absorption ratio","add263A / cy471","Full-precision ratio applied; rounded for display",c.spmRatioRaw,"pct"],
       ["","Calculation base","r","Ending Section 471 costs",c.spmBase],
-      ["","Calculated Section 263A add-on before Producer de minimis rule","ratio × base","Derived",c.spmComputedCap],
+      ["","Calculated Section 263A add-on before Producer de minimis rule","ratio Ã— base","Derived",c.spmComputedCap],
       ["","Producer de minimis rule","rule","User determination",labelIndirectCostRule(c.indirectCostRule),"text"],
       ["","Final additional Section 263A costs allocable to ending inventory","final add-on","Zero if rule applies; otherwise calculated add-on",c.spmCap],
       ["Summary","Current-year ending layer including Section 263A add-on","base + add-on","Derived",c.spmEnding],
