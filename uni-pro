@@ -830,7 +830,7 @@ main{padding:0!important;background-color:#ecebf0!important;background-image:rad
 .stage-stack{min-width:0}.workflow-stage{display:none}.workflow-stage.stage-active{display:block;animation:stageIn .18s ease-out}@keyframes stageIn{from{opacity:.55;transform:translateY(4px)}to{opacity:1;transform:none}}
 .card{border-color:#312842;border-radius:10px;background:#12101c;box-shadow:none;overflow:visible}.card:hover{border-color:#3b3150;box-shadow:none;transform:none}.workflow-stage.card{margin:0;border:0;border-radius:0;background:transparent;box-shadow:none}.workflow-stage.card:hover{border:0;transform:none}.card-head{position:sticky;top:var(--card-head-top,126px);z-index:12;padding:14px 2px;background:rgba(18,12,17,.92);border-bottom:1px solid rgba(184,148,125,.24);backdrop-filter:blur(14px)}.card-head h2{color:#fff;font-size:20px;font-weight:550}.workflow-stage>.card-body{padding:24px 2px 18px}.stage-instruction{display:none}
 .setup-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 34px;max-width:940px}.setup-field.wide{grid-column:1/-1}.setup-field label{font-size:13px}.setup-field>input{min-height:42px;border-radius:4px;font-size:15px;background:rgba(16,12,17,.72);border-color:rgba(177,145,126,.28)}.setup-question{min-width:0;margin:2px 0 0;padding:20px 0 0;border:0;border-top:1px solid rgba(184,148,125,.20)}.setup-question legend{margin:0 0 12px;padding:0;color:#e6ddd7;font-size:14px;font-weight:500;line-height:1.5;letter-spacing:0;text-transform:none}.binary-choice-grid{display:flex;flex-wrap:wrap;align-items:center;gap:22px}.binary-choice{display:inline-flex;align-items:center;gap:8px;margin:0;padding:0;border:0;border-radius:0;background:transparent;color:#f3ece7;text-transform:none;letter-spacing:0;cursor:pointer;box-shadow:none!important}.binary-choice:hover,.binary-choice:has(input:checked){border:0;background:transparent;box-shadow:none}.binary-choice input{appearance:none;width:15px;height:15px;min-height:15px;margin:0;border:1px solid #9d8b80;border-radius:2px;background:rgba(14,11,15,.82);display:grid;place-items:center;flex:0 0 auto}.binary-choice input::before{content:"";width:7px;height:7px;transform:scale(0);background:#c59a78;transition:transform .12s ease}.binary-choice input:checked{border-color:#c59a78}.binary-choice input:checked::before{transform:scale(1)}.binary-choice input:focus-visible{outline:2px solid #d0ad90;outline-offset:3px}.binary-choice span{display:inline;font-size:14px;font-weight:450;line-height:1.3}.automatic-method-note{margin:18px 0 0;color:#c9b4a3;font-size:13px;font-weight:500}
-.help-term{position:relative;display:inline-block;color:#ead5c4;border-bottom:1px dotted #c59a78;cursor:help;outline:none}.help-term:focus-visible{border-bottom-style:solid;box-shadow:0 2px 0 #c59a78}.help-tooltip{position:absolute;left:50%;bottom:calc(100% + 10px);z-index:40;width:min(390px,75vw);padding:11px 13px;border:1px solid rgba(197,154,120,.46);border-radius:4px;background:#211610;color:#f2e9e2;font-size:12px;font-weight:450;line-height:1.45;letter-spacing:0;box-shadow:0 14px 34px rgba(0,0,0,.38);opacity:0;visibility:hidden;transform:translate(-50%,5px);transition:opacity .14s ease,transform .14s ease,visibility .14s}.tooltip-list{display:grid;gap:4px;margin-top:6px}.help-term:hover .help-tooltip,.help-term:focus .help-tooltip,.help-term:focus-within .help-tooltip{opacity:1;visibility:visible;transform:translate(-50%,0)}
+.help-term{position:relative;display:inline-block;color:#ead5c4;border-bottom:1px dotted #c59a78;cursor:help;outline:none}.help-term:focus-visible{border-bottom-style:solid;box-shadow:0 2px 0 #c59a78}.help-tooltip{position:absolute;left:50%;bottom:calc(100% + 10px);z-index:40;width:min(390px,75vw);padding:11px 13px;border:1px solid rgba(197,154,120,.46);border-radius:4px;background:#211610;color:#f2e9e2;font-size:12px;font-weight:450;line-height:1.45;letter-spacing:0;box-shadow:0 14px 34px rgba(0,0,0,.38);opacity:0;visibility:hidden;transform:translate(-50%,5px);transition:opacity .14s ease,transform .14s ease,visibility .14s}.help-tooltip.tooltip-below{top:calc(100% + 10px);bottom:auto;width:min(520px,82vw)}.tooltip-list{display:grid;gap:4px;margin-top:6px}.multi-paragraph-tooltip>span:not(.tooltip-citation)+span:not(.tooltip-citation){margin-top:7px}.tooltip-citation{display:block;margin-top:7px;padding-top:6px;border-top:1px solid rgba(197,154,120,.28);font-size:10px;font-weight:600;line-height:1.4;color:#ddc3b1}.help-term:hover .help-tooltip,.help-term:focus .help-tooltip,.help-term:focus-within .help-tooltip,.binary-choice:focus-within .help-tooltip{opacity:1;visibility:visible;transform:translate(-50%,0)}.binary-choice .help-term{position:relative;display:inline-block}.binary-choice .help-tooltip{display:block;font-size:12px;font-weight:450;line-height:1.45}.binary-choice .help-tooltip span{display:block;font-size:inherit;font-weight:inherit;line-height:inherit}.binary-choice .help-tooltip .tooltip-citation{margin-top:7px;padding-top:6px;font-size:10px;font-weight:600;line-height:1.4}
 .conditional-setup{margin-top:18px;padding-top:18px;border-top:1px solid rgba(184,148,125,.20)}
 .book-tax-reconciliation{display:grid;grid-template-columns:minmax(210px,.8fr) minmax(210px,1.25fr) repeat(3,minmax(130px,.55fr));gap:18px;align-items:end;margin:0 0 18px;padding:16px 2px;border-top:1px solid rgba(184,148,125,.24);border-bottom:1px solid rgba(184,148,125,.24)}
 .book-tax-reconciliation.hidden{display:none!important}.book-tax-reconciliation label{display:grid;gap:7px;color:#d8cec7;font-size:12px}.book-tax-reconciliation input{min-height:38px;border-radius:4px;font-size:14px}.book-tax-metric{display:grid;gap:5px;align-self:stretch;padding:3px 0}.book-tax-metric span{color:#a99a91;font-size:9px;font-weight:750;letter-spacing:.08em;text-transform:uppercase}.book-tax-metric strong{color:#fff;font-size:16px;font-variant-numeric:tabular-nums}.book-tax-metric small{color:#cbbdb4;font-size:10px;line-height:1.35}.book-tax-metric .bad{color:#ff9fbe}.book-tax-metric .ok{color:#8de3c1}
@@ -991,7 +991,8 @@ main{background-color:#f1f0f4!important;background-image:radial-gradient(ellipse
 @media(max-width:1280px){.exception-grid,.partner-grid{grid-template-columns:repeat(2,1fr)}.signoff-chain-grid{grid-template-columns:1fr 1fr}.book-tax-reconciliation{grid-template-columns:1fr 1fr}.book-tax-reconciliation label:nth-child(2){grid-column:1/-1}.book-tax-metric{min-height:54px}}
 @media(max-width:1250px){.import-status-panel{padding:12px 0 0;border-left:0;border-top:1px solid rgba(184,148,125,.24)}}
 @media(max-width:980px){.workbench-layout{grid-template-columns:1fr}.workflow-rail{position:sticky;top:73px;z-index:25;width:100%;height:auto;display:flex;align-items:center;gap:7px;padding:8px 10px;border-right:0;border-bottom:1px solid rgba(132,174,169,.24);overflow-x:auto;box-shadow:0 10px 24px rgba(8,16,20,.14)}.workflow-rail-head{display:block;flex:0 0 auto;padding:0;border:0}.workflow-rail-meta,.workflow-rail-foot{display:none}.rail-progress-ring{width:30px;height:30px}#workflowNav{display:flex;min-width:max-content;padding:0;gap:3px}.workflow-step{width:auto;grid-template-columns:22px auto;padding:8px}.workflow-step small{display:none}.workbench-main{padding:12px}.card-head{top:126px}.command-center{grid-template-columns:1fr auto}.source-map-layout{grid-template-columns:1fr!important}.import-status-panel{width:100%}.landing-eyebrow{font-size:clamp(62px,14vw,104px)}.hello h2{font-size:clamp(23px,4vw,28px)}}
-@media(max-width:680px){.foyer{padding:0 22px!important;background-position:64% bottom!important}.landing-eyebrow{font-size:60px}.hello h2{font-size:24px;letter-spacing:.025em}.command-center{grid-template-columns:1fr;gap:10px}.command-metrics{grid-template-columns:repeat(2,1fr)}.command-metrics button{padding:7px 10px;border-bottom:1px solid rgba(184,148,125,.20)}.command-metrics button:nth-child(2){border-right:0}.command-metrics button:first-child{padding-left:10px}.command-metrics button:nth-last-child(-n+2){border-bottom:0}.command-actions{justify-content:flex-start}.exception-grid,.partner-grid,.signoff-chain-grid,.inspector-grid,.import-preview-grid,.setup-grid{grid-template-columns:1fr}.import-column-choice{grid-template-columns:1fr}.import-column-choice label,.import-column-choice select,.import-column-choice .small-note{grid-column:1;grid-row:auto}.final-population-control{grid-template-columns:1fr 1fr}.final-population-control>strong{grid-column:1 / -1}.setup-field.wide{grid-column:auto}.binary-choice-grid{display:flex}.app-tools{gap:6px}.help-tooltip{position:fixed;left:16px;right:16px;bottom:16px;width:auto;transform:translateY(5px)}.help-term:hover .help-tooltip,.help-term:focus .help-tooltip,.help-term:focus-within .help-tooltip{transform:none}}
+@media(max-width:680px){.foyer{padding:0 22px!important;background-position:64% bottom!important}.landing-eyebrow{font-size:60px}.hello h2{font-size:24px;letter-spacing:.025em}.command-center{grid-template-columns:1fr;gap:10px}.command-metrics{grid-template-columns:repeat(2,1fr)}.command-metrics button{padding:7px 10px;border-bottom:1px solid rgba(184,148,125,.20)}.command-metrics button:nth-child(2){border-right:0}.command-metrics button:first-child{padding-left:10px}.command-metrics button:nth-last-child(-n+2){border-bottom:0}.command-actions{justify-content:flex-start}.exception-grid,.partner-grid,.signoff-chain-grid,.inspector-grid,.import-preview-grid,.setup-grid{grid-template-columns:1fr}.import-column-choice{grid-template-columns:1fr}.import-column-choice label,.import-column-choice select,.import-column-choice .small-note{grid-column:1;grid-row:auto}.final-population-control{grid-template-columns:1fr 1fr}.final-population-control>strong{grid-column:1 / -1}.setup-field.wide{grid-column:auto}.binary-choice-grid{display:flex}.app-tools{gap:6px}.help-tooltip,.help-tooltip.tooltip-below{position:fixed;left:16px;right:16px;top:auto;bottom:16px;width:auto;max-height:calc(100vh - 32px);overflow-y:auto;transform:translateY(5px)}.help-term:hover .help-tooltip,.help-term:focus .help-tooltip,.help-term:focus-within .help-tooltip{transform:none}}
+@media(max-width:680px){.binary-choice:focus-within .help-tooltip{transform:none}}
 
 @media(max-width:900px){.book-tax-reconciliation{grid-template-columns:1fr 1fr}.book-tax-reconciliation label:nth-child(2){grid-column:1/-1}.book-tax-metric{min-height:54px}}
 @media(max-width:560px){.book-tax-reconciliation{grid-template-columns:1fr}.book-tax-reconciliation label:nth-child(2){grid-column:auto}}
@@ -1160,6 +1161,7 @@ main{background-color:#f1f0f4!important;background-image:radial-gradient(ellipse
 .selection-definition-tooltip{position:fixed;z-index:99999;width:max-content;max-width:min(420px,calc(100vw - 24px));padding:11px 13px;border:1px solid rgba(197,154,120,.46);border-radius:4px;background:#211610;color:#f2e9e2;font-family:var(--sans);font-size:12px;font-weight:400;line-height:1.45;letter-spacing:0;box-shadow:0 14px 34px rgba(0,0,0,.38);opacity:0;visibility:hidden;pointer-events:none;transform:translateY(5px);transition:opacity .14s ease,transform .14s ease,visibility .14s}
 .selection-definition-tooltip.visible{opacity:1;visibility:visible;transform:none}
 .selection-definition-tooltip strong{display:block;margin:0 0 4px;color:#fff;font-size:11px;font-weight:600}
+.selection-definition-tooltip .definition-citation{display:block;margin-top:7px;padding-top:6px;border-top:1px solid rgba(197,154,120,.28);color:#ddc3b1;font-size:10px;font-weight:600;line-height:1.4}
 @media(max-width:680px){.mapping-display-control{width:100%}.mapping-display-control select{width:100%}}
 
 /* Results should read as four distinct workpaper sections, not one dark block. */
@@ -1548,6 +1550,9 @@ main{background-color:#f1f0f4!important;background-image:radial-gradient(ellipse
   .msc-flow-panel{
     display:grid;
     gap:18px;
+    min-width:0;
+    max-width:100%;
+    container-type:inline-size;
     padding:20px;
     border:1px solid #68878d;
     border-radius:14px;
@@ -1587,6 +1592,7 @@ main{background-color:#f1f0f4!important;background-image:radial-gradient(ellipse
   }
   .msc-method-card{
     min-height:72px;
+    min-width:0;
     padding:13px 15px!important;
     cursor:default;
     transition:none!important;
@@ -1608,9 +1614,9 @@ main{background-color:#f1f0f4!important;background-image:radial-gradient(ellipse
   .msc-method-card.is-production.is-selected,.msc-option-card.is-production.is-selected{border-color:#e1b887!important;background:#4b3d2c!important;box-shadow:inset 4px 0 0 #e1b887!important}
   .msc-method-card strong,.msc-option-card strong{color:#fff;font-size:14px;font-weight:700;line-height:1.25}
   .msc-method-card small,.msc-option-card small{color:#d3dfdd;font-size:12px;font-weight:400;line-height:1.42}
-  .msc-method-card .msc-card-values{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin-top:8px;padding-top:9px;border-top:1px solid rgba(211,229,227,.2)}
+  .msc-method-card .msc-card-values{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;min-width:0;flex-wrap:wrap;margin-top:8px;padding-top:9px;border-top:1px solid rgba(211,229,227,.2)}
   .msc-method-card .msc-card-values span{color:#d8e3e1;font-size:11px}
-  .msc-method-card .msc-card-values b{color:#fff;font-size:18px;font-variant-numeric:tabular-nums}
+  .msc-method-card .msc-card-values b{color:#fff;font-size:18px;font-variant-numeric:tabular-nums;white-space:nowrap}
   .msc-method-card .msc-method-state{justify-self:start;padding:3px 7px;border:1px solid currentColor;border-radius:999px;color:#d6e8e7;font-size:9px;font-weight:800;letter-spacing:.05em;text-transform:uppercase}
   .msc-method-card .msc-method-state.needs-review{color:#ffd394}
   .msc-option-card.compact{min-height:58px;padding:12px 13px!important}
@@ -1747,6 +1753,12 @@ main{background-color:#f1f0f4!important;background-image:radial-gradient(ellipse
 @media(max-width:950px){
   .msc-card-grid-three{grid-template-columns:1fr 1fr}
 }
+@media(max-width:1200px){
+  .msc-method-comparison{grid-template-columns:1fr}
+}
+@container (max-width:1050px){
+  .msc-method-comparison{grid-template-columns:1fr}
+}
 @media(max-width:760px){
   .msc-method-comparison,.msc-card-grid,.msc-card-grid-three{grid-template-columns:1fr}
   .msc-flow-intro,.msc-question-head{display:grid;gap:8px}
@@ -1781,6 +1793,7 @@ main{background-color:#f1f0f4!important;background-image:radial-gradient(ellipse
   .msc-split-choice-copy{display:grid!important;gap:2px}
   .msc-split-choice-copy strong{color:#fff;font-size:12px}
   .msc-split-choice-copy small{color:#c9d8d6;font-size:10px;font-weight:500;line-height:1.3}
+  .msc-split-choice-copy .applied-method-result{color:#fff;font-size:12px;font-weight:750;font-variant-numeric:tabular-nums}
   .results-method-choice{
     position:relative;
     margin:18px 0 0;
@@ -1885,7 +1898,7 @@ main{background-color:#f1f0f4!important;background-image:radial-gradient(ellipse
         </span>
         <p class="landing-eyebrow">UNIPRO</p>
         <h2>UNIFORM CAPITALIZATION CALCULATOR</h2>
-        <p class="nto-line">Prepare and document Simplified Production Method, Modified Simplified Production Method, and Simplified Resale Method calculations under Section 263A.</p>
+        <p class="nto-line">Prepare and document UNICAP under Section 263A using a simplified method for resellers, producers, or both.</p>
       </div>
       <div class="foyer-options">
         <button class="foyer-link" type="button" onclick="showBackground()">Background</button>
@@ -1986,13 +1999,13 @@ main{background-color:#f1f0f4!important;background-image:radial-gradient(ellipse
         <fieldset class="setup-question setup-field wide">
           <legend>Taxpayer is a</legend>
           <div class="binary-choice-grid">
-            <label class="binary-choice"><input type="radio" name="activityType" value="producer"><span>Producer</span></label>
-            <label class="binary-choice"><input type="radio" name="activityType" value="reseller"><span>Reseller</span></label>
+            <label class="binary-choice"><input type="radio" name="activityType" value="producer" aria-describedby="producerDefinitionTooltip"><span class="help-term">Producer<span class="help-tooltip" id="producerDefinitionTooltip" role="tooltip"><span>A taxpayer that constructs, builds, installs, manufactures, develops, improves, creates, raises, or grows real or tangible personal property.</span><span class="tooltip-citation">Treas. Reg. Section 1.263A-2(a)(1).</span></span></span></label>
+            <label class="binary-choice"><input type="radio" name="activityType" value="reseller" aria-describedby="resellerDefinitionTooltip"><span class="help-term">Reseller<span class="help-tooltip multi-paragraph-tooltip tooltip-below" id="resellerDefinitionTooltip" role="tooltip"><span>In UNIPRO, choose Reseller when the trade or business acquires property for resale and is eligible for the Simplified Resale Method.</span><span>If the taxpayer also produces property, production must be incident to resale and de minimis. Production is presumed de minimis when both gross receipts from produced property and production labor are each less than 10 percent of the trade or business totals. Facts and circumstances may still establish de minimis production when that presumption is not met. Personal property produced under a contract with an unrelated person may also qualify when the contract is incident to resale and the property is sold to customers.</span><span>Property furnished incident to services is a separate exception only when the property is de minimis and is not inventory. Property cost equal to or below 5 percent of the combined charge is deemed de minimis. Installation or implementation may be production; the label does not control.</span><span class="tooltip-citation">Treas. Reg. Sections 1.263A-1(b)(11), 1.263A-2(a)(1), and 1.263A-3(a)(1), (a)(4), (a)(5), and (d).</span></span></span></label>
             <label class="binary-choice"><input type="radio" name="activityType" value="producerReseller"><span>Producer and reseller</span></label>
           </div>
         </fieldset>
         <fieldset class="setup-question setup-field wide" id="unicapHistoryControls">
-          <legend>Did the taxpayer capitalize additional Section 263A costs on last year's federal return? <button type="button" class="setup-help-link row-action-link row-definition-link" onmouseenter="showDefinitionTooltip(this)" onmouseleave="hideDefinitionTooltip(this)" onfocus="showDefinitionTooltip(this)" onblur="hideDefinitionTooltip(this)" data-definition-label="What this question means" data-definition="Answer Yes if the taxpayer included additional Section 263A costs in inventory on last year's federal return. It does not ask whether the taxpayer used UNIPRO." aria-describedby="selectionDefinitionTooltip">What this means</button></legend>
+          <legend>Did the taxpayer capitalize additional Section 263A costs on last year's federal return? <button type="button" class="setup-help-link row-action-link row-definition-link" onmouseenter="showDefinitionTooltip(this)" onmouseleave="hideDefinitionTooltip(this)" onfocus="showDefinitionTooltip(this)" onblur="hideDefinitionTooltip(this)" data-definition-label="What this question means" data-definition="Answer Yes if the taxpayer included additional Section 263A costs in inventory on last year's federal return. It does not ask whether the taxpayer used UNIPRO." data-citation="Treas. Reg. Section 1.263A-1(d)(3)." aria-describedby="selectionDefinitionTooltip">What this means</button></legend>
           <div class="binary-choice-grid">
             <label class="binary-choice"><input type="radio" name="unicapPriorYearApplied" value="yes"><span>Yes</span></label>
             <label class="binary-choice"><input type="radio" name="unicapPriorYearApplied" value="no"><span>No</span></label>
@@ -2001,7 +2014,7 @@ main{background-color:#f1f0f4!important;background-image:radial-gradient(ellipse
           <p id="unicapHistoryNote" class="automatic-method-note"></p>
         </fieldset>
         <fieldset class="setup-question setup-field wide conditional-setup hidden" id="unicapContinuityControls">
-          <legend>Will this year's return use all the same UNICAP methods as last year? <button type="button" class="setup-help-link row-action-link row-definition-link" onmouseenter="showDefinitionTooltip(this)" onmouseleave="hideDefinitionTooltip(this)" onfocus="showDefinitionTooltip(this)" onblur="hideDefinitionTooltip(this)" data-definition-label="Why this matters" data-definition="A UNICAP calculation can contain several accounting-method choices. If every choice stays the same, UNIPRO carries the prior methods forward. If any choice changes, UNIPRO records both the prior method and the proposed method for that component." aria-describedby="selectionDefinitionTooltip">Why this matters</button></legend>
+          <legend>Will this year's return use all the same UNICAP methods as last year? <button type="button" class="setup-help-link row-action-link row-definition-link" onmouseenter="showDefinitionTooltip(this)" onmouseleave="hideDefinitionTooltip(this)" onfocus="showDefinitionTooltip(this)" onblur="hideDefinitionTooltip(this)" data-definition-label="Why this matters" data-definition="A UNICAP calculation can contain several accounting-method choices. If every choice stays the same, UNIPRO carries the prior methods forward. If any choice changes, UNIPRO records both the prior method and the proposed method for that component." data-citation="Section 446(e); Treas. Reg. Sections 1.446-1(e)(2)(ii)(a) and 1.263A-7(a)(5)." aria-describedby="selectionDefinitionTooltip">Why this matters</button></legend>
           <div class="binary-choice-grid">
             <label class="binary-choice"><input type="radio" name="unicapMethodContinuity" value="unchanged"><span>Yes, use the same methods</span></label>
             <label class="binary-choice"><input type="radio" name="unicapMethodContinuity" value="changing"><span>No, one or more methods are changing</span></label>
@@ -2010,17 +2023,17 @@ main{background-color:#f1f0f4!important;background-image:radial-gradient(ellipse
           <p id="unicapContinuityNote" class="automatic-method-note"></p>
         </fieldset>
         <fieldset class="setup-question setup-field wide conditional-setup hidden" id="firstUnicapYearReasonControls">
-          <legend>Why is this the first UNICAP year? <button type="button" class="setup-help-link row-action-link row-definition-link" onmouseenter="showDefinitionTooltip(this)" onmouseleave="hideDefinitionTooltip(this)" onfocus="showDefinitionTooltip(this)" onblur="hideDefinitionTooltip(this)" data-definition-label="Why this matters" data-definition="A new activity can generally select an initial permissible method. An activity that existed before but became subject to UNICAP, or should have applied UNICAP before, may also need beginning-inventory revaluation, Section 481(a), and Form 3115 support." aria-describedby="selectionDefinitionTooltip">Why this matters</button></legend>
+          <legend>Why is this the first UNICAP year? <button type="button" class="setup-help-link row-action-link row-definition-link" onmouseenter="showDefinitionTooltip(this)" onmouseleave="hideDefinitionTooltip(this)" onfocus="showDefinitionTooltip(this)" onblur="hideDefinitionTooltip(this)" data-definition-label="Why this matters" data-definition="A new activity can generally select an initial permissible method. An activity that existed before but became subject to UNICAP, or should have applied UNICAP before, may also need beginning-inventory revaluation, Section 481(a), and Form 3115 support." data-citation="Section 481(a); Treas. Reg. Sections 1.446-1(e) and 1.263A-7(a)(2), (b)(2)(ii), and (c)(2)(i)." aria-describedby="selectionDefinitionTooltip">Why this matters</button></legend>
           <div class="binary-choice-grid">
-            <label class="binary-choice"><input type="radio" name="firstUnicapYearReason" value="newActivity"><span>The taxpayer newly started this trade or business; no tax method carries over</span></label>
-            <label class="binary-choice"><input type="radio" name="firstUnicapYearReason" value="newlySubject"><span>It existed last year and first became subject to UNICAP this year</span></label>
-            <label class="binary-choice"><input type="radio" name="firstUnicapYearReason" value="priorNoncompliance"><span>UNICAP may have been missed</span></label>
+            <label class="binary-choice"><input type="radio" name="firstUnicapYearReason" value="newActivity"><span>First trade or business year</span></label>
+            <label class="binary-choice"><input type="radio" name="firstUnicapYearReason" value="newlySubject"><span>First year subject to UNICAP</span></label>
+            <label class="binary-choice"><input type="radio" name="firstUnicapYearReason" value="priorNoncompliance"><span>Subject to UNICAP and failed to capitalize</span></label>
             <label class="binary-choice"><input type="radio" name="firstUnicapYearReason" value="unsure"><span>Not sure</span></label>
           </div>
           <p id="firstUnicapYearNote" class="automatic-method-note"></p>
         </fieldset>
         <fieldset class="setup-question setup-field wide conditional-setup hidden" id="unicapChangeComponentsControls">
-          <legend>Which UNICAP methods are changing? <button type="button" class="setup-help-link row-action-link row-definition-link" onmouseenter="showDefinitionTooltip(this)" onmouseleave="hideDefinitionTooltip(this)" onfocus="showDefinitionTooltip(this)" onblur="hideDefinitionTooltip(this)" data-definition-label="What these choices mean" data-definition="Production method means the Simplified Production Method (SPM) or Modified Simplified Production Method (MSPM). Mixed service allocation means the method used to assign mixed service costs to inventory. MSPM mixed-service allocation means the method used under MSPM to allocate capitalizable mixed service costs between preproduction and production." aria-describedby="selectionDefinitionTooltip">What this means</button></legend>
+          <legend>Which UNICAP methods are changing? <button type="button" class="setup-help-link row-action-link row-definition-link" onmouseenter="showDefinitionTooltip(this)" onmouseleave="hideDefinitionTooltip(this)" onfocus="showDefinitionTooltip(this)" onblur="hideDefinitionTooltip(this)" data-definition-label="What these choices mean" data-definition="Production method means the Simplified Production Method (SPM) or Modified Simplified Production Method (MSPM). Mixed service allocation means the method used to assign mixed service costs to inventory. MSPM mixed-service allocation means the method used under MSPM to allocate capitalizable mixed service costs between preproduction and production." data-citation="Treas. Reg. Sections 1.263A-1(g)(4), 1.263A-1(h), 1.263A-2(b), and 1.263A-2(c)." aria-describedby="selectionDefinitionTooltip">What this means</button></legend>
           <div class="binary-choice-grid">
             <label class="binary-choice"><input type="checkbox" name="unicapChangeComponent" value="productionMethod"><span>Production calculation</span></label>
             <label class="binary-choice"><input type="checkbox" name="unicapChangeComponent" value="mixedService"><span>Mixed service allocation</span></label>
@@ -2033,6 +2046,7 @@ main{background-color:#f1f0f4!important;background-image:radial-gradient(ellipse
           <div class="binary-choice-grid">
             <label class="binary-choice"><input type="radio" name="priorSelectedMethodChoice" value="SPM"><span>Simplified Production Method</span></label>
             <label class="binary-choice"><input type="radio" name="priorSelectedMethodChoice" value="MSPM"><span>Modified Simplified Production Method</span></label>
+            <label class="binary-choice"><input type="radio" name="priorSelectedMethodChoice" value="other"><span>Another production method</span></label>
           </div>
         </fieldset>
         <fieldset class="setup-question setup-field wide conditional-setup hidden" id="priorMixedServiceMethodControls">
@@ -2047,7 +2061,7 @@ main{background-color:#f1f0f4!important;background-image:radial-gradient(ellipse
           </div>
         </fieldset>
         <fieldset class="setup-question setup-field wide conditional-setup hidden" id="priorMixedMspmSplitMethodControls">
-          <legend>How were capitalizable mixed service costs allocated under last year's MSPM? <button type="button" class="setup-help-link row-action-link row-definition-link" onmouseenter="showDefinitionTooltip(this)" onmouseleave="hideDefinitionTooltip(this)" onfocus="showDefinitionTooltip(this)" onblur="hideDefinitionTooltip(this)" data-definition-label="MSPM mixed-service allocation" data-definition="Under the Modified Simplified Production Method, capitalizable mixed service costs are allocated between preproduction and production. The permitted allocation methods use either direct material costs or preproduction labor costs." aria-describedby="selectionDefinitionTooltip">What this means</button></legend>
+          <legend>How were capitalizable mixed service costs allocated under last year's MSPM? <button type="button" class="setup-help-link row-action-link row-definition-link" onmouseenter="showDefinitionTooltip(this)" onmouseleave="hideDefinitionTooltip(this)" onfocus="showDefinitionTooltip(this)" onblur="hideDefinitionTooltip(this)" data-definition-label="MSPM mixed-service allocation" data-definition="Under the Modified Simplified Production Method, capitalizable mixed service costs are allocated between preproduction and production. The permitted allocation methods use either direct material costs or preproduction labor costs." data-citation="Treas. Reg. Section 1.263A-2(c)(3)(iii)(B)." aria-describedby="selectionDefinitionTooltip">What this means</button></legend>
           <div class="binary-choice-grid">
             <label class="binary-choice"><input type="radio" name="priorMixedSplitBasisChoice" value="materials"><span>Direct material costs</span></label>
             <label class="binary-choice"><input type="radio" name="priorMixedSplitBasisChoice" value="labor"><span>Preproduction labor costs</span></label>
@@ -2079,8 +2093,8 @@ main{background-color:#f1f0f4!important;background-image:radial-gradient(ellipse
         <fieldset class="setup-question setup-field wide">
           <legend>Inventory valuation method</legend>
           <div class="binary-choice-grid">
-            <label class="binary-choice"><input type="radio" name="inventoryMethod" value="FIFO"><span>FIFO</span></label>
-            <label class="binary-choice"><input type="radio" name="inventoryMethod" value="LIFO"><span>LIFO</span></label>
+            <label class="binary-choice"><input type="radio" name="inventoryMethod" value="FIFO" aria-describedby="fifoDefinitionTooltip"><span class="help-term">FIFO<span class="help-tooltip" id="fifoDefinitionTooltip" role="tooltip"><span>First-in, first-out. UNIPRO applies the current-year absorption ratio to current-year Section 471 costs remaining on hand at year end.</span><span class="tooltip-citation">Treas. Reg. Section 1.263A-2(b)(3)(v), Example 1; Treas. Reg. Section 1.263A-2(c)(3)(vi)(A).</span></span></span></label>
+            <label class="binary-choice"><input type="radio" name="inventoryMethod" value="LIFO" aria-describedby="lifoDefinitionTooltip"><span class="help-term">LIFO<span class="help-tooltip" id="lifoDefinitionTooltip" role="tooltip"><span>Last-in, first-out. The current-year ratio applies to the current-year LIFO increment, and a decrement releases the additional Section 263A costs attached to each invaded layer.</span><span class="tooltip-citation">Treas. Reg. Section 1.263A-2(b)(3)(iii); Treas. Reg. Section 1.263A-2(c)(3)(iv).</span></span></span></label>
           </div>
         </fieldset>
         <fieldset id="lifoRatioControls" class="setup-question setup-field wide conditional-setup hidden">
@@ -2099,14 +2113,14 @@ main{background-color:#f1f0f4!important;background-image:radial-gradient(ellipse
           <div class="small-note">This workpaper requires the complete LIFO inventory population. Prepare any non-LIFO inventory separately.</div>
         </fieldset>
         <fieldset class="setup-question setup-field wide">
-          <legend>Amount basis <button type="button" class="setup-help-link row-action-link row-definition-link" onmouseenter="showDefinitionTooltip(this)" onmouseleave="hideDefinitionTooltip(this)" onfocus="showDefinitionTooltip(this)" onblur="hideDefinitionTooltip(this)" data-definition-label="Amount basis" data-definition="Federal tax uses tax-basis account amounts. Book uses the supported financial-statement alternative and requires the related Book-to-Tax confirmations." aria-describedby="selectionDefinitionTooltip">What this means</button></legend>
+          <legend>Basis</legend>
           <div class="binary-choice-grid">
             <label class="binary-choice"><input type="radio" name="amountBasis" value="tax"><span>Federal tax</span></label>
             <label class="binary-choice"><input type="radio" name="amountBasis" value="book"><span>Book</span></label>
           </div>
         </fieldset>
         <fieldset id="financialStatementQualificationControls" class="setup-question setup-field wide conditional-setup hidden">
-          <legend>Does the taxpayer have a <span class="help-term" tabindex="0" aria-describedby="qualifyingStatementTooltip">qualifying financial statement?<span class="help-tooltip" id="qualifyingStatementTooltip" role="tooltip">Use the first available statement in this order:<span class="tooltip-list"><span>1. SEC-filed statement.</span><span>2. Certified audited statement with an independent CPA report, or foreign equivalent, used for a substantial non-tax purpose.</span><span>3. Non-tax statement required by a federal or state government or agency, other than the SEC or IRS.</span></span></span></span></legend>
+          <legend>Does the taxpayer have a <span class="help-term" tabindex="0" aria-describedby="qualifyingStatementTooltip">qualifying financial statement?<span class="help-tooltip" id="qualifyingStatementTooltip" role="tooltip">Use the first available statement in this order:<span class="tooltip-list"><span>1. SEC-filed statement.</span><span>2. Certified audited statement with an independent CPA report, or foreign equivalent, used for a substantial non-tax purpose.</span><span>3. Non-tax statement required by a federal or state government or agency, other than the SEC or IRS.</span></span><span class="tooltip-citation">Treas. Reg. Section 1.263A-1(d)(2)(iii)(A) and (d)(6)(i) through (iii).</span></span></span></legend>
           <div class="binary-choice-grid">
             <label class="binary-choice"><input type="radio" name="financialStatementQualified" value="yes"><span>Yes</span></label>
             <label class="binary-choice"><input type="radio" name="financialStatementQualified" value="no"><span>No</span></label>
@@ -2127,14 +2141,14 @@ main{background-color:#f1f0f4!important;background-image:radial-gradient(ellipse
           </div>
         </fieldset>
         <fieldset id="financialStatementGrossReceiptsControls" class="setup-question setup-field wide conditional-setup hidden">
-          <legend>Were average annual gross receipts for the three preceding tax years <span class="help-term" tabindex="0" aria-describedby="grossReceiptsTooltip">$50 million or less?<span class="help-tooltip" id="grossReceiptsTooltip" role="tooltip">For SPM, apply the Section 448 aggregation, predecessor, short-year, and test-period rules. This fixed limit is separate from the indexed small-business exemption.</span></span></legend>
+          <legend>Were average annual gross receipts for the three preceding tax years <span class="help-term" tabindex="0" aria-describedby="grossReceiptsTooltip">$50 million or less?<span class="help-tooltip" id="grossReceiptsTooltip" role="tooltip">For SPM, apply the Section 448 aggregation, predecessor, short-year, and test-period rules. This fixed limit is separate from the indexed small-business exemption.<span class="tooltip-citation">Treas. Reg. Section 1.263A-1(d)(3)(ii)(B)(1) and (j).</span></span></span></legend>
           <div class="binary-choice-grid">
             <label class="binary-choice"><input type="radio" name="financialStatementGrossReceiptsEligible" value="yes"><span>Yes</span></label>
             <label class="binary-choice"><input type="radio" name="financialStatementGrossReceiptsEligible" value="no"><span>No</span></label>
           </div>
         </fieldset>
         <fieldset id="producerDeMinimisControls" class="setup-question setup-field wide">
-          <legend>Were the producer's total indirect costs <span class="help-term" tabindex="0" aria-describedby="producerThresholdTooltip">$200,000 or less?<span class="help-tooltip" id="producerThresholdTooltip" role="tooltip">Apply the aggregation rules and permitted exclusions. If the total is $200,000 or less, no current-year additional Section 263A costs are allocated to ending inventory.</span></span></legend>
+          <legend>Were the producer's total indirect costs <span class="help-term" tabindex="0" aria-describedby="producerThresholdTooltip">$200,000 or less?<span class="help-tooltip" id="producerThresholdTooltip" role="tooltip">Apply the aggregation rules and permitted exclusions. If the total is $200,000 or less, no current-year additional Section 263A costs are allocated to ending inventory.<span class="tooltip-citation">Treas. Reg. Sections 1.263A-2(b)(3)(iv) and 1.263A-2(c)(3)(v).</span></span></span></legend>
           <div class="binary-choice-grid">
             <label class="binary-choice"><input type="radio" name="indirectCostRule" value="applies"><span>Yes</span></label>
             <label class="binary-choice"><input type="radio" name="indirectCostRule" value="doesNotApply"><span>No</span></label>
@@ -2319,7 +2333,7 @@ main{background-color:#f1f0f4!important;background-image:radial-gradient(ellipse
               <h3 id="mixedMethodPrompt">Mixed service cost comparison</h3>
               <p id="mixedMethodIntroCopy">Review the two results below.</p>
             </div>
-            <button id="mixedMethodHistoryHelp" type="button" class="msc-info-link row-action-link row-definition-link" onmouseenter="showDefinitionTooltip(this)" onmouseleave="hideDefinitionTooltip(this)" onfocus="showDefinitionTooltip(this)" onblur="hideDefinitionTooltip(this)" data-definition-label="Why a choice is still needed" data-definition="The taxpayer's accounting method controls the workpaper result. Account names do not establish that method." aria-describedby="selectionDefinitionTooltip">Why a choice is still needed</button>
+            <button id="mixedMethodHistoryHelp" type="button" class="msc-info-link row-action-link row-definition-link" onmouseenter="showDefinitionTooltip(this)" onmouseleave="hideDefinitionTooltip(this)" onfocus="showDefinitionTooltip(this)" onblur="hideDefinitionTooltip(this)" data-definition-label="Why a choice is still needed" data-definition="The taxpayer's accounting method controls the workpaper result. Account names do not establish that method." data-citation="Section 446(e); Treas. Reg. Sections 1.446-1(e) and 1.263A-1(h)." aria-describedby="selectionDefinitionTooltip">Why a choice is still needed</button>
           </div>
 
           <div id="mixedMethodComparison" class="msc-method-comparison" aria-label="Mixed service cost calculation comparison"></div>
@@ -2329,10 +2343,10 @@ main{background-color:#f1f0f4!important;background-image:radial-gradient(ellipse
             <p id="mixedServiceMethodHelp">Choose the method supported for this tax year.</p>
             <div class="msc-inline-choice-row">
               <div class="binary-choice-grid">
-                <label class="binary-choice"><input type="radio" name="mixedServiceMethodChoice" value="labor" data-mixed-control="mixedServiceMethod" data-value="labor" onchange="if(this.checked)chooseMixedOption('mixedServiceMethod','labor')"><span>Use labor costs</span></label>
-                <label class="binary-choice"><input type="radio" name="mixedServiceMethodChoice" value="production" data-mixed-control="mixedServiceMethod" data-value="production" onchange="if(this.checked)chooseMixedOption('mixedServiceMethod','production')"><span>Use production and business costs</span></label>
+                <label class="binary-choice"><input type="radio" name="mixedServiceMethodChoice" value="labor" data-mixed-control="mixedServiceMethod" data-value="labor" onchange="if(this.checked)chooseMixedOption('mixedServiceMethod','labor')"><span class="msc-split-choice-copy"><strong>Use labor costs</strong><small id="mixedLaborMethodChoicePreview">Calculated result pending</small></span></label>
+                <label class="binary-choice"><input type="radio" name="mixedServiceMethodChoice" value="production" data-mixed-control="mixedServiceMethod" data-value="production" onchange="if(this.checked)chooseMixedOption('mixedServiceMethod','production')"><span class="msc-split-choice-copy"><strong>Use production and business costs</strong><small id="mixedProductionMethodChoicePreview">Calculated result pending</small></span></label>
               </div>
-              <button id="mixedServiceMethodDefinition" type="button" class="msc-info-link row-action-link row-definition-link" onmouseenter="showDefinitionTooltip(this)" onmouseleave="hideDefinitionTooltip(this)" onfocus="showDefinitionTooltip(this)" onblur="hideDefinitionTooltip(this)" data-definition-label="What these choices mean" data-definition="The labor-based method applies the percentage of total labor related to inventory work. The production-cost method applies the percentage of total business costs related to production and resale activity." aria-describedby="selectionDefinitionTooltip">What this means</button>
+              <button id="mixedServiceMethodDefinition" type="button" class="msc-info-link row-action-link row-definition-link" onmouseenter="showDefinitionTooltip(this)" onmouseleave="hideDefinitionTooltip(this)" onfocus="showDefinitionTooltip(this)" onblur="hideDefinitionTooltip(this)" data-definition-label="What these choices mean" data-definition="The labor-based method applies the percentage of total labor related to inventory work. The production-cost method applies the percentage of total business costs related to production and resale activity." data-citation="Treas. Reg. Sections 1.263A-1(h)(4) and 1.263A-1(h)(5)." aria-describedby="selectionDefinitionTooltip">What this means</button>
             </div>
           </fieldset>
 
@@ -2358,21 +2372,21 @@ main{background-color:#f1f0f4!important;background-image:radial-gradient(ellipse
                   <label class="binary-choice"><input type="radio" name="mixedSplitBasisChoice" value="materials" data-mixed-control="mixedMspmSplitMethod" data-value="materials" onchange="if(this.checked)chooseMixedOption('mixedMspmSplitMethod','materials')"><span class="msc-split-choice-copy"><strong>Direct material costs</strong><small id="mixedMaterialsSplitPreview">Preview pending</small></span></label>
                   <label class="binary-choice"><input type="radio" name="mixedSplitBasisChoice" value="labor" data-mixed-control="mixedMspmSplitMethod" data-value="labor" onchange="if(this.checked)chooseMixedOption('mixedMspmSplitMethod','labor')"><span class="msc-split-choice-copy"><strong>Preproduction labor costs</strong><small id="mixedLaborSplitPreview">Preview pending</small></span></label>
                 </div>
-                <button id="mixedSplitDefinition" type="button" class="msc-info-link row-action-link row-definition-link" onmouseenter="showDefinitionTooltip(this)" onmouseleave="hideDefinitionTooltip(this)" onfocus="showDefinitionTooltip(this)" onblur="hideDefinitionTooltip(this)" data-definition-label="Why this is required" data-definition="Under MSPM, capitalizable mixed service costs must be allocated between preproduction and production. Treas. Reg. Section 1.263A-2(c)(3)(iii)(B) permits the direct-material-cost method or the preproduction-labor-cost method. This choice affects only MSPM; it does not change the SPM calculation." aria-describedby="selectionDefinitionTooltip">Why is this required?</button>
+                <button id="mixedSplitDefinition" type="button" class="msc-info-link row-action-link row-definition-link" onmouseenter="showDefinitionTooltip(this)" onmouseleave="hideDefinitionTooltip(this)" onfocus="showDefinitionTooltip(this)" onblur="hideDefinitionTooltip(this)" data-definition-label="Why this is required" data-definition="Under MSPM, capitalizable mixed service costs must be allocated between preproduction and production. Treas. Reg. Section 1.263A-2(c)(3)(iii)(B) permits the direct-material-cost method or the preproduction-labor-cost method. This choice affects only MSPM; it does not change the SPM calculation." data-citation="Treas. Reg. Section 1.263A-2(c)(3)(iii)(B)." aria-describedby="selectionDefinitionTooltip">Why is this required?</button>
               </div>
             </fieldset>
 
             <label class="msc-election-line hidden" id="mixedMspmNinetyElectionField">
               <input id="mixedMspmNinetyToggle" type="checkbox" onchange="toggleMixedMspmNinetyElection(this.checked)">
               <span><strong id="mixedMspmNinetyStrong">Use 100% on the qualifying side</strong><small id="mixedMspmNinetyApplyText">Leave unchecked unless the taxpayer uses this optional treatment.</small></span>
-              <button id="mixedNinetyDefinition" type="button" class="msc-info-link row-action-link row-definition-link" onclick="event.preventDefault();event.stopPropagation()" onmouseenter="showDefinitionTooltip(this)" onmouseleave="hideDefinitionTooltip(this)" onfocus="showDefinitionTooltip(this)" onblur="hideDefinitionTooltip(this)" data-definition-label="MSPM 90% election" data-definition="This is optional. The calculated allocation remains in place unless this box is checked." aria-describedby="selectionDefinitionTooltip">Definition</button>
+              <button id="mixedNinetyDefinition" type="button" class="msc-info-link row-action-link row-definition-link" onclick="event.preventDefault();event.stopPropagation()" onmouseenter="showDefinitionTooltip(this)" onmouseleave="hideDefinitionTooltip(this)" onfocus="showDefinitionTooltip(this)" onblur="hideDefinitionTooltip(this)" data-definition-label="MSPM 90% election" data-definition="This is optional. The calculated allocation remains in place unless this box is checked." data-citation="Treas. Reg. Section 1.263A-2(c)(3)(iii)(C)." aria-describedby="selectionDefinitionTooltip">Definition</button>
             </label>
           </div>
 
           <label class="msc-population-confirmation msc-compact-confirm hidden" id="mixedPopulationConfirmationField">
             <input id="mixedPopulationConfirmed" type="checkbox">
             <span><strong id="mixedPopulationConfirmationStrong">I checked these choices and accounts.</strong><small id="mixedPopulationConfirmationHelp">The calculation choices match this tax year, no separate 90% department schedule applies, and the mixed service accounts are complete.</small></span>
-            <span class="msc-confirm-links"><button type="button" class="msc-info-link row-action-link row-definition-link" onclick="event.preventDefault();event.stopPropagation()" onmouseenter="showDefinitionTooltip(this)" onmouseleave="hideDefinitionTooltip(this)" onfocus="showDefinitionTooltip(this)" onblur="hideDefinitionTooltip(this)" data-definition-label="What this confirmation covers" data-definition="The source includes every mixed service department, all costs of those departments, and the complete cost or labor population for this business. Amounts allocated across another business and costs related to self-constructed assets are addressed in separate support." aria-describedby="selectionDefinitionTooltip">Definition</button><button type="button" class="msc-info-link msc-schedule-link" onclick="event.preventDefault();event.stopPropagation();markMixedDepartmentScheduleApplies()">Separate schedule applies</button></span>
+            <span class="msc-confirm-links"><button type="button" class="msc-info-link row-action-link row-definition-link" onclick="event.preventDefault();event.stopPropagation()" onmouseenter="showDefinitionTooltip(this)" onmouseleave="hideDefinitionTooltip(this)" onfocus="showDefinitionTooltip(this)" onblur="hideDefinitionTooltip(this)" data-definition-label="What this confirmation covers" data-definition="The source includes every mixed service department, all costs of those departments, and the complete cost or labor population for this business. Amounts allocated across another business and costs related to self-constructed assets are addressed in separate support." data-citation="Treas. Reg. Sections 1.263A-1(h)(2) and 1.263A-1(h)(6)." aria-describedby="selectionDefinitionTooltip">Definition</button><button type="button" class="msc-info-link msc-schedule-link" onclick="event.preventDefault();event.stopPropagation();markMixedDepartmentScheduleApplies()">Separate schedule applies</button></span>
           </label>
 
           <div class="msc-state-selects" aria-hidden="true">
@@ -2429,16 +2443,16 @@ main{background-color:#f1f0f4!important;background-image:radial-gradient(ellipse
         <legend id="appliedMethodLegend">Which production method applies to this return?</legend>
         <p id="appliedMethodHelp">Review both results above, then select the method supported for this tax year.</p>
         <div class="binary-choice-grid">
-          <label id="appliedSpmChoice" class="binary-choice"><input type="radio" name="selectedMethodChoice" value="SPM" onchange="if(this.checked)selectAppliedMethod('SPM')"><span class="msc-split-choice-copy"><strong>Simplified Production Method (SPM)</strong><small>Uses one overall allocation ratio.</small></span></label>
-          <label id="appliedMspmChoice" class="binary-choice"><input type="radio" name="selectedMethodChoice" value="MSPM" onchange="if(this.checked)selectAppliedMethod('MSPM')"><span class="msc-split-choice-copy"><strong>Modified Simplified Production Method (MSPM)</strong><small>Separates purchasing/material work from production.</small></span></label>
+          <label id="appliedSpmChoice" class="binary-choice"><input type="radio" name="selectedMethodChoice" value="SPM" onchange="if(this.checked)selectAppliedMethod('SPM')"><span class="msc-split-choice-copy"><strong>Simplified Production Method (SPM)</strong><small>Uses one overall allocation ratio.</small><small id="appliedSpmResult" class="applied-method-result">Result pending</small></span></label>
+          <label id="appliedMspmChoice" class="binary-choice"><input type="radio" name="selectedMethodChoice" value="MSPM" onchange="if(this.checked)selectAppliedMethod('MSPM')"><span class="msc-split-choice-copy"><strong>Modified Simplified Production Method (MSPM)</strong><small>Separates purchasing/material work from production.</small><small id="appliedMspmResult" class="applied-method-result">Result pending</small></span></label>
         </div>
-        <button id="appliedMethodDefinition" type="button" class="msc-info-link row-action-link row-definition-link" onmouseenter="showDefinitionTooltip(this)" onmouseleave="hideDefinitionTooltip(this)" onfocus="showDefinitionTooltip(this)" onblur="hideDefinitionTooltip(this)" data-definition-label="Why this selection is required" data-definition="One production method must control the workpaper result for this tax year. The other result remains available for comparison." aria-describedby="selectionDefinitionTooltip">What this controls</button>
+        <button id="appliedMethodDefinition" type="button" class="msc-info-link row-action-link row-definition-link" onmouseenter="showDefinitionTooltip(this)" onmouseleave="hideDefinitionTooltip(this)" onfocus="showDefinitionTooltip(this)" onblur="hideDefinitionTooltip(this)" data-definition-label="Why this selection is required" data-definition="One production method must control the workpaper result for this tax year. The other result remains available for comparison." data-citation="Treas. Reg. Sections 1.263A-2(b) and 1.263A-2(c); Section 446(e); Treas. Reg. Section 1.446-1(e)." aria-describedby="selectionDefinitionTooltip">What this controls</button>
       </fieldset>
       <div id="methodHistoryResultNote" class="note hidden"></div>
       <label id="methodTransitionSupportField" class="msc-population-confirmation hidden no-print">
         <input id="methodTransitionSupportConfirmed" type="checkbox">
         <span><strong>I confirmed the separate method-change support is complete.</strong><small id="methodTransitionSupportHelp">This includes the applicable Form 3115, Section 481(a), and beginning-inventory support.</small></span>
-        <button type="button" class="msc-info-link row-action-link row-definition-link" onclick="event.preventDefault();event.stopPropagation()" onmouseenter="showDefinitionTooltip(this)" onmouseleave="hideDefinitionTooltip(this)" onfocus="showDefinitionTooltip(this)" onblur="hideDefinitionTooltip(this)" data-definition-label="What this confirmation covers" data-definition="This confirmation is required when an existing trade or business first becomes subject to UNICAP, when prior UNICAP application may have been missed, or when an existing UNICAP method changes. It does not determine automatic-change eligibility." aria-describedby="selectionDefinitionTooltip">Definition</button>
+        <button type="button" class="msc-info-link row-action-link row-definition-link" onclick="event.preventDefault();event.stopPropagation()" onmouseenter="showDefinitionTooltip(this)" onmouseleave="hideDefinitionTooltip(this)" onfocus="showDefinitionTooltip(this)" onblur="hideDefinitionTooltip(this)" data-definition-label="What this confirmation covers" data-definition="This confirmation is required when an existing trade or business first becomes subject to UNICAP, when prior UNICAP application may have been missed, or when an existing UNICAP method changes. It does not determine automatic-change eligibility." data-citation="Sections 446(e) and 481(a); Treas. Reg. Sections 1.446-1(e) and 1.263A-7." aria-describedby="selectionDefinitionTooltip">Definition</button>
       </label>
     </div>
   </section>
@@ -3009,11 +3023,11 @@ function step1MissingFields(){
   if(!validTaxYearEnding(state.taxYear)) missing.push("a valid tax year ending date");
   if(!["producer","reseller","producerReseller"].includes(state.activityProfile)) missing.push("taxpayer type");
   if(!["yes","no"].includes(state.unicapPriorYearApplied)) missing.push("whether the taxpayer capitalized additional Section 263A costs last year");
-  if(state.unicapPriorYearApplied === "yes" && !["unchanged","changing"].includes(state.unicapMethodContinuity)) missing.push("whether this year's UNICAP methods are changing");
+  if(state.unicapPriorYearApplied === "yes" && !["unchanged","changing","unsure"].includes(state.unicapMethodContinuity)) missing.push("whether this year's UNICAP methods are changing");
   if(state.unicapHistory === "firstYear" && !["newActivity","newlySubject","priorNoncompliance"].includes(state.firstUnicapYearReason)) missing.push("why this is the first UNICAP year");
   if(state.unicapHistory === "priorChanging" && (!Array.isArray(state.unicapChangeComponents) || state.unicapChangeComponents.length === 0)) missing.push("the UNICAP method component changing this year");
   if(["priorUnchanged","priorChanging"].includes(state.unicapHistory) && state.activityType === "producer"){
-    if(!["SPM","MSPM"].includes(state.priorSelectedMethod)) missing.push("last year's production calculation");
+    if(!["SPM","MSPM","other"].includes(state.priorSelectedMethod)) missing.push("last year's production calculation");
     if(!["labor","production","direct","step","reasonable","none"].includes(state.priorMixedServiceMethod)) missing.push("last year's mixed service method");
     if(state.priorSelectedMethod === "MSPM" && ["labor","production"].includes(state.priorMixedServiceMethod) && !["materials","labor"].includes(state.priorMixedMspmSplitMethod)) missing.push("last year's MSPM mixed-service allocation method");
   }
@@ -3025,7 +3039,7 @@ function step1MissingFields(){
   if(!["FIFO","LIFO"].includes(state.inventoryMethod)) missing.push("inventory valuation method");
   if(state.inventoryMethod === "LIFO" && state.lifoActualRatioConfirmed !== "yes") missing.push("actual current-year absorption ratios");
   else if(state.inventoryMethod === "LIFO" && state.lifoCoverage !== "all") missing.push("the complete LIFO inventory population");
-  if(!["tax","book"].includes(state.amountBasis)) missing.push("amount basis");
+  if(!["tax","book"].includes(state.amountBasis)) missing.push("basis");
   if(state.amountBasis === "book"){
     if(state.financialStatementQualified !== "yes") missing.push("qualifying financial statement");
     else if(state.financialStatementMethodAdopted !== "yes") missing.push("adopted or consented method");
@@ -3062,13 +3076,13 @@ function advanceFromMapping(){
         ? $("taxYear")
         : !["yes","no"].includes(state.unicapPriorYearApplied)
           ? document.querySelector('input[name="unicapPriorYearApplied"]')
-          : state.unicapPriorYearApplied === "yes" && !["unchanged","changing"].includes(state.unicapMethodContinuity)
+          : state.unicapPriorYearApplied === "yes" && !["unchanged","changing","unsure"].includes(state.unicapMethodContinuity)
             ? document.querySelector('input[name="unicapMethodContinuity"]')
           : state.unicapHistory === "firstYear" && !["newActivity","newlySubject","priorNoncompliance"].includes(state.firstUnicapYearReason)
             ? document.querySelector('input[name="firstUnicapYearReason"]')
           : state.unicapHistory === "priorChanging" && (!Array.isArray(state.unicapChangeComponents) || state.unicapChangeComponents.length === 0)
             ? document.querySelector('input[name="unicapChangeComponent"]')
-          : ["priorUnchanged","priorChanging"].includes(state.unicapHistory) && state.activityType === "producer" && !["SPM","MSPM"].includes(state.priorSelectedMethod)
+          : ["priorUnchanged","priorChanging"].includes(state.unicapHistory) && state.activityType === "producer" && !["SPM","MSPM","other"].includes(state.priorSelectedMethod)
             ? document.querySelector('input[name="priorSelectedMethodChoice"]')
           : ["priorUnchanged","priorChanging"].includes(state.unicapHistory) && state.activityType === "producer" && !["labor","production","direct","step","reasonable","none"].includes(state.priorMixedServiceMethod)
             ? document.querySelector('input[name="priorMixedServiceMethodChoice"]')
@@ -3160,7 +3174,7 @@ document.addEventListener("keydown", event => {
   }
 });
 
-const APP_VERSION = "2026-08-10 step1-labels-combined-v35";
+const APP_VERSION = "2026-08-10 reseller-eligibility-v43";
 
 const wholeDollar = n => {
   const value = Number(n || 0);
@@ -3966,9 +3980,9 @@ function labelUnicapHistory(value=state.unicapHistory){
 }
 
 function labelFirstUnicapYearReason(value=state.firstUnicapYearReason){
-  if(value === "newActivity") return "First federal return for this trade or business";
-  if(value === "newlySubject") return "Existing activity became subject to UNICAP";
-  if(value === "priorNoncompliance") return "Prior UNICAP application may have been missed";
+  if(value === "newActivity") return "First trade or business year";
+  if(value === "newlySubject") return "First year subject to UNICAP";
+  if(value === "priorNoncompliance") return "Subject to UNICAP and failed to capitalize";
   if(value === "unsure") return "Reason not determined";
   return "Not applicable";
 }
@@ -3995,13 +4009,21 @@ function methodTransitionSupportIsCurrent(){
 
 function priorMethodProfileComplete(){
   if(!["priorUnchanged","priorChanging"].includes(state.unicapHistory)) return true;
-  if(state.activityType === "producer" && (!["SPM","MSPM"].includes(state.priorSelectedMethod) || !["labor","production","direct","step","reasonable","none"].includes(state.priorMixedServiceMethod))) return false;
+  if(state.activityType === "producer" && (!["SPM","MSPM","other"].includes(state.priorSelectedMethod) || !["labor","production","direct","step","reasonable","none"].includes(state.priorMixedServiceMethod))) return false;
   if(state.activityType === "producer" && state.priorSelectedMethod === "MSPM" && ["labor","production"].includes(state.priorMixedServiceMethod) && !["materials","labor"].includes(state.priorMixedMspmSplitMethod)) return false;
+  if(state.activityType === "producer" && state.priorSelectedMethod === "other" && !unicapComponentChanging("productionMethod")) return false;
   if(state.unicapHistory !== "priorChanging") return true;
-  if(unicapComponentChanging("productionMethod") && state.activityType === "producer" && (!["SPM","MSPM"].includes(state.priorSelectedMethod) || !selectedMethodIsValid() || state.priorSelectedMethod === state.selectedMethod)) return false;
+  if(unicapComponentChanging("productionMethod") && state.activityType === "producer" && (!["SPM","MSPM","other"].includes(state.priorSelectedMethod) || !selectedMethodIsValid() || state.priorSelectedMethod === state.selectedMethod)) return false;
   if(unicapComponentChanging("mixedService") && hasMixedServiceCosts() && (!["labor","production","direct","step","reasonable","none"].includes(state.priorMixedServiceMethod) || state.priorMixedServiceMethod === state.mixedServiceMethod)) return false;
   if(unicapComponentChanging("modifiedSplit") && hasMixedServiceCosts() && state.methodRun !== "SPM" && (!["materials","labor"].includes(state.priorMixedMspmSplitMethod) || state.priorMixedMspmSplitMethod === state.mixedMspmSplitMethod)) return false;
   return true;
+}
+
+function priorProductionMethodOutsideScope(){
+  return state.activityType === "producer"
+    && state.priorSelectedMethod === "other"
+    && (state.unicapHistory === "priorUnchanged"
+      || (state.unicapHistory === "priorChanging" && !unicapComponentChanging("productionMethod")));
 }
 
 function labelUnicapChangeComponents(){
@@ -4011,7 +4033,7 @@ function labelUnicapChangeComponents(){
 }
 
 function unicapHistoryResolved(){
-  return ["firstYear","priorUnchanged","priorChanging"].includes(state.unicapHistory);
+  return ["firstYear","priorUnchanged","priorChanging","unsure"].includes(state.unicapHistory);
 }
 
 function methodHistoryCopy(){
@@ -4032,10 +4054,27 @@ function methodHistoryCopy(){
     resultDefinition:"Step 1 determines whether the current-year method is a first-year selection, a continuing method, or a proposed change.",
     readySource:"pending Step 1"
   };
-  if(state.unicapHistory === "firstYear" && state.firstUnicapYearReason === "newActivity") return {
-    intro:"Compare the results, then select the method the taxpayer will use this year.",
+  if(state.unicapHistory === "unsure") return {
+    intro:"Prior-year method history is not confirmed. Continue with the method used for this workpaper.",
     methodLegend:"Which mixed service cost method applies to this return?",
-    methodHelp:"Compare both amounts, then choose the calculation the taxpayer will use this year.",
+    methodHelp:"Select the method used for this workpaper. Prior-year treatment can be confirmed later.",
+    methodDefinition:"The prior-year method is not confirmed. This selection identifies the method used for the current workpaper.",
+    splitQuestion:"How should capitalizable mixed service costs be allocated under MSPM?",
+    splitHelp:"Select the MSPM allocation method used for this workpaper. This choice does not change the SPM calculation.",
+    splitDefinition:"Under MSPM, capitalizable mixed service costs are allocated between preproduction and production. Select the direct-material-cost method or preproduction-labor-cost method used for this workpaper.",
+    ninetyHelp:"Leave unchecked unless the method used for this workpaper applies the optional 100% treatment.",
+    ninetyDefinition:"This is optional. Leaving it unchecked keeps the calculated MSPM allocation.",
+    confirmStrong:"I checked these choices and accounts.",
+    confirmHelp:"The selected calculation and source accounts are complete.",
+    resultLegend:"Which production method applies to this return?",
+    resultHelp:"Select the production method used for this workpaper.",
+    resultDefinition:"The prior-year production method is not confirmed. This selection controls the current workpaper result.",
+    readySource:"selected for this workpaper; prior history not confirmed"
+  };
+  if(state.unicapHistory === "firstYear" && state.firstUnicapYearReason === "newActivity") return {
+    intro:"Compare the results, then choose the method the taxpayer wants to use this year.",
+    methodLegend:"Which mixed service cost method does the taxpayer want to use?",
+    methodHelp:"Compare the calculated amounts and choose the method for this return.",
     methodDefinition:"For the taxpayer's first UNICAP year, select the permissible method being adopted on this return.",
     splitQuestion:"How should capitalizable mixed service costs be allocated under MSPM?",
     splitHelp:"Choose the MSPM allocation method for this return. This choice does not change the SPM calculation.",
@@ -4044,15 +4083,15 @@ function methodHistoryCopy(){
     ninetyDefinition:"This is optional. Leaving it unchecked keeps the calculated MSPM allocation. Check it only when the taxpayer is adopting the permissible 100% treatment with the required support.",
     confirmStrong:"I reviewed the current-year choices and accounts.",
     confirmHelp:"The selected calculation and source accounts are complete.",
-    resultLegend:"Which production method will the taxpayer use this year?",
-    resultHelp:"Review both results above, then select the permissible method being adopted on this return.",
+    resultLegend:"Which production method does the taxpayer want to use?",
+    resultHelp:"Compare the calculated results and choose the method for this return.",
     resultDefinition:"This is the taxpayer's current-year production-method selection. The other result remains visible for comparison.",
     readySource:"selected for this tax year"
   };
   if(state.unicapHistory === "firstYear") return {
-    intro:"Compare the results, then select the proposed current-year method. Separate method-change and beginning-inventory support is required.",
-    methodLegend:"Which mixed service cost method applies to this return?",
-    methodHelp:"Compare the calculated amounts above and select the proposed method for this tax year.",
+    intro:"Compare the results, then choose the method the taxpayer wants to use this year. Separate method-change and beginning-inventory support is required.",
+    methodLegend:"Which mixed service cost method does the taxpayer want to use?",
+    methodHelp:"Compare the calculated amounts and choose the method for this return. Separate method-change and beginning-inventory support is required.",
     methodDefinition:"Because this activity existed before its first UNICAP year, the selected current-year method requires separate method-change and beginning-inventory support.",
     splitQuestion:"How should capitalizable mixed service costs be allocated under MSPM?",
     splitHelp:"Compare the amounts below, then select the proposed MSPM allocation method for this tax year. This choice does not change the SPM calculation.",
@@ -4061,10 +4100,27 @@ function methodHistoryCopy(){
     ninetyDefinition:"This is optional. Leaving it unchecked keeps the calculated MSPM allocation. Check it only when the proposed current-year method uses the 100% treatment with the required support.",
     confirmStrong:"I reviewed the proposed current-year choices and accounts.",
     confirmHelp:"The proposed calculation and source accounts are complete.",
-    resultLegend:"Which production method is proposed for this year?",
-    resultHelp:"Review both results above, then select the proposed current-year method. Separate method-change and beginning-inventory support is required.",
-    resultDefinition:"This is the proposed current-year production method, not an initial adoption. The other result remains visible for comparison.",
+    resultLegend:"Which production method does the taxpayer want to use?",
+    resultHelp:"Compare the calculated results and choose the method for this return. Separate method-change and beginning-inventory support is required.",
+    resultDefinition:"This selection identifies the taxpayer's current-year production method. The other result remains visible for comparison, and separate method-change support remains required.",
     readySource:"proposed for this tax year"
+  };
+  if(priorProductionMethodOutsideScope()) return {
+    intro:"Last year's production method is outside this calculator. The Simplified Production Method and Modified Simplified Production Method amounts are comparisons only.",
+    methodLegend:"Which mixed service cost method applies to this return?",
+    methodHelp:unicapComponentChanging("mixedService")?"Choose the new method supported for this year.":"Confirm the mixed service method continuing from last year.",
+    methodDefinition:unicapComponentChanging("mixedService")?"Select the proposed mixed service method shown in the current-year method-change support.":"Select the mixed service method continuing from last year.",
+    splitQuestion:"How should capitalizable mixed service costs be allocated under MSPM?",
+    splitHelp:unicapComponentChanging("modifiedSplit")?"Choose the new MSPM allocation method supported for this year. This choice does not change the SPM calculation.":"Choose the MSPM allocation method used last year. This choice does not change the SPM calculation.",
+    splitDefinition:unicapComponentChanging("modifiedSplit")?"Select the proposed current-year MSPM mixed-service allocation method shown in the method-change support.":"Select the MSPM mixed-service allocation method continuing from last year.",
+    ninetyHelp:"Leave unchecked unless the continuing or approved current-year method uses the optional 100% treatment.",
+    ninetyDefinition:"This is optional. Leaving it unchecked keeps the calculated MSPM allocation.",
+    confirmStrong:"I checked the current-year choices and accounts.",
+    confirmHelp:"The selected mixed service calculation and source accounts are complete.",
+    resultLegend:"Production method outside this calculator",
+    resultHelp:"No calculated production method can control this workpaper. Use a separate workpaper, or return to Step 1 and mark Production calculation as changing only when supported current-year method-change documentation applies.",
+    resultDefinition:"The prior production method is not calculated here. The displayed Simplified Production Method and Modified Simplified Production Method amounts are comparisons only.",
+    readySource:"comparison only; prior production method outside this calculator"
   };
   if(state.unicapHistory === "priorChanging") return {
     intro:"Use the approved current-year method for any component changing this year.",
@@ -4120,6 +4176,7 @@ function labelSelectedMethod(value){
   if(value === "SRM") return "Simplified Resale Method (SRM)";
   if(value === "SPM") return "Simplified Production Method (SPM)";
   if(value === "MSPM") return "Modified Simplified Production Method (MSPM)";
+  if(value === "other") return "Another production method (outside this calculator)";
   return "Not selected";
 }
 
@@ -4885,6 +4942,9 @@ function calculationFingerprint(){
     unicapHistory:state.unicapHistory || "",
     firstUnicapYearReason:state.firstUnicapYearReason || "",
     unicapChangeComponents:Array.isArray(state.unicapChangeComponents) ? [...state.unicapChangeComponents].sort() : [],
+    priorSelectedMethod:state.priorSelectedMethod || "",
+    priorMixedServiceMethod:state.priorMixedServiceMethod || "",
+    priorMixedMspmSplitMethod:state.priorMixedMspmSplitMethod || "",
     amountBasis:state.amountBasis || "",
     bookTreatment:state.bookTreatment || "",
     financialStatementQualified:state.financialStatementQualified || "",
@@ -5198,6 +5258,9 @@ function normalizeSetupDependencies(){
     if(["SPM","MSPM"].includes(state.priorSelectedMethod)){
       state.selectedMethod = state.priorSelectedMethod;
       state.selectedMethodConfirmed = true;
+    } else if(state.priorSelectedMethod === "other"){
+      state.selectedMethod = "";
+      state.selectedMethodConfirmed = false;
     }
     state.mixedServiceMethod = ["labor","production","direct","step","reasonable"].includes(state.priorMixedServiceMethod) ? state.priorMixedServiceMethod : "";
     state.mixedMspmSplitMethod = state.priorSelectedMethod === "MSPM" && ["materials","labor"].includes(state.priorMixedMspmSplitMethod) ? state.priorMixedMspmSplitMethod : "";
@@ -5296,6 +5359,9 @@ function readControls(){
     if(["SPM","MSPM"].includes(state.priorSelectedMethod)){
       state.selectedMethod = state.priorSelectedMethod;
       state.selectedMethodConfirmed = true;
+    } else if(state.priorSelectedMethod === "other"){
+      state.selectedMethod = "";
+      state.selectedMethodConfirmed = false;
     }
     state.mixedServiceMethod = ["labor","production","direct","step","reasonable"].includes(state.priorMixedServiceMethod) ? state.priorMixedServiceMethod : "";
     state.mixedMspmSplitMethod = state.priorSelectedMethod === "MSPM" && ["materials","labor"].includes(state.priorMixedMspmSplitMethod) ? state.priorMixedMspmSplitMethod : "";
@@ -5330,7 +5396,7 @@ function setControls(){
   const allowedChangeComponents = new Set(["productionMethod","mixedService","modifiedSplit"]);
   state.unicapChangeComponents = Array.isArray(state.unicapChangeComponents) ? state.unicapChangeComponents.filter(value => allowedChangeComponents.has(value)) : [];
   document.querySelectorAll('input[name="unicapChangeComponent"]').forEach(input => { input.checked = state.unicapChangeComponents.includes(input.value); });
-  if(!["SPM","MSPM"].includes(state.priorSelectedMethod)) state.priorSelectedMethod = "";
+  if(!["SPM","MSPM","other"].includes(state.priorSelectedMethod)) state.priorSelectedMethod = "";
   if(!["labor","production","direct","step","reasonable","none"].includes(state.priorMixedServiceMethod)) state.priorMixedServiceMethod = "";
   if(!["materials","labor"].includes(state.priorMixedMspmSplitMethod)) state.priorMixedMspmSplitMethod = "";
   document.querySelectorAll('input[name="priorSelectedMethodChoice"]').forEach(input => { input.checked = input.value === state.priorSelectedMethod; });
@@ -5434,11 +5500,7 @@ function renderBookBasisControls(){
       : "";
   }
   const continuityNote = $("unicapContinuityNote");
-  if(continuityNote){
-    continuityNote.textContent = state.unicapMethodContinuity === "unsure"
-      ? "Check last year's return, UNICAP workpaper, and any Form 3115 before continuing."
-      : "";
-  }
+  if(continuityNote) continuityNote.textContent = "";
   const firstYearNote = $("firstUnicapYearNote");
   if(firstYearNote){
     firstYearNote.textContent = state.firstUnicapYearReason === "newActivity"
@@ -6813,6 +6875,33 @@ const INPUT_DEFINITIONS = {
   excludedOther:"Use when the item belongs outside this calculation but does not fit another choice. Explain the basis in the account notes."
 };
 
+const INPUT_CITATIONS = {
+  excludedSales:"Section 263A(a) and (b).",
+  excludedOtherIncome:"Section 263A(a) and (b).",
+  mixedservice:"Treas. Reg. Section 1.263A-1(e)(4)(ii)(C).",
+  raw:"Treas. Reg. Sections 1.263A-1(d)(2)(ii) and 1.263A-1(e)(2).",
+  resale:"Treas. Reg. Sections 1.263A-1(d)(2)(i) and 1.263A-3(a)(1).",
+  prod471:"Treas. Reg. Section 1.263A-1(d)(2)(i) and (ii).",
+  preadd:"Treas. Reg. Sections 1.263A-2(a)(3)(ii) and 1.263A-2(c)(3)(ii)(B)(1).",
+  prodadd:"Treas. Reg. Sections 1.263A-2(a)(3)(i), 1.263A-2(a)(3)(iii), and 1.263A-2(c)(3)(ii)(D)(1).",
+  srmpurchasing:"Treas. Reg. Sections 1.263A-3(c)(3) and 1.263A-3(d)(3)(i)(E).",
+  srmstoragehandling:"Treas. Reg. Sections 1.263A-3(c)(4), 1.263A-3(c)(5), and 1.263A-3(d)(3)(i)(D).",
+  begraw:"Treas. Reg. Section 1.263A-2(c)(3)(ii)(D)(4).",
+  begresale:"Treas. Reg. Sections 1.263A-2(c)(3)(vi)(A) and 1.263A-3(d)(3)(i)(D)(2).",
+  begprod:"Treas. Reg. Sections 1.263A-2(b)(3)(v) and 1.263A-2(c)(3)(vi)(A).",
+  begadd:"Treas. Reg. Sections 1.263A-2(b)(3)(v) and 1.263A-2(c)(3)(vi)(A).",
+  endraw:"Treas. Reg. Section 1.263A-2(c)(3)(ii)(C) and (D)(4).",
+  endresale:"Treas. Reg. Sections 1.263A-2(c)(3)(ii)(C) and 1.263A-3(d)(3)(i)(C)(2).",
+  endprod:"Treas. Reg. Section 1.263A-2(c)(3)(ii)(E).",
+  spmend471:"Treas. Reg. Section 1.263A-2(b)(3)(ii)(B).",
+  excludedSelling:"Treas. Reg. Section 1.263A-1(e)(3)(iii)(A).",
+  excludedMarketing:"Treas. Reg. Section 1.263A-1(e)(3)(iii)(A).",
+  excludedDelivery:"Treas. Reg. Section 1.263A-3(c)(4)(vi)(A).",
+  excludedInterest:"Section 263A(f); Treas. Reg. Sections 1.263A-8 through 1.263A-15.",
+  excludedIncomeTax:"Section 275(a)(1); Treas. Reg. Section 1.263A-1(e)(3)(iii)(F).",
+  excludedSoldOnly:"Treas. Reg. Sections 1.263A-1(c)(5), 1.263A-2(b)(3)(ii)(C), and 1.263A-3(d)(3)(i)(C)(3)."
+};
+
 function inputDefinition(inputId){
   const option = inputById[inputId] || inputById.review;
   if(INPUT_DEFINITIONS[inputId]) return INPUT_DEFINITIONS[inputId];
@@ -6858,7 +6947,10 @@ function showDefinitionTooltip(anchor){
   title.textContent = anchor.dataset.definitionLabel || "Definition";
   const definition = document.createElement("span");
   definition.textContent = anchor.dataset.definition || "";
-  tooltip.replaceChildren(title,definition);
+  const citation = document.createElement("span");
+  citation.className = "definition-citation";
+  citation.textContent = anchor.dataset.citation || "";
+  tooltip.replaceChildren(...(citation.textContent ? [title,definition,citation] : [title,definition]));
   tooltip.classList.add("visible");
   tooltip.setAttribute("aria-hidden","false");
   positionDefinitionTooltip(anchor);
@@ -6876,7 +6968,9 @@ function hideDefinitionTooltip(anchor){
 function definitionLinkHtml(row){
   const definition = inputDefinition(row.inputId);
   const label = bucketDisplayLabel(row.inputId);
-  return `<a href="#" class="row-action-link row-definition-link" onclick="event.preventDefault()" onmouseenter="showDefinitionTooltip(this)" onmouseleave="hideDefinitionTooltip(this)" onfocus="showDefinitionTooltip(this)" onblur="hideDefinitionTooltip(this)" data-definition-label="${esc(label)}" data-definition="${esc(definition)}" aria-describedby="selectionDefinitionTooltip">Definition</a>`;
+  const option = inputById[row.inputId] || inputById.review;
+  const citation = INPUT_CITATIONS[row.inputId] || (option.group === "Breakout / Suspense" ? TERM_DEFINITIONS.breakoutSuspense.citation : "");
+  return `<a href="#" class="row-action-link row-definition-link" onclick="event.preventDefault()" onmouseenter="showDefinitionTooltip(this)" onmouseleave="hideDefinitionTooltip(this)" onfocus="showDefinitionTooltip(this)" onblur="hideDefinitionTooltip(this)" data-definition-label="${esc(label)}" data-definition="${esc(definition)}" data-citation="${esc(citation)}" aria-describedby="selectionDefinitionTooltip">Definition</a>`;
 }
 
 function selectInputHtml(row,index){
@@ -8699,7 +8793,11 @@ function renderMethodScopeNotice(){
     box.classList.toggle("hidden",!message);
     return;
   }
-  if(lifoActive() && state.lifoActualRatioConfirmed === "no"){
+  if(state.priorSelectedMethod === "other" && state.unicapHistory === "priorUnchanged"){
+    message = "Last year's production method is outside this calculator. You may continue to review the supported calculations, but neither can be treated as the continuing method.";
+  } else if(state.priorSelectedMethod === "other" && state.unicapHistory === "priorChanging" && !unicapComponentChanging("productionMethod")){
+    message = "Last year's production method is outside this calculator. Mark Production calculation as changing only if this year's supported method-change documentation moves the taxpayer to one of the calculated methods.";
+  } else if(lifoActive() && state.lifoActualRatioConfirmed === "no"){
     message = "This workpaper requires actual current-year absorption ratios.";
   } else if(lifoActive() && state.lifoActualRatioConfirmed === "yes" && state.lifoCoverage === "partial"){
     message = "This workpaper requires the complete LIFO inventory population.";
@@ -8720,7 +8818,7 @@ function renderMethodScopeNotice(){
           : "The producer de minimis rule applies. No current-year additional Section 263A costs are allocated to ending inventory.";
       } else {
         message = spmAvailable()
-          ? "Both production-method results will be shown."
+          ? ""
           : "Only the Modified Simplified Production Method result will be shown because average annual gross receipts exceed $50 million.";
       }
     }
@@ -9106,18 +9204,33 @@ function renderUnicapHistoryCopy(){
   if($("mixedMethodIntroCopy")) $("mixedMethodIntroCopy").textContent = copy.intro;
   if($("mixedServiceMethodLegend")) $("mixedServiceMethodLegend").textContent = copy.methodLegend;
   if($("mixedServiceMethodHelp")) $("mixedServiceMethodHelp").textContent = copy.methodHelp;
-  if($("mixedServiceMethodDefinition")) $("mixedServiceMethodDefinition").dataset.definition = copy.methodDefinition;
-  if($("mixedMethodHistoryHelp")) $("mixedMethodHistoryHelp").dataset.definition = copy.methodDefinition;
+  if($("mixedServiceMethodDefinition")){
+    $("mixedServiceMethodDefinition").dataset.definition = copy.methodDefinition;
+    $("mixedServiceMethodDefinition").dataset.citation = "Treas. Reg. Sections 1.263A-1(g)(4) and 1.263A-1(h); Section 446(e); Treas. Reg. Section 1.446-1(e).";
+  }
+  if($("mixedMethodHistoryHelp")){
+    $("mixedMethodHistoryHelp").dataset.definition = copy.methodDefinition;
+    $("mixedMethodHistoryHelp").dataset.citation = "Treas. Reg. Sections 1.263A-1(g)(4) and 1.263A-1(h); Section 446(e); Treas. Reg. Section 1.446-1(e).";
+  }
   if($("mixedSplitQuestion")) $("mixedSplitQuestion").textContent = copy.splitQuestion;
   if($("mixedSplitHelp")) $("mixedSplitHelp").textContent = copy.splitHelp;
-  if($("mixedSplitDefinition")) $("mixedSplitDefinition").dataset.definition = copy.splitDefinition;
+  if($("mixedSplitDefinition")){
+    $("mixedSplitDefinition").dataset.definition = copy.splitDefinition;
+    $("mixedSplitDefinition").dataset.citation = "Treas. Reg. Section 1.263A-2(c)(3)(iii)(B).";
+  }
   if($("mixedMspmNinetyApplyText")) $("mixedMspmNinetyApplyText").textContent = copy.ninetyHelp;
-  if($("mixedNinetyDefinition")) $("mixedNinetyDefinition").dataset.definition = copy.ninetyDefinition;
+  if($("mixedNinetyDefinition")){
+    $("mixedNinetyDefinition").dataset.definition = copy.ninetyDefinition;
+    $("mixedNinetyDefinition").dataset.citation = "Treas. Reg. Section 1.263A-2(c)(3)(iii)(C).";
+  }
   if($("mixedPopulationConfirmationStrong")) $("mixedPopulationConfirmationStrong").textContent = copy.confirmStrong;
   if($("mixedPopulationConfirmationHelp")) $("mixedPopulationConfirmationHelp").textContent = copy.confirmHelp;
   if($("appliedMethodLegend")) $("appliedMethodLegend").textContent = copy.resultLegend;
   if($("appliedMethodHelp")) $("appliedMethodHelp").textContent = copy.resultHelp;
-  if($("appliedMethodDefinition")) $("appliedMethodDefinition").dataset.definition = copy.resultDefinition;
+  if($("appliedMethodDefinition")){
+    $("appliedMethodDefinition").dataset.definition = copy.resultDefinition;
+    $("appliedMethodDefinition").dataset.citation = "Treas. Reg. Sections 1.263A-2(b) and 1.263A-2(c); Section 446(e); Treas. Reg. Section 1.446-1(e).";
+  }
   if($("srmSharedIncludedOption")) $("srmSharedIncludedOption").textContent = state.unicapHistory === "firstYear"
     ? "The current-year labor-based schedule is included in these account rows"
     : "The continuing labor-based schedule is included in these account rows";
@@ -9156,6 +9269,12 @@ function renderAppliedMethodSelection(c){
   field.classList.toggle("hidden",!needsChoice);
   document.querySelectorAll('input[name="priorSelectedMethodChoice"]').forEach(input => { input.checked = input.value === state.priorSelectedMethod; });
   if($("appliedSpmChoice")) $("appliedSpmChoice").classList.toggle("hidden",!spmAvailable());
+  const resultUnit = lifoActive() ? "current-year inventory adjustment" : "ending add-on";
+  if($("appliedSpmResult")) $("appliedSpmResult").textContent = spmAvailable()
+    ? `${pct(c.finalSpmRate)} absorption · ${moneyWp(c.finalSpmCurrentAdjustment)} ${resultUnit}`
+    : "Unavailable under the selected facts";
+  if($("appliedMspmResult")) $("appliedMspmResult").textContent =
+    `${pct(c.finalMspmRate)} absorption · ${moneyWp(c.finalMspmCurrentAdjustment)} ${resultUnit}`;
   if(!spmAvailable()){
     if($("appliedMethodLegend")) $("appliedMethodLegend").textContent = "Confirm the production method for this return";
     if($("appliedMethodHelp")) $("appliedMethodHelp").textContent = state.unicapHistory === "priorUnchanged"
@@ -9167,6 +9286,8 @@ function renderAppliedMethodSelection(c){
   const needsTransitionSupport = methodTransitionSupportRequired();
   const changing = state.unicapHistory === "priorChanging";
   const messages = [];
+  if(state.priorSelectedMethod === "other" && state.unicapHistory === "priorUnchanged") messages.push("Last year's production method is outside this calculator. The calculated Simplified Production Method and Modified Simplified Production Method amounts are comparisons only and cannot control this workpaper.");
+  if(state.priorSelectedMethod === "other" && changing && !unicapComponentChanging("productionMethod")) messages.push("The prior production method is outside this calculator. Mark Production calculation as changing only when the supported current-year change moves the taxpayer to one of the calculated methods.");
   if(needsTransitionSupport && !methodTransitionSupportIsCurrent()) messages.push(state.unicapHistory === "priorChanging"
     ? "Confirm the separate support for the prior and proposed methods before finalizing this workpaper."
     : "Confirm the separate method-change, beginning-inventory, and Section 481(a) support before finalizing this workpaper.");
@@ -9204,6 +9325,21 @@ function syncMixedServiceUi(c){
   const selectedBaseReady = method === "labor" ? baseStats.laborComplete : method === "production" ? baseStats.costComplete : false;
   const materialsRatio = c.cy471 > 0 ? c.cyRaw / c.cy471 : NaN;
   const laborRatio = c.mixedTotalLabor > 0 ? c.mixedPreProductionLabor / c.mixedTotalLabor : NaN;
+  const laborMethodReady = baseStats.laborComplete
+    && c.mixedTotalLabor > 0
+    && c.mixedSec263ALabor >= 0
+    && c.mixedSec263ALabor <= c.mixedTotalLabor;
+  const productionMethodReady = baseStats.costComplete
+    && c.mixedTotalCosts > 0
+    && c.mixedSec263AProductionCosts >= 0
+    && c.mixedSec263AProductionCosts <= c.mixedTotalCosts;
+  const methodPreviewText = (ratio,amount,ready) => ready && Number.isFinite(ratio) && ratio >= 0 && ratio <= 1
+    ? `${pct(ratio)} · ${moneyWp(amount)}`
+    : "Needs account review";
+  if($("mixedLaborMethodChoicePreview")) $("mixedLaborMethodChoicePreview").textContent =
+    methodPreviewText(c.mixedLaborRatioExact,c.mixedLaborCapitalizable,laborMethodReady);
+  if($("mixedProductionMethodChoicePreview")) $("mixedProductionMethodChoicePreview").textContent =
+    methodPreviewText(c.mixedProductionCostRatioExact,c.mixedProductionCostCapitalizable,productionMethodReady);
   const splitPreviewText = (ratio,ready) => ready && Number.isFinite(ratio) && ratio >= 0 && ratio <= 1
     ? `${moneyWp(c.mixedCapitalizable * ratio)} purchasing/material · ${moneyWp(c.mixedCapitalizable * (1 - ratio))} production`
     : "Needs account review";
@@ -9292,7 +9428,7 @@ function mixedMethodCardHtml(c,kind,ready,issueCount){
     <span class="msc-method-state ${ready ? "" : "needs-review"}">${esc(stateText)}</span>
     <strong>${esc(title)}</strong>
     <small>${esc(description)}</small>
-    <button type="button" class="msc-info-link row-action-link row-definition-link" onmouseenter="showDefinitionTooltip(this)" onmouseleave="hideDefinitionTooltip(this)" onfocus="showDefinitionTooltip(this)" onblur="hideDefinitionTooltip(this)" data-definition-label="${esc(title)}" data-definition="${esc(definition)}" aria-describedby="selectionDefinitionTooltip">Definition</button>
+    <button type="button" class="msc-info-link row-action-link row-definition-link" onmouseenter="showDefinitionTooltip(this)" onmouseleave="hideDefinitionTooltip(this)" onfocus="showDefinitionTooltip(this)" onblur="hideDefinitionTooltip(this)" data-definition-label="${esc(title)}" data-definition="${esc(definition)}" data-citation="${esc(isLabor ? "Treas. Reg. Section 1.263A-1(h)(4)." : "Treas. Reg. Section 1.263A-1(h)(5).")}" aria-describedby="selectionDefinitionTooltip">Definition</button>
     <div class="msc-card-values"><span>${esc(valueLabel)}</span><b>${previewAvailable ? esc(moneyWp(amount)) : "—"}</b></div>
   </article>`;
 }
@@ -9577,7 +9713,8 @@ function renderCompletionStatuses(c,validationItems=[]){
   }
 
   const redBlocked = s.coreInputsReady && s.redItems.length > 0 && !s.overrideValid;
-  setStepStatus("step6Status",s.workpaperReady ? "Results ready" : s.calculationReady ? (!s.methodSelectionComplete ? "Choose method" : !s.priorMethodProfileRecorded ? "Record prior method" : "Confirm support") : (redBlocked ? "Blocked by red flag" : (state.rows.length ? "Locked" : "Not started")),s.workpaperReady ? "ok" : (redBlocked ? "bad" : "warn"));
+  const priorMethodOutside = priorProductionMethodOutsideScope();
+  setStepStatus("step6Status",s.workpaperReady ? "Results ready" : priorMethodOutside ? "Comparison only" : s.calculationReady ? (!s.methodSelectionComplete ? "Choose method" : !s.priorMethodProfileRecorded ? "Record prior method" : "Confirm support") : (redBlocked ? "Blocked by red flag" : (state.rows.length ? "Locked" : "Not started")),s.workpaperReady ? "ok" : (priorMethodOutside || redBlocked ? "bad" : "warn"));
   if(!state.rows.length){
     setStepStatus("step7Status","Not started","warn");
   } else if(!s.coreInputsReady){
@@ -9591,7 +9728,7 @@ function renderCompletionStatuses(c,validationItems=[]){
   } else {
     setStepStatus("step7Status","Complete","ok");
   }
-  setStepStatus("step8Status",s.workpaperReady ? "Workpaper ready" : s.calculationReady ? (!s.methodSelectionComplete ? "Waiting for method" : !s.priorMethodProfileRecorded ? "Waiting for prior method" : "Waiting for support") : (redBlocked ? "Blocked by red flag" : (state.rows.length ? "Locked" : "Not started")),s.workpaperReady ? "ok" : (redBlocked ? "bad" : "warn"));
+  setStepStatus("step8Status",s.workpaperReady ? "Workpaper ready" : priorMethodOutside ? "Separate workpaper required" : s.calculationReady ? (!s.methodSelectionComplete ? "Waiting for method" : !s.priorMethodProfileRecorded ? "Waiting for prior method" : "Waiting for support") : (redBlocked ? "Blocked by red flag" : (state.rows.length ? "Locked" : "Not started")),s.workpaperReady ? "ok" : (priorMethodOutside || redBlocked ? "bad" : "warn"));
 
   const staffName = !!String(state.staffReviewName || "").trim();
   const managerName = !!String(state.managerReviewName || "").trim();
@@ -9626,7 +9763,10 @@ function renderCompletionStatuses(c,validationItems=[]){
   if(!banner) return;
   banner.className = "note";
   if(s.calculationReady){
-    if(!s.methodSelectionComplete){
+    if(priorMethodOutside){
+      banner.classList.add("bad");
+      banner.innerHTML = `<strong>Comparison only.</strong> Last year's production method is outside this calculator. Use a separate workpaper, or return to Step 1 and mark Production calculation as changing only when supported current-year method-change documentation applies.`;
+    } else if(!s.methodSelectionComplete){
       banner.innerHTML = spmAvailable()
         ? `<strong>Both results are calculated.</strong> Review them below, then choose the production method that applies to this tax year.`
         : `<strong>The available result is calculated.</strong> Confirm the production method that applies to this tax year.`;
@@ -9902,6 +10042,7 @@ function buildValidationItems(c){
   if(!state.rows.length) return items;
 
   if(!validTaxYearEnding(state.taxYear)) items.push(["bad","Enter a valid tax year ending date in MM/DD/YYYY format."]);
+  if(state.unicapHistory === "unsure") items.push(["warn","Whether this year's return continues or changes last year's UNICAP methods is not confirmed. The calculation may continue, but verify the last-filed return, prior UNICAP workpaper, and any Form 3115 before final reliance."]);
   if(!methodTransitionSupportIsCurrent() && state.unicapHistory === "firstYear" && state.firstUnicapYearReason === "newlySubject") items.push(["warn","This existing activity is applying UNICAP for the first time. Confirm the separate beginning-inventory revaluation, Section 481(a), and Form 3115 support in Step 6."]);
   if(!methodTransitionSupportIsCurrent() && state.unicapHistory === "firstYear" && state.firstUnicapYearReason === "priorNoncompliance") items.push(["warn","UNICAP may have been required in an earlier year. Confirm the separate accounting-method correction and beginning-inventory support in Step 6."]);
   if(!methodTransitionSupportIsCurrent() && state.unicapHistory === "priorChanging") items.push(["warn",`Confirm the separate prior and proposed method support for: ${labelUnicapChangeComponents()}.`]);
@@ -10175,7 +10316,7 @@ function renderDecisionSummary(c){
     ] : []),
     ...(methodTransitionSupportRequired() ? [["Method-change support",methodTransitionSupportIsCurrent() ? "Confirmed" : "Not confirmed"]] : []),
     ["Tool version", APP_VERSION],
-    ["Amount basis", labelAmountBasis(state.amountBasis)],
+    ["Basis", labelAmountBasis(state.amountBasis)],
     ...(state.amountBasis === "book" ? [
       ["Cost-amount method", labelBookTreatment(state.bookTreatment)],
       ["Book-to-tax adjustment control", `${moneyWp(bookTaxMappedAdjustmentTotal())} mapped; ${bookTaxReconciliationIssues().length ? "not reconciled" : "reconciled"}`],
@@ -10643,7 +10784,7 @@ function workflowModel(c,validationItems=[]){
     8:{complete:s.workpaperReady,accessible:s.workpaperReady},
     9:{complete:partnerReviewIsCurrent(),accessible:s.workpaperReady}
   };
-  let action = {step:1,title:"Complete taxpayer information",detail:"Enter the taxpayer, tax year, inventory valuation method, Federal tax or Book amount basis, and producer de minimis conclusion."};
+  let action = {step:1,title:"Complete taxpayer information",detail:"Enter the taxpayer, tax year, inventory valuation method, Federal tax or Book basis, and producer de minimis conclusion."};
   if(s.step1Complete && !s.step2Complete) action = {step:2,title:"Confirm the imported report",detail:"Confirm that the imported accounts and report total agree to the source."};
   else if(s.step2Complete && !s.step3MappingComplete) action = {step:3,title:"Classify the accounts",detail:`${unresolvedAccountRows().length} account(s) still require classification, confirmation, or a split.`};
   else if(s.step3MappingComplete && s.bookTaxIssues.length) action = {step:3,title:"Complete the book-to-tax reconciliation",detail:s.bookTaxIssues[0]};
@@ -10651,6 +10792,7 @@ function workflowModel(c,validationItems=[]){
   else if(s.step3Complete && !s.step4Complete) action = {step:4,title:"Confirm inventory amounts",detail:`${s.inventoryIssues.length} inventory item(s) remain.`};
   else if(s.step4Complete && !s.step5Complete) action = {step:5,title:"Review mixed service costs",detail:`${s.step5Issues.length} method, source, or account item${s.step5Issues.length === 1 ? " remains" : "s remain"}.`};
   else if(s.step5Complete && !exceptionComplete) action = {step:7,title:"Resolve workpaper exceptions",detail:`${s.redItems.length} item(s) require correction or reviewer support.`};
+  else if(s.calculationReady && priorProductionMethodOutsideScope()) action = {step:1,title:"Use a separate production-method workpaper",detail:"Last year's production method is outside this calculator. The displayed results are comparisons only. Mark Production calculation as changing only when supported current-year method-change documentation applies."};
   else if(s.calculationReady && !s.methodSelectionComplete) action = {step:6,title:"Choose the production method",detail:"Review both calculated results, then select the method that applies to this tax year."};
   else if(s.calculationReady && !s.priorMethodProfileRecorded) action = {step:6,title:"Record the prior production method",detail:"Record the last-year method for each changed component before confirming the proposed current-year profile."};
   else if(s.calculationReady && !s.methodTransitionComplete) action = {step:6,title:"Confirm method-change support",detail:"Confirm the separate prior/proposed method, beginning-inventory, and Section 481(a) support that applies to this path."};
@@ -11002,7 +11144,7 @@ function renderPartnerSummary(c,validationItems=[]){
   box.innerHTML = `${producerRuleNote}<div class="partner-grid">
     <div><span>Taxpayer</span><strong>${esc(state.clientName || "Not entered")}</strong></div>
     <div><span>UNICAP history</span><strong>${esc(labelUnicapHistory())}</strong></div>
-    <div><span>Method used for this workpaper</span><strong>${esc(selectedMethodIsValid() ? labelSelectedMethod(state.selectedMethod) : "Choose below")}</strong></div>
+    <div><span>Method used for this workpaper</span><strong>${esc(priorProductionMethodOutsideScope() ? "Outside this calculator" : selectedMethodIsValid() ? labelSelectedMethod(state.selectedMethod) : "Choose below")}</strong></div>
     <div><span>Simplified Production Method ${lifoActive() ? "current-year inventory adjustment" : "ending add-on"}</span><strong>${spmAvailable() ? esc(moneyWp(spmValue)) : "Unavailable"}</strong></div>
     <div><span>Modified Simplified Production Method ${lifoActive() ? "current-year inventory adjustment" : "ending add-on"}</span><strong>${esc(moneyWp(mspmValue))}</strong></div>
     <div><span>Difference</span><strong>${spmAvailable() ? esc(moneyWp(delta)) : "Not applicable"}</strong></div>
@@ -11518,7 +11660,9 @@ function preparePrintState(showAlerts=false){
     if($("printSnapshot")) $("printSnapshot").innerHTML = "";
     document.body.classList.add("print-blocked");
     const redBlocked = s.coreInputsReady && s.redItems.length > 0 && !s.overrideValid;
-    const reason = s.calculationReady && !s.methodSelectionComplete
+    const reason = s.calculationReady && priorProductionMethodOutsideScope()
+      ? "The prior production method is outside this calculator."
+      : s.calculationReady && !s.methodSelectionComplete
       ? "Choose the production method before printing."
       : s.calculationReady && !s.priorMethodProfileRecorded
       ? "Record the prior method before printing."
@@ -11527,7 +11671,9 @@ function preparePrintState(showAlerts=false){
       : redBlocked
       ? "Printing is blocked by one or more red flags."
       : "The calculation is not complete.";
-    const detail = s.calculationReady && !s.methodSelectionComplete
+    const detail = s.calculationReady && priorProductionMethodOutsideScope()
+      ? "The displayed Simplified Production Method and Modified Simplified Production Method amounts are comparisons only. Use a separate workpaper, or document a supported current-year change in Step 1."
+      : s.calculationReady && !s.methodSelectionComplete
       ? "Review the calculated result or results in Step 6, then select the method that applies to this tax year."
       : s.calculationReady && !s.priorMethodProfileRecorded
       ? "Record the last-year method for each changed component shown in Step 6."
@@ -11565,7 +11711,7 @@ function exportPdf(){
 }
 
 
-/* ==========================================================================\n   Polished Excel (.xlsx) export: Segoe UI 12 pt, accounting currency, fitted pages\n   Dependency-free OOXML + ZIP writer\n   ========================================================================== */
+/* ==========================================================================\n   Plain Excel (.xlsx) output report: Segoe UI 12.5 pt, wrapped grid, U.S. currency\n   Dependency-free OOXML + ZIP writer\n   ========================================================================== */
 const XLSX_STYLE = Object.freeze({
   body:0,title:1,subtitle:2,section:3,header:4,label:5,currency:6,percentage:7,
   totalCurrency:8,warning:9,redFlag:10,note:11,center:12,integer:13,currencySoft:14,percentageSoft:15
@@ -11609,7 +11755,8 @@ function xlsxWorksheetXml(sheet){
     const rowNumber=rIdx+1;
     const height=sheet.rowHeights && sheet.rowHeights[rowNumber];
     const h=height ? ` ht="${height}" customHeight="1"` : "";
-    const cells=row.map((cell,cIdx)=>xlsxCellXml(cell,rowNumber,cIdx)).join("");
+    const padded=Array.from({length:maxCols},(_,cIdx)=>cIdx<row.length?row[cIdx]:xlsxText(""));
+    const cells=padded.map((cell,cIdx)=>xlsxCellXml(cell,rowNumber,cIdx)).join("");
     return `<row r="${rowNumber}"${h}>${cells}</row>`;
   }).join("");
   const merges=(sheet.merges || []).length ? `<mergeCells count="${sheet.merges.length}">${sheet.merges.map(ref=>`<mergeCell ref="${ref}"/>`).join("")}</mergeCells>` : "";
@@ -11621,14 +11768,13 @@ function xlsxWorksheetXml(sheet){
   if(freezeRows) split.push(`ySplit="${freezeRows}"`);
   const topLeft=`${xlsxColumnName(freezeCols)}${freezeRows+1}`;
   const pane=(freezeRows || freezeCols) ? `<pane ${split.join(" ")} topLeftCell="${topLeft}" activePane="bottomRight" state="frozen"/>` : "";
-  const tabColor=sheet.tabColor || "9999FF";
-  const fitToWidth=Number.isFinite(Number(sheet.fitToWidth)) ? Math.max(0,Number(sheet.fitToWidth)) : 1;
+  const fitToWidth=Number.isFinite(Number(sheet.fitToWidth)) ? Math.max(0,Number(sheet.fitToWidth)) : 0;
   return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
-  <sheetPr><tabColor rgb="FF${tabColor}"/><pageSetUpPr fitToPage="1"/></sheetPr>
+  <sheetPr><pageSetUpPr fitToPage="1"/></sheetPr>
   <dimension ref="${dimension}"/>
-  <sheetViews><sheetView workbookViewId="0" showGridLines="0">${pane}</sheetView></sheetViews>
-  <sheetFormatPr defaultRowHeight="18"/>
+  <sheetViews><sheetView workbookViewId="0" showGridLines="1">${pane}</sheetView></sheetViews>
+  <sheetFormatPr defaultRowHeight="20"/>
   <cols>${cols}</cols>
   <sheetData>${rowXml}</sheetData>
   ${merges}${autoFilter}
@@ -11642,57 +11788,50 @@ function xlsxStylesXml(){
   return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <styleSheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
   <numFmts count="2">
-    <numFmt numFmtId="164" formatCode="$#,##0.00;[Red]($#,##0.00);-"/>
+    <numFmt numFmtId="164" formatCode="$#,##0.00;($#,##0.00);-"/>
     <numFmt numFmtId="165" formatCode="0.0000%"/>
   </numFmts>
   <fonts count="6">
-    <font><sz val="12"/><color rgb="FF302B48"/><name val="Segoe UI"/><family val="2"/></font>
-    <font><b/><sz val="12"/><color rgb="FFFFFFFF"/><name val="Segoe UI"/><family val="2"/></font>
-    <font><b/><sz val="12"/><color rgb="FFFFFFFF"/><name val="Segoe UI"/><family val="2"/></font>
-    <font><b/><sz val="12"/><color rgb="FF49436F"/><name val="Segoe UI"/><family val="2"/></font>
-    <font><i/><sz val="12"/><color rgb="FF716D86"/><name val="Segoe UI"/><family val="2"/></font>
-    <font><b/><sz val="12"/><color rgb="FFA13C62"/><name val="Segoe UI"/><family val="2"/></font>
+    <font><sz val="12.5"/><color rgb="FF000000"/><name val="Segoe UI"/><family val="2"/></font>
+    <font><b/><sz val="12.5"/><color rgb="FF000000"/><name val="Segoe UI"/><family val="2"/></font>
+    <font><b/><sz val="12.5"/><color rgb="FF000000"/><name val="Segoe UI"/><family val="2"/></font>
+    <font><b/><sz val="12.5"/><color rgb="FF000000"/><name val="Segoe UI"/><family val="2"/></font>
+    <font><sz val="12.5"/><color rgb="FF000000"/><name val="Segoe UI"/><family val="2"/></font>
+    <font><b/><sz val="12.5"/><color rgb="FF000000"/><name val="Segoe UI"/><family val="2"/></font>
   </fonts>
-  <fills count="9">
+  <fills count="2">
     <fill><patternFill patternType="none"/></fill>
     <fill><patternFill patternType="gray125"/></fill>
-    <fill><patternFill patternType="solid"><fgColor rgb="FF49436F"/><bgColor indexed="64"/></patternFill></fill>
-    <fill><patternFill patternType="solid"><fgColor rgb="FF9999FF"/><bgColor indexed="64"/></patternFill></fill>
-    <fill><patternFill patternType="solid"><fgColor rgb="FFF0EFFF"/><bgColor indexed="64"/></patternFill></fill>
-    <fill><patternFill patternType="solid"><fgColor rgb="FFECEBFF"/><bgColor indexed="64"/></patternFill></fill>
-    <fill><patternFill patternType="solid"><fgColor rgb="FFFFF8E7"/><bgColor indexed="64"/></patternFill></fill>
-    <fill><patternFill patternType="solid"><fgColor rgb="FFFFF0F5"/><bgColor indexed="64"/></patternFill></fill>
-    <fill><patternFill patternType="solid"><fgColor rgb="FFEAF7F2"/><bgColor indexed="64"/></patternFill></fill>
   </fills>
   <borders count="2">
     <border><left/><right/><top/><bottom/><diagonal/></border>
-    <border><left style="thin"><color rgb="FFDDDAF5"/></left><right style="thin"><color rgb="FFDDDAF5"/></right><top style="thin"><color rgb="FFDDDAF5"/></top><bottom style="thin"><color rgb="FFDDDAF5"/></bottom><diagonal/></border>
+    <border><left style="thin"><color rgb="FF000000"/></left><right style="thin"><color rgb="FF000000"/></right><top style="thin"><color rgb="FF000000"/></top><bottom style="thin"><color rgb="FF000000"/></bottom><diagonal/></border>
   </borders>
   <cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs>
   <cellXfs count="16">
     <xf numFmtId="0" fontId="0" fillId="0" borderId="1" applyBorder="1" applyAlignment="1"><alignment vertical="top" wrapText="1"/></xf>
-    <xf numFmtId="0" fontId="1" fillId="2" borderId="1" applyFont="1" applyFill="1" applyBorder="1" applyAlignment="1"><alignment horizontal="center" vertical="center" wrapText="1"/></xf>
-    <xf numFmtId="0" fontId="3" fillId="4" borderId="1" applyFont="1" applyFill="1" applyBorder="1" applyAlignment="1"><alignment horizontal="center" vertical="center" wrapText="1"/></xf>
-    <xf numFmtId="0" fontId="2" fillId="3" borderId="1" applyFont="1" applyFill="1" applyBorder="1" applyAlignment="1"><alignment horizontal="left" vertical="center" wrapText="1"/></xf>
-    <xf numFmtId="0" fontId="2" fillId="2" borderId="1" applyFont="1" applyFill="1" applyBorder="1" applyAlignment="1"><alignment horizontal="center" vertical="center" wrapText="1"/></xf>
-    <xf numFmtId="0" fontId="3" fillId="4" borderId="1" applyFont="1" applyFill="1" applyBorder="1" applyAlignment="1"><alignment vertical="top" wrapText="1"/></xf>
-    <xf numFmtId="164" fontId="0" fillId="0" borderId="1" applyNumberFormat="1" applyBorder="1" applyAlignment="1"><alignment horizontal="right" vertical="top"/></xf>
-    <xf numFmtId="165" fontId="0" fillId="0" borderId="1" applyNumberFormat="1" applyBorder="1" applyAlignment="1"><alignment horizontal="right" vertical="top"/></xf>
-    <xf numFmtId="164" fontId="3" fillId="5" borderId="1" applyNumberFormat="1" applyFont="1" applyFill="1" applyBorder="1" applyAlignment="1"><alignment horizontal="right" vertical="top"/></xf>
-    <xf numFmtId="0" fontId="3" fillId="6" borderId="1" applyFont="1" applyFill="1" applyBorder="1" applyAlignment="1"><alignment vertical="top" wrapText="1"/></xf>
-    <xf numFmtId="0" fontId="5" fillId="7" borderId="1" applyFont="1" applyFill="1" applyBorder="1" applyAlignment="1"><alignment vertical="top" wrapText="1"/></xf>
+    <xf numFmtId="0" fontId="1" fillId="0" borderId="1" applyFont="1" applyBorder="1" applyAlignment="1"><alignment horizontal="left" vertical="center" wrapText="1"/></xf>
+    <xf numFmtId="0" fontId="1" fillId="0" borderId="1" applyFont="1" applyBorder="1" applyAlignment="1"><alignment horizontal="left" vertical="center" wrapText="1"/></xf>
+    <xf numFmtId="0" fontId="1" fillId="0" borderId="1" applyFont="1" applyBorder="1" applyAlignment="1"><alignment horizontal="left" vertical="center" wrapText="1"/></xf>
+    <xf numFmtId="0" fontId="1" fillId="0" borderId="1" applyFont="1" applyBorder="1" applyAlignment="1"><alignment horizontal="center" vertical="center" wrapText="1"/></xf>
+    <xf numFmtId="0" fontId="1" fillId="0" borderId="1" applyFont="1" applyBorder="1" applyAlignment="1"><alignment vertical="top" wrapText="1"/></xf>
+    <xf numFmtId="164" fontId="0" fillId="0" borderId="1" applyNumberFormat="1" applyBorder="1" applyAlignment="1"><alignment horizontal="right" vertical="top" wrapText="1"/></xf>
+    <xf numFmtId="165" fontId="0" fillId="0" borderId="1" applyNumberFormat="1" applyBorder="1" applyAlignment="1"><alignment horizontal="right" vertical="top" wrapText="1"/></xf>
+    <xf numFmtId="164" fontId="1" fillId="0" borderId="1" applyNumberFormat="1" applyFont="1" applyBorder="1" applyAlignment="1"><alignment horizontal="right" vertical="top" wrapText="1"/></xf>
+    <xf numFmtId="0" fontId="1" fillId="0" borderId="1" applyFont="1" applyBorder="1" applyAlignment="1"><alignment vertical="top" wrapText="1"/></xf>
+    <xf numFmtId="0" fontId="1" fillId="0" borderId="1" applyFont="1" applyBorder="1" applyAlignment="1"><alignment vertical="top" wrapText="1"/></xf>
     <xf numFmtId="0" fontId="4" fillId="0" borderId="1" applyFont="1" applyBorder="1" applyAlignment="1"><alignment vertical="top" wrapText="1"/></xf>
     <xf numFmtId="0" fontId="0" fillId="0" borderId="1" applyBorder="1" applyAlignment="1"><alignment horizontal="center" vertical="center" wrapText="1"/></xf>
-    <xf numFmtId="1" fontId="0" fillId="0" borderId="1" applyNumberFormat="1" applyBorder="1" applyAlignment="1"><alignment horizontal="right" vertical="top"/></xf>
-    <xf numFmtId="164" fontId="3" fillId="4" borderId="1" applyNumberFormat="1" applyFont="1" applyFill="1" applyBorder="1" applyAlignment="1"><alignment horizontal="right" vertical="top"/></xf>
-    <xf numFmtId="165" fontId="3" fillId="4" borderId="1" applyNumberFormat="1" applyFont="1" applyFill="1" applyBorder="1" applyAlignment="1"><alignment horizontal="right" vertical="top"/></xf>
+    <xf numFmtId="1" fontId="0" fillId="0" borderId="1" applyNumberFormat="1" applyBorder="1" applyAlignment="1"><alignment horizontal="right" vertical="top" wrapText="1"/></xf>
+    <xf numFmtId="164" fontId="1" fillId="0" borderId="1" applyNumberFormat="1" applyFont="1" applyBorder="1" applyAlignment="1"><alignment horizontal="right" vertical="top" wrapText="1"/></xf>
+    <xf numFmtId="165" fontId="1" fillId="0" borderId="1" applyNumberFormat="1" applyFont="1" applyBorder="1" applyAlignment="1"><alignment horizontal="right" vertical="top" wrapText="1"/></xf>
   </cellXfs>
   <cellStyles count="1"><cellStyle name="Normal" xfId="0" builtinId="0"/></cellStyles>
   <dxfs count="0"/>
-  <tableStyles count="0" defaultTableStyle="TableStyleMedium4" defaultPivotStyle="PivotStyleLight16"/>
+  <tableStyles count="0"/>
 </styleSheet>`;
 }
-function xlsxThemeXml(){return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><a:theme xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" name="UNIPRO"><a:themeElements><a:clrScheme name="UNIPRO"><a:dk1><a:srgbClr val="302B48"/></a:dk1><a:lt1><a:srgbClr val="FFFFFF"/></a:lt1><a:dk2><a:srgbClr val="49436F"/></a:dk2><a:lt2><a:srgbClr val="F0EFFF"/></a:lt2><a:accent1><a:srgbClr val="9999FF"/></a:accent1><a:accent2><a:srgbClr val="B7B1FF"/></a:accent2><a:accent3><a:srgbClr val="7770E5"/></a:accent3><a:accent4><a:srgbClr val="2F7D67"/></a:accent4><a:accent5><a:srgbClr val="DAD7FF"/></a:accent5><a:accent6><a:srgbClr val="A13C62"/></a:accent6><a:hlink><a:srgbClr val="9999FF"/></a:hlink><a:folHlink><a:srgbClr val="B7B1FF"/></a:folHlink></a:clrScheme><a:fontScheme name="UNIPRO"><a:majorFont><a:latin typeface="Segoe UI"/></a:majorFont><a:minorFont><a:latin typeface="Segoe UI"/></a:minorFont></a:fontScheme><a:fmtScheme name="UNIPRO"><a:fillStyleLst/><a:lnStyleLst/><a:effectStyleLst/><a:bgFillStyleLst/></a:fmtScheme></a:themeElements></a:theme>`;}
+function xlsxThemeXml(){return `<?xml version="1.0" encoding="UTF-8" standalone="yes"?><a:theme xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" name="UNIPRO Plain"><a:themeElements><a:clrScheme name="Black and White"><a:dk1><a:srgbClr val="000000"/></a:dk1><a:lt1><a:srgbClr val="FFFFFF"/></a:lt1><a:dk2><a:srgbClr val="000000"/></a:dk2><a:lt2><a:srgbClr val="FFFFFF"/></a:lt2><a:accent1><a:srgbClr val="000000"/></a:accent1><a:accent2><a:srgbClr val="000000"/></a:accent2><a:accent3><a:srgbClr val="000000"/></a:accent3><a:accent4><a:srgbClr val="000000"/></a:accent4><a:accent5><a:srgbClr val="000000"/></a:accent5><a:accent6><a:srgbClr val="000000"/></a:accent6><a:hlink><a:srgbClr val="000000"/></a:hlink><a:folHlink><a:srgbClr val="000000"/></a:folHlink></a:clrScheme><a:fontScheme name="Segoe UI"><a:majorFont><a:latin typeface="Segoe UI"/></a:majorFont><a:minorFont><a:latin typeface="Segoe UI"/></a:minorFont></a:fontScheme><a:fmtScheme name="Plain"><a:fillStyleLst/><a:lnStyleLst/><a:effectStyleLst/><a:bgFillStyleLst/></a:fmtScheme></a:themeElements></a:theme>`;}
 
 function zipCrc32(bytes){
   if(!zipCrc32.table){zipCrc32.table=Array.from({length:256},(_,n)=>{let c=n;for(let k=0;k<8;k++)c=(c&1)?(0xEDB88320^(c>>>1)):(c>>>1);return c>>>0;});}
@@ -11744,7 +11883,7 @@ function buildSummaryExcelSheet(c,isDraft){
   rows.push([xlsxText("Taxpayer and Calculation Scope",XLSX_STYLE.section)]);merges.push("A6:D6");
   rows.push([xlsxText("Taxpayer name",XLSX_STYLE.label),xlsxText(state.clientName),xlsxText("Tax year ending",XLSX_STYLE.label),xlsxText(state.taxYear)]);
   rows.push([xlsxText("Taxpayer type",XLSX_STYLE.label),xlsxText(labelActivityProfile()),xlsxText("Inventory valuation method",XLSX_STYLE.label),xlsxText(state.inventoryMethod || "FIFO")]);
-  rows.push([xlsxText("Amount basis",XLSX_STYLE.label),xlsxText(labelAmountBasis(state.amountBasis)),xlsxText("UNICAP history",XLSX_STYLE.label),xlsxText(labelUnicapHistory())]);
+  rows.push([xlsxText("Basis",XLSX_STYLE.label),xlsxText(labelAmountBasis(state.amountBasis)),xlsxText("UNICAP history",XLSX_STYLE.label),xlsxText(labelUnicapHistory())]);
   rows.push([xlsxText("First-year reason",XLSX_STYLE.label),xlsxText(state.unicapHistory === "firstYear" ? labelFirstUnicapYearReason() : "Not applicable"),xlsxText("",XLSX_STYLE.label),xlsxText("")]);
   if(state.unicapHistory === "priorChanging"){
     rows.push([xlsxText("Changing components",XLSX_STYLE.label),xlsxText(labelUnicapChangeComponents()),xlsxText("Prior production method",XLSX_STYLE.label),xlsxText(state.priorSelectedMethod ? labelSelectedMethod(state.priorSelectedMethod) : "Not applicable or not recorded")]);
@@ -11935,7 +12074,7 @@ function buildBreakoutParentsExcelSheet(){
 function buildReviewLogExcelSheet(c){
   const rows=[[xlsxText("Review and Source Reconciliation Log",XLSX_STYLE.title)],[],[xlsxText("Each signoff is tied to the current calculation fingerprint. Calculation changes invalidate the affected review chain.",XLSX_STYLE.subtitle)],
     ["Event","Role / Source","Name or Detail","Timestamp","Status / Fingerprint"].map(v=>xlsxText(v,XLSX_STYLE.header))];
-  rows.push([xlsxText("Tool version"),xlsxText(APP_VERSION),xlsxText(`Taxpayer type: ${labelActivityProfile()}; suggestion basis: ${labelSuggestionBasis(state.suggestionBasis)}; amount basis: ${labelAmountBasis(state.amountBasis)}`),xlsxText(""),xlsxText("Fingerprint includes version and source controls")]);
+  rows.push([xlsxText("Tool version"),xlsxText(APP_VERSION),xlsxText(`Taxpayer type: ${labelActivityProfile()}; suggestion basis: ${labelSuggestionBasis(state.suggestionBasis)}; basis: ${labelAmountBasis(state.amountBasis)}`),xlsxText(""),xlsxText("Fingerprint includes version and source controls")]);
   rows.push([xlsxText("UNICAP method profile"),xlsxText(labelUnicapHistory()),xlsxText(`First-year reason: ${state.unicapHistory === "firstYear" ? labelFirstUnicapYearReason() : "Not applicable"}; changing components: ${state.unicapHistory === "priorChanging" ? labelUnicapChangeComponents() : "Not applicable"}; prior production method: ${state.priorSelectedMethod ? labelSelectedMethod(state.priorSelectedMethod) : "Not applicable"}; prior mixed service method: ${state.priorMixedServiceMethod ? mixedMethodLabel(state.priorMixedServiceMethod) : "Not applicable"}; prior MSPM mixed-service allocation: ${state.priorMixedMspmSplitMethod === "materials" ? "Direct material costs" : state.priorMixedMspmSplitMethod === "labor" ? "Preproduction labor costs" : "Not applicable"}; current production method: ${selectedMethodIsValid() ? labelSelectedMethod(state.selectedMethod) : "Not selected"}; current mixed service method: ${hasMixedServiceCosts() ? mixedMethodLabel(c.mixedServiceMethod) : "Not applicable"}; current MSPM mixed-service allocation: ${state.activityType === "producer" && hasMixedServiceCosts() ? mixedSplitLabel(c) : "Not applicable"}; transition support: ${methodTransitionSupportRequired() ? (methodTransitionSupportIsCurrent()?"Confirmed":"Not confirmed") : "Not required"}`),xlsxText(""),xlsxText(completionState(c).workpaperReady?"Current method profile recorded":"Method profile action required",completionState(c).workpaperReady?XLSX_STYLE.body:XLSX_STYLE.warning)]);
   if(state.amountBasis==="book") rows.push([xlsxText("Book-to-tax reconciliation"),xlsxText(labelBookTreatment(state.bookTreatment)),xlsxText(`Control ${moneyWp(bookTaxControlTotalValue())}; mapped ${moneyWp(bookTaxMappedAdjustmentTotal())}; reference ${state.bookTaxReference||"Not entered"}; row tax sources: imported ${state.rows.filter(row=>fsaRowApplies(row)&&parseAmountResult(row.sourceTaxAmount).ok).length}, Book-equals-tax ${state.rows.filter(row=>fsaRowApplies(row)&&row.fsaBookEqualsTax==="yes").length}, entered after No ${state.rows.filter(row=>fsaRowApplies(row)&&row.fsaBookEqualsTax==="no"&&fsaTaxAmountResult(row).ok).length}`),xlsxText(""),xlsxText(bookTaxReconciliationIssues().length?"Action required":"Reconciled",bookTaxReconciliationIssues().length?XLSX_STYLE.redFlag:XLSX_STYLE.body)]);
   if(financialStatementAlternativeActive()) rows.push([xlsxText("FSA eligibility and basis"),xlsxText(spmAvailable()?"SPM and MSPM":"MSPM only"),xlsxText(`Qualifying financial statement ${state.financialStatementQualified}; adopted/consented method ${state.financialStatementMethodAdopted}; valuation adjustments excluded ${state.financialStatementValuationExcluded}; gross-receipts ceiling ${state.financialStatementGrossReceiptsEligible}; opening basis ${state.fsaOpeningBasisConfirmed}; method change ${state.fsaMethodChange}${state.fsaMethodChange==="yes"?` (${state.fsaMethodChangeReference||"reference missing"})`:""}; ending basis ${state.fsaEndingBasisConfirmed}; pre adjustment ${moneyWp(fsaPreProductionAdjustment())}; production adjustment ${moneyWp(fsaProductionAdjustment())}`),xlsxText(""),xlsxText("Account-level Book / Tax layering")]);
@@ -12222,18 +12361,107 @@ function buildInstructionsExcelSheet(){
   steps.forEach(([n,purpose,action,done])=>rows.push([xlsxNumber(n,XLSX_STYLE.center),xlsxText(purpose,XLSX_STYLE.label),xlsxText(action),xlsxText(done)]));
   return {name:"Instructions",rows,widths:[10,28,80,54],merges:["A1:D2","A3:D3"],freezeRows:4,tabColor:"7770E5",rowHeights:{1:26,2:26,3:24,4:32}};
 }
+
+function xlsxShiftReferenceRows(reference,rowOffset){
+  const offset=Number(rowOffset||0);
+  if(!offset)return reference;
+  return String(reference).replace(/(\$?[A-Z]{1,3})(\$?)(\d+)/g,(_,column,absolute,row)=>`${column}${absolute}${Number(row)+offset}`);
+}
+function xlsxRemapFormula(formula,localSheet,localOffset,sheetTargets,sheetOffsets){
+  const placeholders=[];
+  const stash=(sheetName,reference)=>{
+    const target=sheetTargets[sheetName]||sheetName;
+    const offset=Object.prototype.hasOwnProperty.call(sheetOffsets,sheetName)?sheetOffsets[sheetName]:0;
+    const mapped=`'${String(target).replace(/'/g,"''")}'!${xlsxShiftReferenceRows(reference,offset)}`;
+    const marker=`__UNIPRO_XLSX_REF_${placeholders.length}__`;
+    placeholders.push(mapped);
+    return marker;
+  };
+  let mapped=String(formula||"");
+  mapped=mapped.replace(/'((?:[^']|'')+)'!((?:\$?[A-Z]{1,3}\$?\d+)(?::\$?[A-Z]{1,3}\$?\d+)?)/g,(_,sheetName,reference)=>stash(sheetName.replace(/''/g,"'"),reference));
+  mapped=mapped.replace(/\b([A-Za-z_][A-Za-z0-9_.]*)!((?:\$?[A-Z]{1,3}\$?\d+)(?::\$?[A-Z]{1,3}\$?\d+)?)/g,(_,sheetName,reference)=>stash(sheetName,reference));
+  const offset=Number(localOffset||0);
+  if(offset){
+    mapped=mapped.replace(/(^|[^A-Za-z0-9_!'])(\$?[A-Z]{1,3}\$?\d+(?::\$?[A-Z]{1,3}\$?\d+)?)/g,(_,prefix,reference)=>`${prefix}${xlsxShiftReferenceRows(reference,offset)}`);
+  }
+  placeholders.forEach((value,index)=>{mapped=mapped.replace(`__UNIPRO_XLSX_REF_${index}__`,value);});
+  return mapped;
+}
+function xlsxRemapRows(rows,localSheet,localOffset,sheetTargets,sheetOffsets){
+  return (rows||[]).map(row=>(row||[]).map(cell=>{
+    if(!cell||typeof cell!=="object"||(cell.t!=="f"&&cell.t!=="fs"))return cell;
+    return {...cell,f:xlsxRemapFormula(cell.f,localSheet,localOffset,sheetTargets,sheetOffsets)};
+  }));
+}
+function xlsxPlainCellLength(cell){
+  if(cell===null||cell===undefined)return 0;
+  if(typeof cell==="object"&&Object.prototype.hasOwnProperty.call(cell,"v"))return String(cell.v??"").length;
+  return String(cell).length;
+}
+function xlsxPlainWidths(rows,minWidth=12,maxWidth=32){
+  const maxCols=Math.max(1,...(rows||[]).map(row=>(row||[]).length));
+  return Array.from({length:maxCols},(_,column)=>{
+    let longest=0;
+    (rows||[]).forEach(row=>{longest=Math.max(longest,xlsxPlainCellLength((row||[])[column]));});
+    return Math.max(minWidth,Math.min(maxWidth,longest+2));
+  });
+}
+function xlsxPlainRowHeights(rows,widths){
+  const heights={};
+  (rows||[]).forEach((row,index)=>{
+    const populated=(row||[]).some(cell=>xlsxPlainCellLength(cell)>0);
+    if(!populated){heights[index+1]=8;return;}
+    let lineCount=1;
+    (row||[]).forEach((cell,column)=>{
+      const textLength=xlsxPlainCellLength(cell);
+      const usable=Math.max(8,Number(widths[column]||12)-2);
+      lineCount=Math.max(lineCount,Math.ceil(textLength/usable));
+    });
+    heights[index+1]=Math.min(408,Math.max(20,lineCount*17));
+  });
+  return heights;
+}
+function xlsxPlainSheet(name,rows,options={}){
+  const widths=options.widths||xlsxPlainWidths(rows,options.minWidth||12,options.maxWidth||32);
+  return {name,rows,widths,rowHeights:xlsxPlainRowHeights(rows,widths),freezeRows:Number(options.freezeRows||0),freezeCols:Number(options.freezeCols||0),fitToWidth:Number(options.fitToWidth||0)};
+}
 function buildUniproExcelSheets(c,isDraft){
-  const sheets=[buildSummaryExcelSheet(c,isDraft),buildInstructionsExcelSheet(),buildSourceExcelSheet()];
-  if(state.amountBasis==="book")sheets.push(buildBookTaxExcelSheet());
-  if(Array.isArray(state.sourceParents) && state.sourceParents.length)sheets.push(buildBreakoutParentsExcelSheet());
-  sheets.push(buildInventoryExcelSheet(),buildRollupsExcelSheet(c),buildReviewLogExcelSheet(c));
-  if(state.methodRun==="SPM"||state.methodRun==="Both")sheets.push(buildSpmExcelSheet(c));
-  if(state.methodRun==="MSPM"||state.methodRun==="Both")sheets.push(buildMspmExcelSheet(c));
-  if(state.methodRun==="SRM")sheets.push(buildSrmExcelSheet(c));
-  if(lifoActive()){sheets.push(buildLifoExcelSheet(c));sheets.push(buildLifoLayersExcelSheet(c));}
-  if(hasMixedServiceCosts())sheets.push(buildMixedServiceExcelSheet(c));
-  sheets.push(buildValidationExcelSheet(c),buildDefinitionsExcelSheet());
-  return sheets;
+  const reportSource=buildSummaryExcelSheet(c,isDraft);
+  const accountsSource=buildSourceExcelSheet();
+  const supportSources=[];
+  if(state.amountBasis==="book")supportSources.push(buildBookTaxExcelSheet());
+  if(Array.isArray(state.sourceParents)&&state.sourceParents.length)supportSources.push(buildBreakoutParentsExcelSheet());
+  supportSources.push(buildInventoryExcelSheet(),buildRollupsExcelSheet(c),buildReviewLogExcelSheet(c));
+  if(state.methodRun==="SPM"||state.methodRun==="Both")supportSources.push(buildSpmExcelSheet(c));
+  if(state.methodRun==="MSPM"||state.methodRun==="Both")supportSources.push(buildMspmExcelSheet(c));
+  if(state.methodRun==="SRM")supportSources.push(buildSrmExcelSheet(c));
+  if(lifoActive())supportSources.push(buildLifoExcelSheet(c),buildLifoLayersExcelSheet(c));
+  if(hasMixedServiceCosts())supportSources.push(buildMixedServiceExcelSheet(c));
+  supportSources.push(buildValidationExcelSheet(c));
+
+  const sheetTargets={Summary:"Report","Source Accounts":"Accounts"};
+  const sheetOffsets={Summary:0,"Source Accounts":0};
+  let supportRowOffset=0;
+  supportSources.forEach((sheet,index)=>{
+    if(index)supportRowOffset+=2;
+    sheetTargets[sheet.name]="Support";
+    sheetOffsets[sheet.name]=supportRowOffset;
+    supportRowOffset+=(sheet.rows||[]).length;
+  });
+
+  const reportRows=xlsxRemapRows(reportSource.rows,"Summary",0,sheetTargets,sheetOffsets);
+  const accountRows=xlsxRemapRows(accountsSource.rows,"Source Accounts",0,sheetTargets,sheetOffsets);
+  const supportRows=[];
+  supportSources.forEach((sheet,index)=>{
+    if(index)supportRows.push([],[]);
+    supportRows.push(...xlsxRemapRows(sheet.rows,sheet.name,sheetOffsets[sheet.name],sheetTargets,sheetOffsets));
+  });
+
+  return [
+    xlsxPlainSheet("Report",reportRows,{widths:[34,28,34,28],freezeRows:4,fitToWidth:1}),
+    xlsxPlainSheet("Accounts",accountRows,{minWidth:12,maxWidth:28,freezeRows:4,freezeCols:2}),
+    xlsxPlainSheet("Support",supportRows,{minWidth:12,maxWidth:40})
+  ];
 }
 function buildUniproXlsxBlob(sheets){
   sheets.forEach(sheet=>{
@@ -12262,7 +12490,9 @@ function buildUniproXlsxBlob(sheets){
 function exportExcel(){
   const c=calc();invalidateStaleApprovals();const completion=completionState(c);
   if(!completion.workpaperReady){
-    alert(completion.calculationReady && !completion.methodSelectionComplete
+    alert(completion.calculationReady && priorProductionMethodOutsideScope()
+      ? "The prior production method is outside this calculator. The displayed results are comparisons only; use a separate workpaper or document a supported current-year change in Step 1."
+      : completion.calculationReady && !completion.methodSelectionComplete
       ? "Review both results in Step 6 and choose the production method before exporting."
       : completion.calculationReady && !completion.priorMethodProfileRecorded
       ? "Record the prior method for each changed component in Step 6 before exporting."
