@@ -303,6 +303,127 @@ td.num,th.num{white-space:nowrap;text-align:right}
   main{padding:14px}
   .grid,.two-col,.readiness{grid-template-columns:1fr}
 }
+/* Version 43 working pages: daylight optical glass. The landing remains dark. */
+@media screen{
+  main.active{
+    position:relative;
+    isolation:isolate;
+    min-height:100vh;
+    max-width:none;
+    padding:22px 26px 34px;
+    color:#241d35;
+    background:
+      radial-gradient(1200px 760px at 18% -8%,rgba(255,255,255,.96) 0%,rgba(255,255,255,.52) 40%,transparent 72%),
+      radial-gradient(980px 680px at 92% 10%,rgba(191,201,240,.52) 0%,rgba(218,205,239,.26) 48%,transparent 76%),
+      linear-gradient(145deg,#d9e0ee 0%,#e8e4ef 34%,#cbd5e8 68%,#ded6e8 100%);
+    background-attachment:fixed;
+  }
+  main.active::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    z-index:-1;
+    pointer-events:none;
+    opacity:.42;
+    background:
+      linear-gradient(112deg,transparent 0 32%,rgba(255,255,255,.42) 44%,transparent 58%),
+      radial-gradient(780px 210px at 50% 105%,rgba(255,255,255,.58),transparent 72%);
+  }
+  .workbench-layout{gap:16px;align-items:start}
+  .workflow-rail{
+    background:linear-gradient(155deg,rgba(255,255,255,.66),rgba(239,239,249,.42));
+    border:1px solid rgba(255,255,255,.86);
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.94),inset -1px 0 0 rgba(116,97,163,.16),0 22px 64px rgba(52,45,78,.16);
+    backdrop-filter:blur(30px) saturate(145%);
+    -webkit-backdrop-filter:blur(30px) saturate(145%);
+  }
+  .workflow-rail::after{
+    content:"";position:absolute;inset:0;pointer-events:none;border-radius:inherit;
+    box-shadow:inset 1px 0 rgba(255,255,255,.72),inset -1px 0 rgba(108,79,173,.13);
+  }
+  .workflow-rail,.workflow-rail *{color:#29213b}
+  .workflow-step{border-color:transparent;background:transparent;color:#403651}
+  .workflow-step.current{
+    background:linear-gradient(100deg,rgba(255,255,255,.76),rgba(238,232,251,.48));
+    border-color:rgba(123,91,201,.25);
+    box-shadow:inset 3px 0 0 #7654d6,0 8px 24px rgba(85,60,137,.10);
+  }
+  .workflow-step.current span{color:#6540cf;border-color:#8b70dc;background:rgba(255,255,255,.72)}
+  .live-results,.workflow-rail-foot{border-color:rgba(77,62,107,.16)}
+  .workbench-main{
+    min-width:0;
+    border:1px solid rgba(255,255,255,.82);
+    background:linear-gradient(145deg,rgba(255,255,255,.62),rgba(244,242,249,.43));
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.96),0 24px 76px rgba(50,43,75,.17);
+    backdrop-filter:blur(34px) saturate(142%);
+    -webkit-backdrop-filter:blur(34px) saturate(142%);
+  }
+  .workflow-stage.card{
+    border-color:rgba(119,100,157,.22)!important;
+    background:linear-gradient(145deg,rgba(255,255,255,.72),rgba(248,246,252,.55))!important;
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.96),0 16px 40px rgba(55,46,78,.10)!important;
+  }
+  .card-head{
+    background:linear-gradient(90deg,rgba(255,255,255,.64),rgba(238,233,247,.38))!important;
+    border-color:rgba(94,75,132,.18)!important;
+  }
+  .card-head h2,.workbench-main h2,.workbench-main h3,.workbench-main h4{color:#251c38!important}
+  .workbench-main label,.workbench-main .field-label,.workbench-main legend,.workbench-main p,.workbench-main .small-note{color:#4d435f}
+  .workbench-main input,.workbench-main select,.workbench-main textarea,.editable-text,.bucket-readonly{
+    color:#241d33!important;
+    background:linear-gradient(145deg,rgba(255,255,255,.78),rgba(246,245,251,.58))!important;
+    border-color:rgba(99,79,138,.32)!important;
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.88)!important;
+  }
+  .workbench-main input:focus,.workbench-main select:focus,.workbench-main textarea:focus,.editable-text:focus{
+    outline:0!important;border-color:#7656d4!important;box-shadow:0 0 0 3px rgba(118,86,212,.14),inset 0 1px 0 #fff!important;
+  }
+  .table-wrap,.source-map-table{
+    border-color:rgba(101,82,139,.24)!important;
+    background:rgba(255,255,255,.34)!important;
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.9),0 14px 32px rgba(51,42,72,.08)!important;
+    backdrop-filter:blur(20px) saturate(132%);
+    -webkit-backdrop-filter:blur(20px) saturate(132%);
+  }
+  .workbench-main table{background:transparent!important}
+  .workbench-main th{
+    color:#4b405f!important;
+    background:linear-gradient(180deg,rgba(248,246,253,.89),rgba(229,225,241,.72))!important;
+    border-color:rgba(92,74,127,.22)!important;
+  }
+  .workbench-main td,.workbench-main table tbody tr:nth-child(odd)>td,.workbench-main table tbody tr:nth-child(even)>td{
+    color:#281f38!important;
+    background:rgba(255,255,255,.46)!important;
+    border-color:rgba(95,77,130,.17)!important;
+  }
+  .workbench-main table tbody tr:nth-child(even)>td{background:rgba(240,238,247,.49)!important}
+  .workbench-main table tbody tr:hover>td{background:rgba(236,229,251,.78)!important}
+  .source-map-table tr:focus-within>td{box-shadow:inset 0 1px rgba(126,91,216,.42),inset 0 -1px rgba(126,91,216,.42)}
+  .source-map-table tr.source-row-error>td,.source-map-table tr.source-row-error:nth-child(even)>td,.source-map-table tr.source-row-error:nth-child(odd)>td{
+    background:rgba(255,226,237,.88)!important;
+    border-top:1px solid rgba(177,58,103,.58)!important;
+    border-bottom:1px solid rgba(177,58,103,.58)!important;
+  }
+  .source-map-table tr.source-row-error .row-number-cell span{color:#8d244d;border-color:#b13a67;background:#fff0f5}
+  .row-number-heading,.row-number-cell{width:48px;min-width:48px;text-align:center!important}
+  .row-number-cell{position:relative;font-family:var(--sans);font-variant-numeric:tabular-nums;color:#6c588d!important;font-weight:800}
+  .row-number-cell span{display:inline-grid;place-items:center;min-width:26px;height:26px;border:1px solid rgba(111,82,178,.28);background:rgba(255,255,255,.54);box-shadow:inset 0 1px 0 #fff}
+  .col-row-number{width:48px}
+  .note,.mapping-check-panel,.ready-card,.base-mapping-section,.breakout-panel{
+    color:#493e5b!important;background:rgba(255,255,255,.53)!important;border-color:rgba(104,84,143,.22)!important;
+  }
+  .note.bad{color:#742845!important;background:rgba(255,237,244,.78)!important;border-color:#b9557b!important}
+  .note.warn{color:#654818!important;background:rgba(255,247,225,.78)!important;border-color:#b89142!important}
+  .row-action-link,.msc-info-link,.setup-help-link{color:#5938b5!important}
+  .help-tooltip,.selection-definition-tooltip{color:#f7f3ff!important;background:rgba(37,27,55,.96)!important;border-color:rgba(205,188,255,.42)!important;box-shadow:0 18px 50px rgba(35,25,54,.30)!important}
+  .help-tooltip *,.selection-definition-tooltip *{color:inherit!important}
+  .msc-flow-panel{background:linear-gradient(145deg,rgba(255,255,255,.60),rgba(239,235,248,.43))!important;border-color:rgba(103,81,148,.23)!important}
+  .msc-split-choice-copy strong{color:#2a213a!important}
+  .msc-split-choice-copy small{color:#655977!important}
+  .setup-question.progressively-complete,.setup-question.progressively-pending{display:none!important}
+  #reviewSetupAnswers{margin:10px 0 0;color:#5938b5!important}
+}
+
 @media print{
   @page{size:landscape;margin:.35in}
   header,.foyer,.card-head button,.tabs,.no-print,details.advanced-settings summary{display:none!important}
@@ -1836,6 +1957,478 @@ main{background-color:#f1f0f4!important;background-image:radial-gradient(ellipse
   #printSnapshot{display:block!important}.print-snapshot>.card{margin:14px 0;break-inside:auto}.print-snapshot h2{color:#111}.print-support-section{margin-top:18px;break-before:auto}.print-snapshot table{font-size:8.5px;table-layout:fixed;width:100%}.print-snapshot th{position:static!important}.print-snapshot code{white-space:normal;overflow-wrap:anywhere}
 }
 
+/* Verified correction layer: force the interior application into the approved daylight-glass system. */
+@media screen{
+  html:has(main#app.active),body:has(main#app.active){
+    min-height:100%;
+    background:#d9dceb!important;
+  }
+  body:has(main#app.active){
+    color:#251e34!important;
+    background:
+      radial-gradient(1200px 680px at 8% -12%,rgba(255,255,255,.98) 0%,rgba(255,255,255,.42) 54%,transparent 76%),
+      radial-gradient(980px 640px at 96% 2%,rgba(196,187,232,.52) 0%,rgba(216,209,237,.22) 56%,transparent 78%),
+      linear-gradient(145deg,#dbe1ed 0%,#e7e4ed 46%,#cbd4e4 100%)!important;
+    background-attachment:fixed!important;
+  }
+  body:has(main#app.active) header#appHeader{
+    position:relative;
+    z-index:20;
+    border:0!important;
+    border-bottom:1px solid rgba(103,82,145,.24)!important;
+    background:linear-gradient(105deg,rgba(255,255,255,.78),rgba(244,241,250,.62))!important;
+    color:#251d36!important;
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.98),0 10px 34px rgba(46,38,68,.10)!important;
+    backdrop-filter:blur(28px) saturate(145%)!important;
+    -webkit-backdrop-filter:blur(28px) saturate(145%)!important;
+  }
+  body:has(main#app.active) header#appHeader h1,
+  body:has(main#app.active) header#appHeader .subhead{color:#281f39!important}
+  body:has(main#app.active) header#appHeader .subhead{opacity:.68}
+  body:has(main#app.active) header#appHeader button{
+    color:#3a2c51!important;
+    border-color:rgba(91,68,133,.26)!important;
+    background:rgba(255,255,255,.56)!important;
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.95)!important;
+  }
+  body:has(main#app.active) header#appHeader button.primary{
+    color:#fff!important;background:#6f51c8!important;border-color:#6f51c8!important;
+  }
+  body:has(main#app.active) main#app.active{
+    padding:18px!important;
+    background:transparent!important;
+  }
+  body:has(main#app.active) .workbench-layout{gap:16px!important}
+  body:has(main#app.active) aside.workflow-rail{
+    position:sticky!important;
+    top:18px!important;
+    overflow:hidden!important;
+    color:#2b223b!important;
+    border:1px solid rgba(255,255,255,.88)!important;
+    background:linear-gradient(155deg,rgba(255,255,255,.72),rgba(236,232,245,.48))!important;
+    box-shadow:inset 0 1px 0 #fff,inset -1px 0 0 rgba(112,84,172,.14),0 24px 60px rgba(47,39,70,.14)!important;
+    backdrop-filter:blur(34px) saturate(150%)!important;
+    -webkit-backdrop-filter:blur(34px) saturate(150%)!important;
+  }
+  body:has(main#app.active) aside.workflow-rail::before{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background:linear-gradient(112deg,rgba(255,255,255,.52),transparent 34%,rgba(148,119,213,.05) 72%,rgba(255,255,255,.28));
+  }
+  body:has(main#app.active) aside.workflow-rail *{color:#332942!important}
+  body:has(main#app.active) .workflow-step{
+    opacity:1!important;border:1px solid transparent!important;background:transparent!important;
+  }
+  body:has(main#app.active) .workflow-step small{color:#71657f!important}
+  body:has(main#app.active) .workflow-step.current{
+    border-color:rgba(112,79,194,.24)!important;
+    background:linear-gradient(100deg,rgba(255,255,255,.86),rgba(231,224,248,.62))!important;
+    box-shadow:inset 3px 0 0 #7652d4,0 9px 24px rgba(75,52,125,.10)!important;
+  }
+  body:has(main#app.active) .workflow-step.current>span{
+    color:#fff!important;background:#7554d0!important;border-color:#7554d0!important;
+  }
+  body:has(main#app.active) .workflow-step.locked{opacity:.58!important}
+  body:has(main#app.active) .live-results,
+  body:has(main#app.active) .workflow-rail-foot{border-color:rgba(89,70,120,.15)!important}
+  body:has(main#app.active) div.workbench-main{
+    position:relative!important;
+    overflow:visible!important;
+    color:#281f37!important;
+    border:1px solid rgba(255,255,255,.90)!important;
+    background:linear-gradient(145deg,rgba(255,255,255,.67),rgba(239,235,247,.48))!important;
+    box-shadow:inset 0 1px 0 #fff,0 28px 78px rgba(49,41,72,.15)!important;
+    backdrop-filter:blur(36px) saturate(145%)!important;
+    -webkit-backdrop-filter:blur(36px) saturate(145%)!important;
+  }
+  body:has(main#app.active) div.workbench-main::before{
+    content:"";position:absolute;inset:-1px;z-index:-1;pointer-events:none;
+    border:1px solid rgba(137,111,198,.18);
+    box-shadow:inset 1px 1px 0 rgba(255,255,255,.9),inset -1px -1px 0 rgba(115,88,173,.10);
+  }
+  body:has(main#app.active) section.workflow-stage.card,
+  body:has(main#app.active) section.workflow-stage.card.stage-active{
+    color:#281f37!important;
+    border:0!important;
+    background:transparent!important;
+    box-shadow:none!important;
+  }
+  body:has(main#app.active) section.workflow-stage .card-head{
+    min-height:72px!important;
+    padding:18px 22px!important;
+    gap:14px!important;
+    align-items:center!important;
+    color:#2c2340!important;
+    border-bottom:1px solid rgba(92,73,130,.18)!important;
+    background:rgba(255,255,255,.16)!important;
+  }
+  body:has(main#app.active) section.workflow-stage .card-head h2{margin:0!important;color:#2c2340!important;line-height:1.25!important}
+  body:has(main#app.active) section.workflow-stage .card-head .card-title-status{gap:12px!important;align-items:center!important}
+  body:has(main#app.active) section.workflow-stage .card-body{padding:22px!important;background:transparent!important}
+  body:has(main#app.active) .workflow-stage[data-step="1"] .setup-grid{row-gap:20px!important}
+  body:has(main#app.active) .workflow-stage[data-step="1"] .setup-field>label{margin-top:0!important}
+  body:has(main#app.active) .source-paste-copy,
+  body:has(main#app.active) .workflow-stage[data-step="2"] .two-col,
+  body:has(main#app.active) .source-map-layout,
+  body:has(main#app.active) .msc-flow-panel{
+    color:#2b2339!important;
+    border:1px solid rgba(255,255,255,.90)!important;
+    background:linear-gradient(145deg,rgba(255,255,255,.70),rgba(232,235,245,.50))!important;
+    box-shadow:inset 0 1px 0 #fff,inset -1px -1px 0 rgba(102,80,148,.10),0 18px 46px rgba(48,40,71,.11)!important;
+    backdrop-filter:blur(26px) saturate(140%)!important;
+    -webkit-backdrop-filter:blur(26px) saturate(140%)!important;
+  }
+  body:has(main#app.active) .workflow-stage[data-step="2"] .two-col{padding:20px!important}
+  body:has(main#app.active) .workbench-main label,
+  body:has(main#app.active) .workbench-main legend,
+  body:has(main#app.active) .workbench-main p,
+  body:has(main#app.active) .workbench-main .small-note,
+  body:has(main#app.active) .workbench-main strong{color:#3a3048!important}
+  body:has(main#app.active) .workbench-main input,
+  body:has(main#app.active) .workbench-main select,
+  body:has(main#app.active) .workbench-main textarea,
+  body:has(main#app.active) .editable-text,
+  body:has(main#app.active) .bucket-readonly{
+    color:#2d243c!important;
+    caret-color:#6947cb!important;
+    border:1px solid rgba(100,77,146,.30)!important;
+    background:linear-gradient(145deg,rgba(255,255,255,.84),rgba(244,243,249,.66))!important;
+    box-shadow:inset 0 1px 0 #fff,0 6px 16px rgba(49,41,72,.05)!important;
+  }
+  body:has(main#app.active) textarea.paste-box{
+    min-height:190px!important;
+    color:#30263f!important;
+    border:1px solid rgba(107,78,181,.46)!important;
+    background:linear-gradient(145deg,rgba(255,255,255,.78),rgba(237,238,247,.65))!important;
+    box-shadow:inset 0 1px 0 #fff,0 0 0 3px rgba(115,82,207,.08),0 15px 34px rgba(49,40,73,.10)!important;
+  }
+  body:has(main#app.active) textarea.paste-box::placeholder{color:#71667f!important;opacity:.76!important}
+  body:has(main#app.active) .workbench-main input:focus,
+  body:has(main#app.active) .workbench-main select:focus,
+  body:has(main#app.active) .workbench-main textarea:focus,
+  body:has(main#app.active) .editable-text:focus{
+    outline:0!important;border-color:#7958d2!important;
+    box-shadow:0 0 0 3px rgba(121,88,210,.15),inset 0 1px 0 #fff!important;
+  }
+  body:has(main#app.active) #clientName,
+  body:has(main#app.active) #taxYear,
+  body:has(main#app.active) #clientName:hover,
+  body:has(main#app.active) #taxYear:hover,
+  body:has(main#app.active) #clientName:focus,
+  body:has(main#app.active) #taxYear:focus,
+  body:has(main#app.active) #clientName:not(:placeholder-shown),
+  body:has(main#app.active) #taxYear:not(:placeholder-shown){
+    color:#2d243c!important;
+    background:rgba(255,255,255,.82)!important;
+    -webkit-text-fill-color:#2d243c!important;
+  }
+  body:has(main#app.active) #clientName:-webkit-autofill,
+  body:has(main#app.active) #clientName:-webkit-autofill:hover,
+  body:has(main#app.active) #clientName:-webkit-autofill:focus,
+  body:has(main#app.active) #taxYear:-webkit-autofill,
+  body:has(main#app.active) #taxYear:-webkit-autofill:hover,
+  body:has(main#app.active) #taxYear:-webkit-autofill:focus{
+    -webkit-text-fill-color:#2d243c!important;
+    caret-color:#2d243c!important;
+    -webkit-box-shadow:0 0 0 1000px rgba(255,255,255,.88) inset!important;
+    box-shadow:0 0 0 1000px rgba(255,255,255,.88) inset!important;
+    transition:background-color 99999s ease-out 0s!important;
+  }
+  body:has(main#app.active) .table-wrap,
+  body:has(main#app.active) table.source-map-table{
+    border-color:rgba(255,255,255,.88)!important;
+    background:rgba(255,255,255,.38)!important;
+    box-shadow:inset 0 1px 0 #fff,0 18px 42px rgba(49,41,72,.10)!important;
+  }
+  body:has(main#app.active) .workbench-main th{
+    color:#4a3d5d!important;
+    border-color:rgba(92,70,132,.20)!important;
+    background:linear-gradient(180deg,rgba(255,255,255,.92),rgba(226,223,239,.76))!important;
+  }
+  body:has(main#app.active) .workbench-main td,
+  body:has(main#app.active) .workbench-main tbody tr:nth-child(odd)>td{
+    color:#2b2239!important;border-color:rgba(94,73,132,.16)!important;background:rgba(255,255,255,.58)!important;
+  }
+  body:has(main#app.active) .workbench-main tbody tr:nth-child(even)>td{background:rgba(236,234,244,.58)!important}
+  body:has(main#app.active) .workbench-main tbody tr:hover>td{background:rgba(231,224,249,.84)!important}
+  body:has(main#app.active) .workbench-main button:not(.link):not(.row-action-link){
+    color:#443653!important;border-color:rgba(92,68,136,.28)!important;background:rgba(255,255,255,.62)!important;
+  }
+  body:has(main#app.active) .workbench-main button.primary{
+    color:#fff!important;background:#7050ca!important;border-color:#7050ca!important;
+  }
+  body:has(main#app.active) .pill.warn{color:#6a4713!important;background:rgba(255,244,216,.82)!important;border-color:rgba(168,119,34,.45)!important}
+  body:has(main#app.active) .pill.ok{color:#235942!important;background:rgba(229,250,240,.82)!important;border-color:rgba(49,130,92,.38)!important}
+  body:has(main#app.active) .row-action-link,
+  body:has(main#app.active) .setup-help-link{color:#5e3cc1!important}
+  body:has(main#app.active) button.row-action-link,
+  body:has(main#app.active) button.setup-help-link,
+  body:has(main#app.active) button.msc-info-link,
+  body:has(main#app.active) button.msc-schedule-link{
+    display:inline!important;
+    width:auto!important;
+    min-width:0!important;
+    height:auto!important;
+    min-height:0!important;
+    margin-left:6px!important;
+    padding:0!important;
+    border:0!important;
+    border-radius:0!important;
+    color:#5e3cc1!important;
+    background:transparent!important;
+    box-shadow:none!important;
+    font-size:11px!important;
+    font-weight:400!important;
+    line-height:1.35!important;
+    letter-spacing:0!important;
+    text-decoration:underline!important;
+    text-underline-offset:2px!important;
+    vertical-align:baseline!important;
+  }
+  body:has(main#app.active) button.row-action-link:hover,
+  body:has(main#app.active) button.row-action-link:focus-visible,
+  body:has(main#app.active) button.setup-help-link:hover,
+  body:has(main#app.active) button.setup-help-link:focus-visible{
+    color:#44239f!important;background:transparent!important;box-shadow:none!important;
+  }
+  body:has(main#app.active) .workbench-main .help-term{
+    color:#8a5700!important;
+    border:1px solid rgba(164,106,0,.32)!important;
+    border-radius:3px!important;
+    background:rgba(255,224,137,.52)!important;
+    padding:1px 4px!important;
+    text-decoration:none!important;
+  }
+  a,.workbench-main a,button.link,.row-action-link,.setup-help-link,.msc-info-link,.msc-schedule-link,.foyer-link,.copy a{
+    font-weight:400!important;
+  }
+  .setup-question.progressively-complete,.setup-question.progressively-pending,
+  .setup-field.progressively-complete,.setup-field.progressively-pending{display:none!important}
+}
+
+/* Workflow geometry correction: one complete frame, consistent breathing room,
+   and no obsolete sticky offset beneath the non-sticky application header. */
+@media screen{
+  body:has(main#app.active) main#app.active{
+    padding:24px!important;
+  }
+  body:has(main#app.active) .workbench-layout{
+    gap:24px!important;
+  }
+  body:has(main#app.active) aside.workflow-rail{
+    top:24px!important;
+    height:calc(100vh - 48px)!important;
+    border-radius:18px!important;
+  }
+  body:has(main#app.active) div.workbench-main{
+    padding:28px 30px 48px!important;
+    border-radius:18px!important;
+  }
+  body:has(main#app.active) .stage-stack{
+    min-width:0!important;
+  }
+  body:has(main#app.active) section.workflow-stage.card{
+    scroll-margin-top:20px!important;
+    overflow:visible!important;
+  }
+  body:has(main#app.active) section.workflow-stage>.card-head{
+    position:sticky!important;
+    top:0!important;
+    min-height:82px!important;
+    padding:20px 26px!important;
+    column-gap:20px!important;
+    row-gap:16px!important;
+    flex-wrap:wrap!important;
+    border:1px solid rgba(104,82,149,.28)!important;
+    border-radius:16px 16px 0 0!important;
+    background:linear-gradient(105deg,rgba(255,255,255,.82),rgba(238,233,247,.66))!important;
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.98),0 10px 28px rgba(49,40,72,.08)!important;
+    backdrop-filter:blur(30px) saturate(145%)!important;
+    -webkit-backdrop-filter:blur(30px) saturate(145%)!important;
+  }
+  body:has(main#app.active) section.workflow-stage>.card-head .card-title-status{
+    flex:1 1 480px!important;
+    gap:14px!important;
+  }
+  body:has(main#app.active) section.workflow-stage>.card-head h2:focus,
+  body:has(main#app.active) section.workflow-stage>.card-head h2:focus-visible{
+    outline:0!important;
+    box-shadow:none!important;
+  }
+  body:has(main#app.active) section.workflow-stage>.card-head .row-tools{
+    gap:10px!important;
+  }
+  body:has(main#app.active) section.workflow-stage>.card-body{
+    padding:28px 26px 30px!important;
+    border:1px solid rgba(104,82,149,.28)!important;
+    border-top:0!important;
+    border-radius:0 0 16px 16px!important;
+    background:linear-gradient(145deg,rgba(255,255,255,.64),rgba(238,236,246,.46))!important;
+    box-shadow:0 20px 52px rgba(48,40,71,.11)!important;
+  }
+  body:has(main#app.active) section.workflow-stage .grid{
+    column-gap:22px!important;
+    row-gap:20px!important;
+  }
+  body:has(main#app.active) section.workflow-stage .two-col{
+    column-gap:30px!important;
+    row-gap:24px!important;
+  }
+  body:has(main#app.active) section.workflow-stage .small-note{
+    line-height:1.55!important;
+  }
+  body:has(main#app.active) .workflow-stage[data-step="2"] .two-col{
+    padding:26px 28px!important;
+    border-radius:14px!important;
+  }
+  body:has(main#app.active) .workflow-stage[data-step="2"] .source-paste-copy{
+    padding:0!important;
+    border:0!important;
+    border-radius:0!important;
+    background:transparent!important;
+    box-shadow:none!important;
+    backdrop-filter:none!important;
+    -webkit-backdrop-filter:none!important;
+  }
+  body:has(main#app.active) .workflow-stage[data-step="2"] .source-paste-copy>label{
+    margin-top:0!important;
+  }
+  body:has(main#app.active) .workflow-stage[data-step="2"] .source-paste-copy>.small-note{
+    margin-bottom:18px!important;
+  }
+  body:has(main#app.active) .workflow-stage[data-step="2"] textarea.paste-box{
+    min-height:220px!important;
+  }
+  body:has(main#app.active) button.status-pill-action{
+    width:auto!important;
+    min-width:0!important;
+    min-height:0!important;
+    padding:4px 9px!important;
+    color:inherit!important;
+    font-size:10px!important;
+    line-height:1.2!important;
+    box-shadow:none!important;
+  }
+  body:has(main#app.active) button.status-pill-action:not(:disabled){cursor:pointer!important}
+  body:has(main#app.active) button.status-pill-action:disabled{cursor:default!important;opacity:1!important}
+  body:has(main#app.active) .workbench-main button.status-pill-action.warn{
+    color:#6a4713!important;
+    border-color:rgba(168,119,34,.58)!important;
+    background:rgba(255,235,179,.94)!important;
+  }
+  body:has(main#app.active) .workbench-main button.status-pill-action.bad{
+    color:#fff!important;
+    border-color:#8d244d!important;
+    background:#9f315a!important;
+  }
+  body:has(main#app.active) .workbench-main button.status-pill-action.ok{
+    color:#235942!important;
+    border-color:rgba(49,130,92,.48)!important;
+    background:rgba(223,247,234,.96)!important;
+  }
+  body:has(main#app.active) .step2-imported-accounts{
+    margin-top:24px;
+    padding:22px;
+    border:1px solid rgba(104,82,149,.24);
+    border-radius:14px;
+    background:linear-gradient(145deg,rgba(255,255,255,.74),rgba(235,234,245,.54));
+    box-shadow:inset 0 1px 0 rgba(255,255,255,.96),0 16px 36px rgba(49,40,72,.08);
+  }
+  body:has(main#app.active) .step2-imported-head{
+    display:flex;
+    align-items:flex-end;
+    justify-content:space-between;
+    gap:18px;
+    margin-bottom:16px;
+  }
+  body:has(main#app.active) .step2-imported-head h3{
+    margin:0 0 5px!important;
+    color:#2c2340!important;
+    font-size:17px;
+  }
+  body:has(main#app.active) .step2-imported-head p{margin:0!important;line-height:1.5!important}
+  body:has(main#app.active) .step2-import-pagination{
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    gap:9px;
+    flex-wrap:wrap;
+  }
+  body:has(main#app.active) .step2-import-pagination>span{
+    color:#665b75;
+    font-size:11px;
+  }
+  body:has(main#app.active) .step2-import-table-wrap{
+    max-height:430px;
+    overflow:auto!important;
+    border-radius:10px;
+  }
+  body:has(main#app.active) .step2-import-table{
+    width:100%;
+    min-width:780px;
+    table-layout:fixed;
+  }
+  body:has(main#app.active) .step2-import-table .step2-account-col{width:18%}
+  body:has(main#app.active) .step2-import-table .step2-description-col{width:34%}
+  body:has(main#app.active) .step2-import-table .step2-amount-col{width:22%}
+  body:has(main#app.active) .step2-import-table .step2-status-col{width:20%}
+  body:has(main#app.active) .step2-import-table th{
+    position:sticky!important;
+    top:0!important;
+    z-index:2;
+  }
+  body:has(main#app.active) .step2-import-table td{vertical-align:middle!important;padding:10px!important}
+  body:has(main#app.active) .step2-import-table input{
+    min-height:38px;
+    font-size:13px;
+  }
+  body:has(main#app.active) .step2-import-table tr.source-row-error>td{
+    background:rgba(255,229,237,.82)!important;
+    box-shadow:inset 0 1px rgba(177,58,103,.18),inset 0 -1px rgba(177,58,103,.18);
+  }
+  body:has(main#app.active) .step2-import-table tr.source-row-error .row-number-cell span{
+    color:#8d244d;
+    border-color:#b13a67;
+    background:#fff0f5;
+  }
+  body:has(main#app.active) .step2-import-table .step2-row-message{
+    margin-top:5px!important;
+    color:#8d244d!important;
+    font-size:11px!important;
+    line-height:1.4!important;
+  }
+  body:has(main#app.active) #step2ControlRefresh,
+  body:has(main#app.active) #step2PeriodMismatch{margin:0 0 16px!important}
+}
+
+@media screen and (max-width:980px){
+  body:has(main#app.active) main#app.active{padding:14px!important}
+  body:has(main#app.active) .workbench-layout{gap:14px!important}
+  body:has(main#app.active) aside.workflow-rail{
+    top:0!important;
+    width:100%!important;
+    height:auto!important;
+    border-radius:14px!important;
+    overflow-x:auto!important;
+  }
+  body:has(main#app.active) div.workbench-main{
+    padding:18px!important;
+    border-radius:14px!important;
+  }
+  body:has(main#app.active) section.workflow-stage>.card-head{
+    min-height:72px!important;
+    padding:18px 20px!important;
+  }
+  body:has(main#app.active) section.workflow-stage>.card-body{
+    padding:22px 20px 24px!important;
+  }
+  body:has(main#app.active) .workflow-stage[data-step="2"] .two-col{
+    grid-template-columns:1fr!important;
+    padding:20px!important;
+  }
+  body:has(main#app.active) .step2-imported-accounts{padding:18px}
+  body:has(main#app.active) .step2-imported-head{align-items:flex-start;flex-direction:column}
+  body:has(main#app.active) .step2-import-pagination{justify-content:flex-start}
+}
 </style>
 </head>
 
@@ -1996,13 +2589,22 @@ main{background-color:#f1f0f4!important;background-image:radial-gradient(ellipse
           <label for="taxYear">Tax year ending</label>
           <input id="taxYear" placeholder="12/31/2025">
         </div>
-        <fieldset class="setup-question setup-field wide">
+        <fieldset id="activityTypeControls" class="setup-question setup-field wide">
           <legend>Taxpayer is a</legend>
           <div class="binary-choice-grid">
             <label class="binary-choice"><input type="radio" name="activityType" value="producer" aria-describedby="producerDefinitionTooltip"><span class="help-term">Producer<span class="help-tooltip" id="producerDefinitionTooltip" role="tooltip"><span>A taxpayer that constructs, builds, installs, manufactures, develops, improves, creates, raises, or grows real or tangible personal property.</span><span class="tooltip-citation">Treas. Reg. Section 1.263A-2(a)(1).</span></span></span></label>
             <label class="binary-choice"><input type="radio" name="activityType" value="reseller" aria-describedby="resellerDefinitionTooltip"><span class="help-term">Reseller<span class="help-tooltip multi-paragraph-tooltip tooltip-below" id="resellerDefinitionTooltip" role="tooltip"><span>In UNIPRO, choose Reseller when the trade or business acquires property for resale and is eligible for the Simplified Resale Method.</span><span>If the taxpayer also produces property, production must be incident to resale and de minimis. Production is presumed de minimis when both gross receipts from produced property and production labor are each less than 10 percent of the trade or business totals. Facts and circumstances may still establish de minimis production when that presumption is not met. Personal property produced under a contract with an unrelated person may also qualify when the contract is incident to resale and the property is sold to customers.</span><span>Property furnished incident to services is a separate exception only when the property is de minimis and is not inventory. Property cost equal to or below 5 percent of the combined charge is deemed de minimis. Installation or implementation may be production; the label does not control.</span><span class="tooltip-citation">Treas. Reg. Sections 1.263A-1(b)(11), 1.263A-2(a)(1), and 1.263A-3(a)(1), (a)(4), (a)(5), and (d).</span></span></span></label>
             <label class="binary-choice"><input type="radio" name="activityType" value="producerReseller"><span>Producer and reseller</span></label>
           </div>
+        </fieldset>
+        <fieldset id="producerDeMinimisControls" class="setup-question setup-field wide conditional-setup hidden">
+          <legend>Were the producer's total indirect costs <span class="help-term" tabindex="0" aria-describedby="producerThresholdTooltip">$200,000 or less?<span class="help-tooltip" id="producerThresholdTooltip" role="tooltip">Apply the aggregation rules and permitted exclusions. If the total is $200,000 or less, no current-year additional Section 263A costs are allocated to ending inventory.<span class="tooltip-citation">Treas. Reg. Sections 1.263A-2(b)(3)(iv) and 1.263A-2(c)(3)(v).</span></span></span></legend>
+          <div class="binary-choice-grid">
+            <label class="binary-choice"><input type="radio" name="indirectCostRule" value="applies"><span>Yes</span></label>
+            <label class="binary-choice"><input type="radio" name="indirectCostRule" value="doesNotApply"><span>No</span></label>
+            <label class="binary-choice"><input type="radio" name="indirectCostRule" value="unsure"><span>Not sure</span></label>
+          </div>
+          <p id="producerRuleYesNote" class="small-note hidden">A Yes answer ends the producer calculation. No additional current-year Section 263A costs are allocated to ending inventory.</p>
         </fieldset>
         <fieldset class="setup-question setup-field wide" id="unicapHistoryControls">
           <legend>Did the taxpayer capitalize additional Section 263A costs on last year's federal return? <button type="button" class="setup-help-link row-action-link row-definition-link" onmouseenter="showDefinitionTooltip(this)" onmouseleave="hideDefinitionTooltip(this)" onfocus="showDefinitionTooltip(this)" onblur="hideDefinitionTooltip(this)" data-definition-label="What this question means" data-definition="Answer Yes if the taxpayer included additional Section 263A costs in inventory on last year's federal return. It does not ask whether the taxpayer used UNIPRO." data-citation="Treas. Reg. Section 1.263A-1(d)(3)." aria-describedby="selectionDefinitionTooltip">What this means</button></legend>
@@ -2052,11 +2654,11 @@ main{background-color:#f1f0f4!important;background-image:radial-gradient(ellipse
         <fieldset class="setup-question setup-field wide conditional-setup hidden" id="priorMixedServiceMethodControls">
           <legend>How did last year's return allocate mixed service costs?</legend>
           <div class="binary-choice-grid">
-            <label class="binary-choice"><input type="radio" name="priorMixedServiceMethodChoice" value="labor"><span>Labor costs</span></label>
-            <label class="binary-choice"><input type="radio" name="priorMixedServiceMethodChoice" value="production"><span>Production and business costs</span></label>
-            <label class="binary-choice"><input type="radio" name="priorMixedServiceMethodChoice" value="direct"><span>Direct reallocation</span></label>
-            <label class="binary-choice"><input type="radio" name="priorMixedServiceMethodChoice" value="step"><span>Step allocation</span></label>
-            <label class="binary-choice"><input type="radio" name="priorMixedServiceMethodChoice" value="reasonable"><span>Other supported method</span></label>
+            <label class="binary-choice"><input type="radio" name="priorMixedServiceMethodChoice" value="labor"><span class="help-term" tabindex="0">Labor costs<span class="help-tooltip" role="tooltip">Uses inventory-related labor divided by total labor to allocate the mixed service cost pool.<span class="tooltip-citation">Treas. Reg. Section 1.263A-1(h)(4).</span></span></span></label>
+            <label class="binary-choice"><input type="radio" name="priorMixedServiceMethodChoice" value="production"><span class="help-term" tabindex="0">Production and business costs<span class="help-tooltip" role="tooltip">Uses Section 263A production costs divided by total trade or business costs, with the required exclusions.<span class="tooltip-citation">Treas. Reg. Section 1.263A-1(h)(5).</span></span></span></label>
+            <label class="binary-choice"><input type="radio" name="priorMixedServiceMethodChoice" value="direct"><span class="help-term" tabindex="0">Direct reallocation<span class="help-tooltip" role="tooltip">Allocates each mixed service department directly to the activities it supports without recognizing services between mixed service departments.<span class="tooltip-citation">Treas. Reg. Section 1.263A-1(g)(4)(iii)(A).</span></span></span></label>
+            <label class="binary-choice"><input type="radio" name="priorMixedServiceMethodChoice" value="step"><span class="help-term" tabindex="0">Step allocation<span class="help-tooltip" role="tooltip">Allocates mixed service departments sequentially and recognizes services provided to departments later in the sequence.<span class="tooltip-citation">Treas. Reg. Section 1.263A-1(g)(4)(iii)(B).</span></span></span></label>
+            <label class="binary-choice"><input type="radio" name="priorMixedServiceMethodChoice" value="reasonable"><span class="help-term" tabindex="0">Other supported method<span class="help-tooltip" role="tooltip">Uses another reasonable method supported by the taxpayer's facts, records, and consistently applied accounting method.<span class="tooltip-citation">Treas. Reg. Sections 1.263A-1(f)(4) and 1.263A-1(g)(4).</span></span></span></label>
             <label class="binary-choice"><input type="radio" name="priorMixedServiceMethodChoice" value="none"><span>No mixed service costs</span></label>
           </div>
         </fieldset>
@@ -2090,7 +2692,7 @@ main{background-color:#f1f0f4!important;background-image:radial-gradient(ellipse
           <label for="srmHistoricSupport">Test-period and election support</label>
           <input id="srmHistoricSupport" placeholder="Workpaper reference and qualifying period">
         </div>
-        <fieldset class="setup-question setup-field wide">
+        <fieldset id="inventoryMethodControls" class="setup-question setup-field wide">
           <legend>Inventory valuation method</legend>
           <div class="binary-choice-grid">
             <label class="binary-choice"><input type="radio" name="inventoryMethod" value="FIFO" aria-describedby="fifoDefinitionTooltip"><span class="help-term">FIFO<span class="help-tooltip" id="fifoDefinitionTooltip" role="tooltip"><span>First-in, first-out. UNIPRO applies the current-year absorption ratio to current-year Section 471 costs remaining on hand at year end.</span><span class="tooltip-citation">Treas. Reg. Section 1.263A-2(b)(3)(v), Example 1; Treas. Reg. Section 1.263A-2(c)(3)(vi)(A).</span></span></span></label>
@@ -2112,7 +2714,7 @@ main{background-color:#f1f0f4!important;background-image:radial-gradient(ellipse
           </div>
           <div class="small-note">This workpaper requires the complete LIFO inventory population. Prepare any non-LIFO inventory separately.</div>
         </fieldset>
-        <fieldset class="setup-question setup-field wide">
+        <fieldset id="amountBasisControls" class="setup-question setup-field wide">
           <legend>Basis</legend>
           <div class="binary-choice-grid">
             <label class="binary-choice"><input type="radio" name="amountBasis" value="tax"><span>Federal tax</span></label>
@@ -2147,22 +2749,16 @@ main{background-color:#f1f0f4!important;background-image:radial-gradient(ellipse
             <label class="binary-choice"><input type="radio" name="financialStatementGrossReceiptsEligible" value="no"><span>No</span></label>
           </div>
         </fieldset>
-        <fieldset id="producerDeMinimisControls" class="setup-question setup-field wide">
-          <legend>Were the producer's total indirect costs <span class="help-term" tabindex="0" aria-describedby="producerThresholdTooltip">$200,000 or less?<span class="help-tooltip" id="producerThresholdTooltip" role="tooltip">Apply the aggregation rules and permitted exclusions. If the total is $200,000 or less, no current-year additional Section 263A costs are allocated to ending inventory.<span class="tooltip-citation">Treas. Reg. Sections 1.263A-2(b)(3)(iv) and 1.263A-2(c)(3)(v).</span></span></span></legend>
-          <div class="binary-choice-grid">
-            <label class="binary-choice"><input type="radio" name="indirectCostRule" value="applies"><span>Yes</span></label>
-            <label class="binary-choice"><input type="radio" name="indirectCostRule" value="doesNotApply"><span>No</span></label>
-          </div>
-        </fieldset>
       </div>
 
       <p id="methodScopeNotice" class="automatic-method-note hidden" aria-live="polite"></p>
+      <button id="reviewSetupAnswers" class="ghost setup-back-button no-print hidden" type="button" onclick="toggleSetupReviewMode()">Back</button>
     </div>
   </section>
 
   <section class="card workflow-stage" data-step="2" data-tour="import">
     <div class="card-head">
-      <div class="card-title-status"><h2>2. Paste Account, Description, and Amount</h2><span id="step2Status" class="pill warn">Not started</span></div>
+      <div class="card-title-status"><h2>2. Paste Account, Description, and Amount</h2><button id="step2Status" class="pill warn status-pill-action" type="button" aria-controls="step2ImportedAccounts" onclick="focusStep2Issues()" disabled>Not started</button></div>
       <div class="row-tools no-print">
         <button class="secondary" type="button" onclick="addBlankRow()">Add row</button>
         <button class="ghost" type="button" onclick="clearRows()">Clear rows</button>
@@ -2179,7 +2775,7 @@ main{background-color:#f1f0f4!important;background-image:radial-gradient(ellipse
           <div class="grid" style="grid-template-columns:1fr">
             <div>
               <label for="pasteMode">What should this paste do?</label>
-              <select id="pasteMode">
+              <select id="pasteMode" onchange="changePasteMode()">
                 <option value="append">Add accounts to the current list</option>
                 <option value="replace">Replace the current account list</option>
               </select>
@@ -2197,6 +2793,8 @@ main{background-color:#f1f0f4!important;background-image:radial-gradient(ellipse
         </div>
       </div>
       <div id="importPreview" class="import-preview hidden" aria-live="polite"></div>
+      <section id="step2ImportedAccounts" class="step2-imported-accounts hidden" aria-live="polite"></section>
+      <div id="sourceImportExceptions" class="note warn hidden" style="margin-top:16px"></div>
     </div>
   </section>
 
@@ -2232,11 +2830,13 @@ main{background-color:#f1f0f4!important;background-image:radial-gradient(ellipse
       </div>
       <div id="fsaExclusionNote" class="note mapping-instruction hidden"><strong>FSA exclusion control.</strong> If a cost was capitalized in the qualifying statement but removed for Federal tax, retain the row and enter the Federal tax amount, including zero. Write-downs, reserves, and valuation adjustments are removed separately.</div>
       <div id="mspmRemediationBanner" class="note mspm-remediation-banner hidden"></div>
+      <div id="mappingWarning" class="note bad hidden" style="margin-bottom:16px"></div>
       <div class="source-map-layout">
         <div class="source-map-main">
           <div class="table-wrap source-map-wrap" style="margin-top:12px">
             <table class="source-map-table">
               <colgroup>
+                <col class="col-row-number">
                 <col class="col-account-number">
                 <col class="col-account-name">
                 <col class="col-value">
@@ -2246,6 +2846,7 @@ main{background-color:#f1f0f4!important;background-image:radial-gradient(ellipse
               </colgroup>
               <thead>
                 <tr>
+                  <th class="row-number-heading">Row</th>
                   <th>Account number</th>
                   <th>Account name</th>
                   <th class="num" id="sourceAmountColumnHeading">Source amount</th>
@@ -2264,8 +2865,6 @@ main{background-color:#f1f0f4!important;background-image:radial-gradient(ellipse
         <div id="mappingMissingZeroCheck" class="mapping-check-panel hidden"></div>
         <div id="mappingOverlapCheck" class="mapping-check-panel hidden"></div>
       </div>
-      <div id="mappingWarning" class="note bad hidden" style="margin-top:16px"></div>
-      <div id="sourceImportExceptions" class="note warn hidden" style="margin-top:10px"></div>
     </div>
   </section>
 
@@ -2343,8 +2942,8 @@ main{background-color:#f1f0f4!important;background-image:radial-gradient(ellipse
             <p id="mixedServiceMethodHelp">Choose the method supported for this tax year.</p>
             <div class="msc-inline-choice-row">
               <div class="binary-choice-grid">
-                <label class="binary-choice"><input type="radio" name="mixedServiceMethodChoice" value="labor" data-mixed-control="mixedServiceMethod" data-value="labor" onchange="if(this.checked)chooseMixedOption('mixedServiceMethod','labor')"><span class="msc-split-choice-copy"><strong>Use labor costs</strong><small id="mixedLaborMethodChoicePreview">Calculated result pending</small></span></label>
-                <label class="binary-choice"><input type="radio" name="mixedServiceMethodChoice" value="production" data-mixed-control="mixedServiceMethod" data-value="production" onchange="if(this.checked)chooseMixedOption('mixedServiceMethod','production')"><span class="msc-split-choice-copy"><strong>Use production and business costs</strong><small id="mixedProductionMethodChoicePreview">Calculated result pending</small></span></label>
+                <label class="binary-choice"><input type="radio" name="mixedServiceMethodChoice" value="labor" data-mixed-control="mixedServiceMethod" data-value="labor" onchange="if(this.checked)chooseMixedOption('mixedServiceMethod','labor')"><span class="msc-split-choice-copy help-term" tabindex="0"><strong>Use labor costs</strong><small id="mixedLaborMethodChoicePreview">Calculated result pending</small><span class="help-tooltip" role="tooltip">Divides labor costs allocable to production or resale activities by total labor costs, then applies that ratio to the mixed service cost pool.<span class="tooltip-citation">Treas. Reg. Section 1.263A-1(h)(4).</span></span></span></label>
+                <label class="binary-choice"><input type="radio" name="mixedServiceMethodChoice" value="production" data-mixed-control="mixedServiceMethod" data-value="production" onchange="if(this.checked)chooseMixedOption('mixedServiceMethod','production')"><span class="msc-split-choice-copy help-term" tabindex="0"><strong>Use production and business costs</strong><small id="mixedProductionMethodChoicePreview">Calculated result pending</small><span class="help-tooltip" role="tooltip">Divides Section 263A production costs by total trade or business costs, excluding mixed service costs and interest from both parts of the ratio.<span class="tooltip-citation">Treas. Reg. Section 1.263A-1(h)(5).</span></span></span></label>
               </div>
               <button id="mixedServiceMethodDefinition" type="button" class="msc-info-link row-action-link row-definition-link" onmouseenter="showDefinitionTooltip(this)" onmouseleave="hideDefinitionTooltip(this)" onfocus="showDefinitionTooltip(this)" onblur="hideDefinitionTooltip(this)" data-definition-label="What these choices mean" data-definition="The labor-based method applies the percentage of total labor related to inventory work. The production-cost method applies the percentage of total business costs related to production and resale activity." data-citation="Treas. Reg. Sections 1.263A-1(h)(4) and 1.263A-1(h)(5)." aria-describedby="selectionDefinitionTooltip">What this means</button>
             </div>
@@ -2353,9 +2952,9 @@ main{background-color:#f1f0f4!important;background-image:radial-gradient(ellipse
           <details class="msc-other-methods" id="mixedOtherMethodsField">
             <summary>Uses a different allocation method?</summary>
             <div class="binary-choice-grid msc-other-choice-grid">
-              <label class="binary-choice"><input type="radio" name="mixedServiceMethodChoice" value="direct" data-mixed-control="mixedServiceMethod" data-value="direct" onchange="if(this.checked)chooseMixedOption('mixedServiceMethod','direct')"><span>Direct reallocation</span></label>
-              <label class="binary-choice"><input type="radio" name="mixedServiceMethodChoice" value="step" data-mixed-control="mixedServiceMethod" data-value="step" onchange="if(this.checked)chooseMixedOption('mixedServiceMethod','step')"><span>Step allocation</span></label>
-              <label class="binary-choice"><input type="radio" name="mixedServiceMethodChoice" value="reasonable" data-mixed-control="mixedServiceMethod" data-value="reasonable" onchange="if(this.checked)chooseMixedOption('mixedServiceMethod','reasonable')"><span>Another supported method</span></label>
+              <label class="binary-choice"><input type="radio" name="mixedServiceMethodChoice" value="direct" data-mixed-control="mixedServiceMethod" data-value="direct" onchange="if(this.checked)chooseMixedOption('mixedServiceMethod','direct')"><span class="help-term" tabindex="0">Direct reallocation<span class="help-tooltip" role="tooltip">Allocates each mixed service department directly to the production, resale, and deductible activities it supports. It does not recognize services provided between mixed service departments.<span class="tooltip-citation">Treas. Reg. Section 1.263A-1(g)(4)(iii)(A).</span></span></span></label>
+              <label class="binary-choice"><input type="radio" name="mixedServiceMethodChoice" value="step" data-mixed-control="mixedServiceMethod" data-value="step" onchange="if(this.checked)chooseMixedOption('mixedServiceMethod','step')"><span class="help-term" tabindex="0">Step allocation<span class="help-tooltip" role="tooltip">Allocates mixed service departments sequentially. Each department may receive costs from departments allocated earlier in the sequence.<span class="tooltip-citation">Treas. Reg. Section 1.263A-1(g)(4)(iii)(B).</span></span></span></label>
+              <label class="binary-choice"><input type="radio" name="mixedServiceMethodChoice" value="reasonable" data-mixed-control="mixedServiceMethod" data-value="reasonable" onchange="if(this.checked)chooseMixedOption('mixedServiceMethod','reasonable')"><span class="help-term" tabindex="0">Another supported method<span class="help-tooltip" role="tooltip">Uses another reasonable allocation method supported by the taxpayer's facts, records, and consistently applied accounting method. A separate department schedule is required.<span class="tooltip-citation">Treas. Reg. Sections 1.263A-1(f)(4) and 1.263A-1(g)(4).</span></span></span></label>
             </div>
             <p class="small-note">These methods require a separate department schedule; UNIPRO will not approximate them.</p>
           </details>
@@ -3022,6 +3621,8 @@ function step1MissingFields(){
   if(!String(state.clientName || "").trim()) missing.push("taxpayer name");
   if(!validTaxYearEnding(state.taxYear)) missing.push("a valid tax year ending date");
   if(!["producer","reseller","producerReseller"].includes(state.activityProfile)) missing.push("taxpayer type");
+  if(state.activityType !== "reseller" && !["applies","doesNotApply"].includes(state.indirectCostRule)) missing.push("the $200,000 producer-rule answer");
+  if(state.activityType !== "reseller" && state.indirectCostRule === "applies") return missing;
   if(!["yes","no"].includes(state.unicapPriorYearApplied)) missing.push("whether the taxpayer capitalized additional Section 263A costs last year");
   if(state.unicapPriorYearApplied === "yes" && !["unchanged","changing","unsure"].includes(state.unicapMethodContinuity)) missing.push("whether this year's UNICAP methods are changing");
   if(state.unicapHistory === "firstYear" && !["newActivity","newlySubject","priorNoncompliance"].includes(state.firstUnicapYearReason)) missing.push("why this is the first UNICAP year");
@@ -3046,7 +3647,6 @@ function step1MissingFields(){
     else if(state.financialStatementValuationExcluded !== "yes") missing.push("removal of write-downs, reserves, and valuation adjustments");
     else if(state.activityType !== "reseller" && !["yes","no"].includes(state.financialStatementGrossReceiptsEligible)) missing.push("three-year gross receipts test");
   }
-  if(state.activityType !== "reseller" && !["applies","doesNotApply"].includes(state.indirectCostRule)) missing.push("the $200,000 producer-rule answer");
   return missing;
 }
 
@@ -3174,7 +3774,7 @@ document.addEventListener("keydown", event => {
   }
 });
 
-const APP_VERSION = "2026-08-10 reseller-eligibility-v43";
+const APP_VERSION = "2026-08-11 import-workflow-restored-v44";
 
 const wholeDollar = n => {
   const value = Number(n || 0);
@@ -3227,6 +3827,12 @@ function parseNumResult(v){
   let s = original.trim();
   if(!s) return {value:0,ok:false,cleaned:"",blank:true,original};
 
+  // Standard accounting exports display a zero as -, $-, an en dash, or an
+  // em dash. Those are valid zero amounts, not import errors.
+  if(/^\(?\s*\$?\s*[-–—]\s*\)?$/.test(s)){
+    return {value:0,ok:true,cleaned:"0",blank:false,original};
+  }
+
   let negative = false;
   if(/^\(.*\)$/.test(s)){
     negative = true;
@@ -3258,6 +3864,28 @@ function parseAmountResult(v){
 const parseAmount = v => parseAmountResult(v).value;
 const MONEY_EPSILON = 1e-8;
 const isZeroMoney = value => Math.abs(Number(value || 0)) <= MONEY_EPSILON;
+
+function rowAmountIssue(row){
+  const parsed = parseAmountResult(row && row.amount);
+  if(parsed.ok) return "";
+  if(row && row.parseWarning) return String(row.parseWarning);
+  return parsed.blank ? "Enter an amount." : `Amount '${String(row && row.amount != null ? row.amount : "")}' is not valid.`;
+}
+
+function rowIdentityIssue(row){
+  if(!row) return "Account and Description are required.";
+  const missing = [];
+  if(!String(row.account || "").trim()) missing.push("Account");
+  if(!String(row.description || "").trim()) missing.push("Description");
+  return missing.length ? `${missing.join(" and ")} ${missing.length === 1 ? "is" : "are"} required.` : "";
+}
+
+function amountValuesEquivalent(left,right){
+  const a = parseAmountResult(left);
+  const b = parseAmountResult(right);
+  if(a.ok && b.ok) return isZeroMoney(a.value - b.value);
+  return String(left ?? "").trim() === String(right ?? "").trim();
+}
 
 const hasNumericEntry = v => {
   const parsed = parseAmountResult(v);
@@ -3310,9 +3938,12 @@ function blurCurrencyInput(index, el){
   editRow(index, "amount", el.value);
   const parsed = parseAmountResult(el.value);
   if(parsed.ok) el.value = currencyInputValue(parsed.value);
+  const shouldFocusStep2Issue = !!rowAmountIssue(state.rows[index]) || sourceControlRefreshCount() > 0 || activeImportPeriodMismatches().length > 0;
   setTimeout(() => {
     rerenderRowSurfacesPreservingFocus();
     renderCalcOnly();
+    renderStep2ImportedAccounts();
+    if(shouldFocusStep2Issue) setTimeout(() => focusStep2Issues(),0);
   },0);
 }
 
@@ -3748,7 +4379,7 @@ const ambiguousTerms = ["freight","labor","overhead","depreciation","supplies","
 let state = {
   clientName:"",
   taxYear:"",
-  activityProfile:"producer",
+  activityProfile:"",
   activityType:"producer",
   unicapPriorYearApplied:"",
   unicapMethodContinuity:"",
@@ -3849,11 +4480,117 @@ let activeBreakoutId = null;
 let pendingImportAnalysis = null;
 let pasteImportTimer = null;
 let lastImportSnapshot = null;
+let step2ImportPage = 0;
+const STEP2_IMPORT_PAGE_SIZE = 50;
 let activeInspectorRowId = null;
 let focusedExceptionRowIds = null;
 let inspectorValidationTimer = null;
 let calculationRevision = 1;
 let fingerprintCacheRevision = -1;
+
+function importAnalysisIsBlocked(analysis){
+  if(!analysis) return false;
+  return !Array.isArray(analysis.rows) || !analysis.rows.length
+    || !!(analysis.rejected || []).length
+    || !!analysis.needsAmountSelection
+    || !!analysis.needsTaxAmountSelection
+    || !!analysis.basisConflict
+    || !!analysis.periodConflict
+    || !!(analysis.controlFailures || []).length
+    || !!(analysis.appendIdentityOverlaps || []).length
+    || !!analysis.confirmationError;
+}
+
+function pendingImportStatusText(analysis=pendingImportAnalysis){
+  if(!analysis) return "";
+  const rejected = (analysis.rejected || []).length;
+  const overlaps = (analysis.appendIdentityOverlaps || []).length;
+  const controls = (analysis.controlFailures || []).length;
+  if(analysis.confirmationError) return "Paste needs a decision";
+  if(rejected) return `${rejected} source ${rejected === 1 ? "line needs" : "lines need"} correction`;
+  if(overlaps) return `${overlaps} ${overlaps === 1 ? "account already exists" : "accounts already exist"}`;
+  if(controls) return `${controls} source ${controls === 1 ? "control does" : "controls do"} not tie`;
+  if(analysis.needsAmountSelection) return "Choose the amount column";
+  if(analysis.needsTaxAmountSelection) return "Choose the Federal tax column";
+  if(analysis.basisConflict) return "Source basis needs review";
+  if(analysis.periodConflict) return "Source date needs review";
+  if(!Array.isArray(analysis.rows) || !analysis.rows.length) return "No account rows recognized";
+  return "Paste needs review";
+}
+
+function sourceControlRefreshCount(){
+  const activeIds = new Set(state.rows.map(row => String(row.sourceImportId || "")).filter(Boolean));
+  return (state.importHistory || []).filter(item => activeIds.has(String(item.id || "")) && item.controlsInvalidatedByEdit === true).length;
+}
+
+function activeImportPeriodMismatches(){
+  const activeIds = new Set(state.rows.map(row => String(row.sourceImportId || "")).filter(Boolean));
+  const selectedDate = canonicalPeriodDate(state.taxYear);
+  const selectedYear = periodYear(state.taxYear);
+  if(!selectedDate && !selectedYear) return [];
+  return (state.importHistory || []).filter(item => {
+    if(!activeIds.has(String(item.id || ""))) return false;
+    const rawPeriod = item.reportPeriod || item.workpaperTaxYear || "";
+    const importedDate = canonicalPeriodDate(rawPeriod);
+    const importedYear = periodYear(rawPeriod);
+    if(importedDate && selectedDate) return importedDate !== selectedDate;
+    return !!importedYear && !!selectedYear && importedYear !== selectedYear;
+  });
+}
+
+function controlDetailForImportRows(control,rows){
+  const usesFederalTax = /federal tax/i.test(String(control && control.type || ""));
+  return rows.reduce((sum,row) => {
+    if(usesFederalTax){
+      const tax = parseAmountResult(row.sourceTaxAmount);
+      return sum + (tax.ok ? tax.value : 0);
+    }
+    return sum + parseAmount(row.amount);
+  },0);
+}
+
+function rowAmountDiffersFromImportedSource(row){
+  const current = parseAmountResult(row && row.amount);
+  const original = parseAmountResult(row && row.originalAmount);
+  if(current.ok && original.ok) return !isZeroMoney(current.value - original.value);
+  return String((row && row.amount) ?? "").trim() !== String((row && row.originalAmount) ?? "").trim();
+}
+
+function refreshActiveImportSummaries(){
+  if(!Array.isArray(state.importHistory)) state.importHistory = [];
+  const activeIds = new Set(state.rows.map(row => String(row.sourceImportId || "")).filter(Boolean));
+  state.importHistory.forEach(item => {
+    const id = String(item.id || "");
+    if(!activeIds.has(id)) return;
+    const rows = state.rows.filter(row => String(row.sourceImportId || "") === id);
+    item.originalAccepted = Number(item.originalAccepted ?? item.accepted ?? rows.length);
+    item.accepted = rows.length;
+    item.net = rows.reduce((sum,row) => sum + parseAmount(row.amount),0);
+    item.absolute = rows.reduce((sum,row) => sum + Math.abs(parseAmount(row.amount)),0);
+    item.controlCount = Number(item.controlCount ?? item.controlsPassed ?? (item.finalPopulationControls || []).length);
+    if(Array.isArray(item.finalPopulationControls)){
+      item.finalPopulationControls.forEach(control => {
+        const detailAmount = controlDetailForImportRows(control,rows);
+        control.detailAmount = detailAmount;
+        control.difference = detailAmount - Number(control.sourceAmount || 0);
+      });
+    }
+    const activeSourceLineCount = new Set(rows.map(row => row.sourceLineNumber == null ? `row:${row.id}` : `line:${row.sourceLineNumber}`)).size;
+    const finalControlMismatch = (item.finalPopulationControls || []).some(control => Math.abs(Number(control.difference || 0)) >= SOURCE_CONTROL_EPSILON);
+    item.controlsInvalidatedByEdit = item.controlCount > 0 && (rows.some(rowAmountDiffersFromImportedSource) || activeSourceLineCount !== item.originalAccepted || finalControlMismatch);
+    item.controlsPassed = item.controlsInvalidatedByEdit ? 0 : item.controlCount;
+  });
+  if(!state.lastImport) return;
+  const activeHistory = state.importHistory.filter(item => activeIds.has(String(item.id || "")));
+  const importedRows = state.rows.filter(row => activeIds.has(String(row.sourceImportId || "")));
+  state.lastImport.accepted = importedRows.length;
+  state.lastImport.net = importedRows.reduce((sum,row) => sum + parseAmount(row.amount),0);
+  state.lastImport.absolute = importedRows.reduce((sum,row) => sum + Math.abs(parseAmount(row.amount)),0);
+  state.lastImport.controlsPassed = activeHistory.reduce((sum,item) => sum + Number(item.controlsPassed || 0),0);
+  state.lastImport.controlsInvalidatedImportIds = activeHistory.filter(item => item.controlsInvalidatedByEdit).map(item => item.id);
+  state.lastImport.controlsInvalidatedByEdit = state.lastImport.controlsInvalidatedImportIds.length > 0;
+  state.lastImport.finalPopulationControls = activeHistory.flatMap(item => Array.isArray(item.finalPopulationControls) ? item.finalPopulationControls : []);
+}
 let fingerprintCacheValue = "";
 let workflowAutoAdvancePrevious = null;
 let workflowAutoAdvancePending = null;
@@ -3863,8 +4600,8 @@ let workflowNavigationRevision = 0;
 function importBatchFingerprint(text,analysis={}){
   const canonical = [
     IMPORT_PARSER_VERSION,
-    state.amountBasis || "",
-    state.taxYear || "",
+    analysis.previewAmountBasis || state.amountBasis || "",
+    analysis.previewTaxYear || state.taxYear || "",
     analysis.selectedAmountColumnKey || "",
     analysis.selectedTaxAmountColumnKey || "",
     String(text || "").replace(/\r\n?/g,"\n").replace(/\u00a0/g," ").trim()
@@ -5291,7 +6028,7 @@ function normalizeSetupDependencies(){
 function readControls(){
   state.clientName = $("clientName").value;
   state.taxYear = $("taxYear").value;
-  state.activityProfile = document.querySelector('input[name="activityType"]:checked')?.value || "producer";
+  state.activityProfile = document.querySelector('input[name="activityType"]:checked')?.value || "";
   state.activityType = state.activityProfile === "reseller" ? "reseller" : "producer";
   state.unicapPriorYearApplied = document.querySelector('input[name="unicapPriorYearApplied"]:checked')?.value || "";
   state.unicapMethodContinuity = state.unicapPriorYearApplied === "yes" ? (document.querySelector('input[name="unicapMethodContinuity"]:checked')?.value || "") : "";
@@ -5512,6 +6249,101 @@ function renderBookBasisControls(){
           : state.firstUnicapYearReason === "unsure"
             ? "Resolve why this is the first UNICAP year before continuing."
           : "";
+  }
+  renderProgressiveSetupQuestions();
+}
+
+let setupReviewFamily = "";
+let setupPreviousFamily = "";
+
+function setupQuestionAnswered(fieldset){
+  if(!fieldset) return false;
+  const radios = Array.from(fieldset.querySelectorAll('input[type="radio"]'));
+  if(radios.length){
+    const checked = radios.find(input => input.checked);
+    return !!checked && checked.value !== "unsure";
+  }
+  const checks = Array.from(fieldset.querySelectorAll('input[type="checkbox"]'));
+  if(checks.length) return checks.some(input => input.checked);
+  const select = fieldset.querySelector("select");
+  if(select) return !!select.value && select.value !== "unsure";
+  return false;
+}
+
+function toggleSetupReviewMode(){
+  setupReviewFamily = setupReviewFamily ? "" : setupPreviousFamily;
+  renderCalcOnly();
+}
+
+function renderProgressiveSetupQuestions(){
+  const grid = document.querySelector('.workflow-stage[data-step="1"] .setup-grid');
+  if(!grid) return;
+  const questions = Array.from(grid.querySelectorAll(":scope > fieldset.setup-question"));
+  questions.forEach(fieldset => fieldset.classList.remove("progressively-complete","progressively-pending"));
+  const familyById = {
+    activityTypeControls:"screening",producerDeMinimisControls:"screening",
+    unicapHistoryControls:"methods",unicapContinuityControls:"methods",firstUnicapYearReasonControls:"methods",unicapChangeComponentsControls:"methods",priorAppliedMethodControls:"methods",priorMixedServiceMethodControls:"methods",priorMixedMspmSplitMethodControls:"methods",
+    srmEligibilityControls:"resale",srmRatioModeControls:"resale",
+    inventoryMethodControls:"inventory",lifoRatioControls:"inventory",lifoCoverageControls:"inventory",
+    amountBasisControls:"basis",financialStatementQualificationControls:"basis",financialStatementMethodAdoptedControls:"basis",financialStatementValuationControls:"basis",financialStatementGrossReceiptsControls:"basis"
+  };
+  const familyOrder = ["screening","methods","resale","inventory","basis"];
+  const familyFor = fieldset => familyById[fieldset.id] || `single-${questions.indexOf(fieldset)}`;
+  const stop = state.activityType !== "reseller" && state.indirectCostRule === "applies";
+  const stopNotice = $("producerRuleYesNote");
+  if(stopNotice){
+    stopNotice.classList.toggle("hidden",!stop);
+  }
+  const applicable = questions.filter(fieldset => !fieldset.classList.contains("hidden"));
+  const reviewLink = $("reviewSetupAnswers");
+  const historicFields = $("srmHistoricFields");
+  if(historicFields) historicFields.classList.remove("progressively-complete","progressively-pending");
+  const families = new Map();
+  applicable.forEach(fieldset => {
+    const family = familyFor(fieldset);
+    if(!families.has(family)) families.set(family,[]);
+    families.get(family).push(fieldset);
+  });
+  const orderedFamilies = [...familyOrder.filter(family => families.has(family)),...Array.from(families.keys()).filter(family => !familyOrder.includes(family))];
+  const familyComplete = family => {
+    const members = families.get(family) || [];
+    if(!members.length || !members.every(setupQuestionAnswered)) return false;
+    if(family === "resale" && state.srmRatioMode === "historic") return srmHistoricRatioValue() >= 0 && !!String(state.srmHistoricSupport || "").trim();
+    return true;
+  };
+  const currentFamily = stop ? null : orderedFamilies.find(family => !familyComplete(family)) || null;
+  if(setupReviewFamily && !families.has(setupReviewFamily)) setupReviewFamily = "";
+  if(setupReviewFamily){
+    orderedFamilies.forEach(family => {
+      if(family === setupReviewFamily) return;
+      (families.get(family) || []).forEach(fieldset => fieldset.classList.add("progressively-pending"));
+    });
+    if(historicFields && !historicFields.classList.contains("hidden") && setupReviewFamily !== "resale") historicFields.classList.add("progressively-pending");
+    if(reviewLink){ reviewLink.classList.remove("hidden"); reviewLink.textContent = "Continue"; }
+    return;
+  }
+  const currentIndex = currentFamily ? orderedFamilies.indexOf(currentFamily) : orderedFamilies.length;
+  const completedBeforeCurrent = orderedFamilies.slice(0,currentIndex).filter(familyComplete);
+  setupPreviousFamily = stop && families.has("screening")
+    ? "screening"
+    : (completedBeforeCurrent[completedBeforeCurrent.length - 1] || "");
+  let completedCount = 0;
+  orderedFamilies.forEach(family => {
+    const members = families.get(family) || [];
+    if(stop){
+      members.forEach(fieldset => fieldset.classList.add(family === "screening" ? "progressively-complete" : "progressively-pending"));
+      if(family === "screening") completedCount += 1;
+      return;
+    }
+    if(family === currentFamily) return;
+    const complete = familyComplete(family);
+    members.forEach(fieldset => fieldset.classList.add(complete ? "progressively-complete" : "progressively-pending"));
+    if(complete) completedCount += 1;
+  });
+  if(historicFields && !historicFields.classList.contains("hidden") && currentFamily !== "resale") historicFields.classList.add(familyComplete("resale") ? "progressively-complete" : "progressively-pending");
+  if(reviewLink){
+    reviewLink.classList.toggle("hidden",!setupPreviousFamily);
+    reviewLink.textContent = "Back";
   }
 }
 
@@ -6629,7 +7461,7 @@ function breakoutPanelHtml(row,index){
     </tr>`).join("");
 
   return `<tr class="breakout-row">
-    <td colspan="6">
+    <td colspan="7">
       <div class="breakout-panel">
         <div class="breakout-panel-head">
           <div>
@@ -6776,6 +7608,7 @@ function applyBreakout(index){
   if(!Array.isArray(state.sourceParents)) state.sourceParents = [];
   state.sourceParents.push({...JSON.parse(JSON.stringify(row)),breakoutAppliedAt:new Date().toISOString(),breakoutChildIds:replacementRows.map(child => child.id)});
   state.rows.splice(index,1,...replacementRows);
+  refreshActiveImportSummaries();
   activeBreakoutId = null;
   renderAll();
 }
@@ -6787,7 +7620,7 @@ function rowNeedsConfirmation(row){
 function viewMatches(row){
   const opt = inputOption(row);
   if(state.view === "all") return true;
-  if(state.view === "review") return row.review || row.inputId === "review" || rowNeedsConfirmation(row) || row.parseOk === false || rowNeedsMspmReview(row) || rowNeedsMspmBreakout(row) || rowNeedsTaxReconcileAdjustment(row) || rowNeedsFsaTaxAmount(row) || !!fsaAdditionalCostCharacterizationIssue(row) || rowNeedsFsaNegativeConfirmation(row) || (rowRequiresOverlapConfirmation(row) && row.notIn471Confirmed !== true);
+  if(state.view === "review") return row.review || row.inputId === "review" || rowNeedsConfirmation(row) || !!rowAmountIssue(row) || rowNeedsMspmReview(row) || rowNeedsMspmBreakout(row) || rowNeedsTaxReconcileAdjustment(row) || rowNeedsFsaTaxAmount(row) || !!fsaAdditionalCostCharacterizationIssue(row) || rowNeedsFsaNegativeConfirmation(row) || (rowRequiresOverlapConfirmation(row) && row.notIn471Confirmed !== true);
   if(state.view === "suspense") return opt.group === "Breakout / Suspense";
   if(state.view === "mixed") return opt.group === "Mixed Service Costs";
   if(state.view === "materials") return opt.group === "Materials or goods";
@@ -6994,7 +7827,7 @@ function selectInputHtml(row,index){
 
 function suggestedInputHtml(row){
   const suggestedId = inputById[row.suggestedInputId] ? row.suggestedInputId : "review";
-  return `<div class="bucket-readonly">${esc(bucketDisplayLabel(suggestedId))}</div><div class="small-note"><strong>${esc(row.confidence || "Low")}</strong> confidence</div>`;
+  return `<div class="bucket-readonly">${esc(bucketDisplayLabel(suggestedId))}</div>`;
 }
 
 function suggestionCanBeAccepted(row){
@@ -7023,7 +7856,7 @@ function acceptSuggestedClassification(index){
   row.mspmConfirmed = needsMspmDetail() && MSPM_REVIEW_INPUT_IDS.has(row.inputId);
   row.laborConfirmed = false;
   row.costConfirmed = false;
-  row.reason = `Accepted ${row.confidence.toLowerCase()}-confidence suggestion.`;
+  row.reason = "Accepted suggestion.";
   row.confirmedAt = new Date().toISOString();
   syncBaseSuggestions(row,true);
   renderAll();
@@ -7032,7 +7865,7 @@ function acceptSuggestedClassification(index){
 function confirmVisibleSuggestions(){
   const candidates = visibleRows().filter(suggestionCanBeAccepted);
   if(!candidates.length){
-    alert("No High or Medium confidence suggestions are eligible for batch acceptance. Low-confidence and suspense suggestions always require individual review.");
+    alert("No eligible suggestions are available for batch acceptance. Ambiguous and suspense rows require individual review.");
     return;
   }
   const net = candidates.reduce((sum,row) => sum + mapped(row),0);
@@ -7046,7 +7879,7 @@ function confirmVisibleSuggestions(){
     row.review = false;
     row.confirmed = true;
     row.confirmedAt = acceptedAt;
-    row.reason = `Batch accepted ${row.confidence.toLowerCase()}-confidence suggestion.`;
+    row.reason = "Accepted suggestion.";
     row.notIn471Confirmed = false;
     row.fsaNegativeAdjustmentConfirmed = false;
     clearFsaBookTaxDecision(row,true);
@@ -7128,12 +7961,14 @@ function renderRows(){
   }
   renderMappingPagination();
   if(!rows.length){
-    body.innerHTML = `<tr><td colspan="6"><div class="note">No rows in this view.</div></td></tr>`;
+    body.innerHTML = `<tr><td colspan="7"><div class="note">No rows in this view.</div></td></tr>`;
     return;
   }
 
   body.innerHTML = rows.map(row => {
     const index = state.rows.indexOf(row);
+    const displayNumber = index + 1;
+    const amountIssue = rowAmountIssue(row);
     const isSuspense = isSuspenseInputId(row.inputId);
     const needsBucket = row.inputId === "review";
     const needsConfirm = rowNeedsConfirmation(row);
@@ -7142,8 +7977,8 @@ function renderRows(){
     const needsTaxReconcile = rowNeedsTaxReconcileAdjustment(row);
     const needsFsaTax = rowNeedsFsaTaxAmount(row);
     const needsFsaNegative = rowNeedsFsaNegativeConfirmation(row);
-    const status = row.parseOk === false
-      ? `<span class="pill bad">Import issue</span>`
+    const status = amountIssue
+      ? `<span class="pill bad">Amount needs correction</span>`
       : needsBucket
         ? `<span class="pill bad">Needs category</span>`
         : needsConfirm
@@ -7166,7 +8001,7 @@ function renderRows(){
       : needsMspmReview
         ? `<div class="small-note">Reconfirm this dropdown for the MSPM pre-production/production treatment. Change it when the SPM selection was only an aggregate or provisional classification.</div>`
         : "";
-    const parseDetail = row.parseOk === false && row.parseWarning ? `<div class="small-note">${esc(row.parseWarning)}</div>` : "";
+    const parseDetail = amountIssue ? `<div class="small-note">${esc(amountIssue)}</div>` : "";
     const statusHtml = status || parseDetail || remediationDetail ? `<div class="small-note">${status}${parseDetail}${remediationDetail}</div>` : "";
     const breakoutLink = rowCanBeBrokenOut(row) ? `<a href="#" class="row-action-link" onclick="event.preventDefault();toggleBreakout(${index})">${activeBreakoutId === row.id ? "Close" : (needsMspmBreakout ? "Break out for MSPM" : "Break out")}</a>` : "";
     const acceptLink = suggestionCanBeAccepted(row) && (row.inputId === "review" || row.confirmed !== true) ? `<a href="#" class="row-action-link" onclick="event.preventDefault();acceptSuggestedClassification(${index})">Accept suggestion</a>` : "";
@@ -7174,11 +8009,12 @@ function renderRows(){
       ? `<a href="#" class="row-action-link" onclick="event.preventDefault();removeRow(${index})">Remove draft</a>`
       : `<a href="#" class="row-action-link" onclick="event.preventDefault();excludeRow(${index})">Exclude</a>`;
     const confirmMspmLink = needsMspmReview ? `<a href="#" class="row-action-link" onclick="event.preventDefault();confirmRowForMspm(${index})">Confirm for MSPM</a>` : "";
-    const rowClass = needsMspmBreakout ? "mspm-breakout-row" : needsMspmReview ? "mspm-review-row" : "";
+    const rowClass = amountIssue ? "source-row-error" : needsMspmBreakout ? "mspm-breakout-row" : needsMspmReview ? "mspm-review-row" : "";
     const mainRow = `<tr class="${rowClass}">
+      <td class="row-number-cell" aria-label="Row ${displayNumber}"><span>${displayNumber}</span></td>
       <td><input class="account-number-input" aria-label="Account number" value="${esc(row.account)}" oninput="editRowTextLive(${index},'account',this.value)" onblur="editRow(${index},'account',this.value)"></td>
       <td class="source-description"><div class="editable-text account-name-box" contenteditable="true" oninput="editRowTextLive(${index},'description',this.textContent)" onblur="editRow(${index},'description',this.textContent)">${esc(row.description)}</div></td>
-      <td class="num"><input class="value-input currency-input" aria-label="${state.amountBasis === "book" ? "Book amount" : "Federal tax amount"}" type="text" inputmode="decimal" value="${esc(currencyInputValue(row.amount))}" onfocus="focusCurrencyInput(this)" oninput="editRow(${index},'amount',this.value)" onblur="blurCurrencyInput(${index},this)">${financialStatementAlternativeActive() ? fsaBookTaxInlineHtml(row) : ""}</td>
+      <td class="num"><input class="value-input currency-input" aria-label="${state.amountBasis === "book" ? "Book amount" : "Federal tax amount"}" type="text" inputmode="decimal" value="${esc(currencyInputValue(row.amount))}" onfocus="focusCurrencyInput(this)" oninput="editRowAmountLive(${index},this.value)" onblur="blurCurrencyInput(${index},this)">${financialStatementAlternativeActive() ? fsaBookTaxInlineHtml(row) : ""}</td>
       <td class="source-bucket">${suggestedInputHtml(row)}</td>
       <td class="source-bucket">${selectInputHtml(row,index)}${statusHtml}</td>
       <td class="no-print"><div class="row-action-links"><a href="#" class="row-action-link" data-inspect-row-id="${esc(row.id)}" onclick="event.preventDefault();openAccountInspector(${jsString(row.id)})">Inspect</a>${definitionLinkHtml(row)}${acceptLink}${confirmMspmLink}${breakoutLink}${rowRemovalLink}</div></td>
@@ -7316,6 +8152,22 @@ function editRowTextLive(index,field,value){
   row._textEditPendingField = field;
 }
 
+function editRowAmountLive(index,value){
+  const row = state.rows[index];
+  if(!row || amountValuesEquivalent(row.amount,value)) return false;
+  invalidateCalculationApprovals();
+  clearBookTaxMethodConfirmation();
+  const parsed = parseAmountResult(value);
+  row.amount = parsed.ok ? parsed.value : value;
+  row.parseOk = parsed.ok;
+  row.parseWarning = parsed.ok ? "" : (parsed.blank ? "Source amount is blank." : `Source amount '${String(value ?? "")}' is not valid.`);
+  if(OVERLAP_CONFIRMATION_IDS.has(row.inputId)) row.notIn471Confirmed = false;
+  row.fsaNegativeAdjustmentConfirmed = false;
+  clearFsaBookTaxDecision(row,true);
+  refreshActiveImportSummaries();
+  return true;
+}
+
 function editRow(index,field,value){
   if(!state.rows[index]) return;
   const row = state.rows[index];
@@ -7340,6 +8192,7 @@ function editRow(index,field,value){
     if(OVERLAP_CONFIRMATION_IDS.has(row.inputId)) row.notIn471Confirmed = false;
     row.fsaNegativeAdjustmentConfirmed = false;
     clearFsaBookTaxDecision(row,true);
+    refreshActiveImportSummaries();
   } else {
     if(String(row[field] ?? "") === String(value ?? "")) return;
     invalidateCalculationApprovals();
@@ -7394,6 +8247,10 @@ function confirmRowForMspm(index){
 function removeRow(index){
   const row = state.rows[index];
   if(!row) return;
+  if(row.sourceImportId){
+    alert("Imported source rows cannot be removed. Use Exclude with support, or replace the complete account list in Step 2.");
+    return;
+  }
   const label = [row.account,row.description].filter(Boolean).join(" | ") || `row ${index + 1}`;
   if(!confirm(`Remove ${label}?`)) return;
   invalidateCalculationApprovals();
@@ -7401,22 +8258,30 @@ function removeRow(index){
   const removed = row;
   if(removed && activeBreakoutId === removed.id) activeBreakoutId = null;
   state.rows.splice(index,1);
+  refreshActiveImportSummaries();
   renderAll();
 }
 
 function addBlankRow(){
-  if(!financialStatementAlternativeActive()){
-    alert("To add a missing Federal tax account, return to Step 2 and select Add accounts to the current list.");
-    openStage(2);
-    return;
-  }
   invalidateCalculationApprovals();
+  clearBookTaxMethodConfirmation();
+  const index = state.rows.length;
   const row = newRow();
   row.sourceKind = financialStatementAlternativeActive() ? "manualSupplement" : "manualDraft";
   row.sourceAmountBasis = state.amountBasis;
   row.sourceAmountHeader = financialStatementAlternativeActive() ? "Manual Book amount" : "Manual Federal tax amount";
+  row.parseOk = false;
+  row.parseWarning = "Enter an amount.";
   state.rows.push(row);
+  state.currentStage = 2;
+  step2ImportPage = Math.floor(index / STEP2_IMPORT_PAGE_SIZE);
   renderAll();
+  requestAnimationFrame(() => {
+    const input = document.querySelector(`[data-step2-row-index="${index}"] input[aria-label^="Account"]`);
+    if(!input) return;
+    input.scrollIntoView({behavior:"smooth",block:"center"});
+    input.focus({preventScroll:true});
+  });
 }
 
 function clearRows(){
@@ -7427,9 +8292,7 @@ function clearRows(){
     state.lastImport = null;
     state.importHistory = [];
     resetSourceDependentInputs();
-    activeBreakoutId = null;
-    activeInspectorRowId = null;
-    focusedExceptionRowIds = null;
+    resetMappingWorkspaceAfterImport();
     clearPendingImportUi(true);
     renderAll();
   }
@@ -7616,7 +8479,16 @@ function findScopedHeader(headers,candidates,forbiddenTerms=[]){
 }
 
 function splitPasteLine(line){
-  return line.includes("	") ? line.split("	") : csvSplit(line);
+  const text = String(line ?? "");
+  if(text.includes("	")) return text.split("	");
+  // Many trial-balance exports and copied text reports preserve columns with
+  // two or more spaces instead of tabs. The on-screen example uses this same
+  // fixed-width format, so test those gaps before CSV. This preserves commas
+  // inside accounting-formatted amounts such as 1,234.56.
+  const fixedWidth = text.trim().split(/\s{2,}/);
+  if(fixedWidth.length === 3) return fixedWidth;
+  if(fixedWidth.length > 3) return [fixedWidth[0],fixedWidth.slice(1,-1).join(" "),fixedWidth[fixedWidth.length - 1]];
+  return csvSplit(text);
 }
 
 function normalizePasteCell(value){
@@ -8018,17 +8890,14 @@ function analyzeStructuredPastedData(text,grid,header,requestedAmountColumnKey="
     }
     const amountText = normalizePasteCell(item.cells[selected.index]);
     const parsed = parseAmountResult(amountText);
-    if(!parsed.ok){
-      base.rejected.push({line:item.line,reason:parsed.blank ? `The selected amount column '${selected.label}' is blank for this account.` : `Source amount '${amountText}' is not valid.`,text:item.text});
-      return;
-    }
+    const amountWarning = parsed.ok ? "" : (parsed.blank ? "Enter an amount." : `Unreadable amount: '${amountText}'.`);
     const taxAmountText = selectedTax ? normalizePasteCell(item.cells[selectedTax.index]) : "";
     const parsedTax = selectedTax ? parseAmountResult(taxAmountText) : {ok:false,blank:true,value:0};
     if(selectedTax && !parsedTax.ok){
       base.rejected.push({line:item.line,reason:parsedTax.blank ? `The selected federal tax amount column '${selectedTax.label}' is blank for this account.` : `Federal tax amount '${taxAmountText}' is not valid.`,text:item.text});
       return;
     }
-    const row = newRow(account,description,amountText,100,true,"",selectedPeriod || reportPeriod,"");
+    const row = newRow(account,description,amountText,100,parsed.ok,amountWarning,selectedPeriod || reportPeriod,"");
     row.sourceLineNumber = item.line;
     row.sourceAmountHeader = selected.label;
     row.sourceGroup = currentGroup;
@@ -8110,8 +8979,10 @@ function threeColumnStructuralReason(account,description,amountText){
 
 function analyzeThreeColumnPastedData(text){
   const raw = String(text || "");
-  const physicalLines = raw.split(/\r\n|[\n\r\u2028\u2029]/).filter(line => line.trim());
-  let records = physicalLines.map((line,index) => ({line:index+1,text:line,cells:splitPasteLine(line).map(normalizePasteCell)}));
+  const physicalLines = raw.split(/\r\n|[\n\r\u2028\u2029]/);
+  let records = physicalLines
+    .map((line,index) => ({line:index+1,text:line,cells:splitPasteLine(line).map(normalizePasteCell)}))
+    .filter(item => item.text.trim());
   if(records.length === 1 && records[0].cells.length > 3 && records[0].cells.length % 3 === 0){
     const flat = records[0].cells;
     records = [];
@@ -8122,24 +8993,29 @@ function analyzeThreeColumnPastedData(text){
   }
   const empty = {rows:[],rejected:[],ignored:[],hasHeader:false,headerError:false,net:0,absolute:0,duplicateGroups:0,amountColumnLabel:"Amount",amountCandidates:[],selectedAmountColumnKey:"2",recommendedAmountColumnKey:"2",needsAmountSelection:false,taxAmountCandidates:[],selectedTaxAmountColumnKey:"",recommendedTaxAmountColumnKey:"",needsTaxAmountSelection:false,taxAmountColumnLabel:"Not applicable",sourceFormat:"Three-column account list",structured:false,reportPeriod:"",reportSourceBasis:state.amountBasis,selectedSourceBasis:state.amountBasis,basisConflict:false,periodConflict:false,detectedAccountRows:0,controlChecks:[],controlFailures:[]};
   if(!records.length) return empty;
+  const accountHeaderPattern = /^(?:account|account number|account no\.?|account #|account code|gl account|gl account number|acct|acct number|acct no\.?)$/;
+  const descriptionHeaderPattern = /^(?:description|account description|account name|description name|name)$/;
   const first = records[0].cells.map(normalizeHeader);
   const hasHeader = first.length === 3
-    && /^(?:account|account number|account code|gl account|acct)$/.test(first[0])
-    && /^(?:description|account description|account name|name)$/.test(first[1])
+    && accountHeaderPattern.test(first[0])
+    && descriptionHeaderPattern.test(first[1])
     && !parseAmountResult(records[0].cells[2]).ok;
   const rows = [];
   const rejected = [];
   const ignored = hasHeader ? [{line:records[0].line,reason:"Column header",text:records[0].text}] : [];
   records.slice(hasHeader ? 1 : 0).forEach(item => {
-    if(item.cells.length !== 3){
-      rejected.push({line:item.line,reason:`Paste exactly three columns. This row contains ${item.cells.length}.`,text:item.text});
+    const cells = item.cells.slice();
+    while(cells.length > 3 && !normalizePasteCell(cells[cells.length - 1])) cells.pop();
+    while(cells.length > 3 && !normalizePasteCell(cells[0])) cells.shift();
+    if(cells.length !== 3){
+      rejected.push({line:item.line,reason:`Paste exactly three populated columns. This row contains ${cells.length} columns.`,text:item.text});
       return;
     }
-    const [account,description,amountText] = item.cells;
+    const [account,description,amountText] = cells;
     const normalizedAccount = normalizeHeader(account);
     const normalizedDescription = normalizeHeader(description);
-    const repeatedHeader = /^(?:account|account number|account code|gl account|acct)$/.test(normalizedAccount)
-      && /^(?:description|account description|account name|name)$/.test(normalizedDescription)
+    const repeatedHeader = accountHeaderPattern.test(normalizedAccount)
+      && descriptionHeaderPattern.test(normalizedDescription)
       && !parseAmountResult(amountText).ok;
     if(repeatedHeader){
       ignored.push({line:item.line,reason:"Repeated column header",text:item.text});
@@ -8150,34 +9026,26 @@ function analyzeThreeColumnPastedData(text){
       ignored.push({line:item.line,reason:structuralReason,text:item.text});
       return;
     }
-    if(!account || !description){
-      rejected.push({line:item.line,reason:"Account and Description are required.",text:item.text});
-      return;
-    }
     const parsed = parseAmountResult(amountText);
-    if(!parsed.ok){
-      rejected.push({line:item.line,reason:parsed.blank ? "Amount is blank." : `Amount '${amountText}' is not valid.`,text:item.text});
-      return;
-    }
-    const row = newRow(account,description,amountText,100,true,"","","");
+    const warning = parsed.ok ? "" : (parsed.blank ? "Enter an amount." : `Unreadable amount: '${amountText}'.`);
+    const row = newRow(account,description,amountText,100,parsed.ok,warning,"","");
     row.sourceLineNumber = item.line;
     row.sourceAmountHeader = "Amount";
     row.sourceAmountBasis = state.amountBasis;
     row.sourceFormat = "Three-column account list";
     row.sourceOriginalAccount = account;
     row.sourceOriginalDescription = description;
-    row.sourceOriginalAmount = parsed.value;
+    row.sourceOriginalAmount = parsed.ok ? parsed.value : amountText;
     row.originalAccount = account;
     row.originalDescription = description;
-    row.originalAmount = parsed.value;
-    row.parseOk = true;
+    row.originalAmount = parsed.ok ? parsed.value : amountText;
+    row.parseOk = parsed.ok;
     rows.push(row);
   });
   return {...empty,rows,rejected,ignored,hasHeader,headerLine:hasHeader ? records[0].line : null,detectedAccountRows:rows.length,net:rows.reduce((sum,row)=>sum+mapped(row),0),absolute:rows.reduce((sum,row)=>sum+Math.abs(mapped(row)),0),duplicateGroups:duplicateRowGroups(rows).length};
 }
 
 function analyzePastedData(text,options={}){
-  return analyzeThreeColumnPastedData(text);
   const requestedAmountColumnKey = typeof options === "string" ? options : String(options.amountColumnKey || "");
   const requestedTaxAmountColumnKey = typeof options === "object" ? String(options.taxAmountColumnKey || "") : "";
   const grid = parsePasteGrid(text);
@@ -8195,6 +9063,13 @@ function analyzePastedData(text,options={}){
   const useStructured = !!structuredHeader && (grid.isMarkdown || structuredHeader.index > 0 || hasStructuredMarkers || structuredHeader.row.cells.length > 8 || (structuredHeader.row.cells.length >= 3 && knownStructuredAmountIndex < 0 && neutralStructuredAmountIndex < 0));
   if(useStructured) return analyzeStructuredPastedData(text,grid,structuredHeader,requestedAmountColumnKey,requestedTaxAmountColumnKey);
   const physical = String(text || "").split(/\r\n|[\n\r\u2028\u2029]/).map((text,index) => ({text,line:index+1})).filter(item => item.text.trim() !== "");
+  const exactThreeColumnRows = physical.filter(item => splitPasteLine(item.text).length === 3).length;
+  const simpleThreeColumn = physical.length > 0 && (
+    exactThreeColumnRows === physical.length
+    || exactThreeColumnRows >= Math.max(1,Math.ceil(physical.length * 0.6))
+    || (physical.length === 1 && splitPasteLine(physical[0].text).length > 3 && splitPasteLine(physical[0].text).length % 3 === 0)
+  );
+  if(simpleThreeColumn) return analyzeThreeColumnPastedData(text);
   if(!physical.length) return {rows:[],rejected:[],ignored:[],hasHeader:false,net:0,absolute:0,duplicateGroups:0,amountColumnLabel:"Not detected",amountCandidates:[],selectedAmountColumnKey:"",needsAmountSelection:false,sourceFormat:"Empty",structured:false};
   const firstParts = splitPasteLine(physical[0].text);
   const headers = firstParts.map(normalizeHeader);
@@ -8203,9 +9078,25 @@ function analyzePastedData(text,options={}){
   const taxAmountIndex = findScopedHeader(headers,["federal tax total","tax total","federal tax amount","tax amount","tax-adjusted amount","tax adjusted amount"],["book"]);
   const bookAmountIndex = findScopedHeader(headers,["book total","book amount","book balance","financial statement amount","financial statement total","trial balance amount","tb amount"],["tax"]);
   const genericAmountIndex = findExactHeader(headers,["source amount","client amount","amount","value"]);
-  const amountIndex = state.amountBasis === "book" ? bookAmountIndex : taxAmountIndex;
+  const amountIndex = state.amountBasis === "book"
+    ? (bookAmountIndex >= 0 ? bookAmountIndex : genericAmountIndex)
+    : (taxAmountIndex >= 0 ? taxAmountIndex : genericAmountIndex);
   const detectedIndices = [accountIndex,descriptionIndex,amountIndex];
   const hasHeader = detectedIndices.every(index => index >= 0) && new Set(detectedIndices).size === 3;
+  const allowedHeaderIndices = new Set(detectedIndices);
+  if(bookFederalTaxSupportActive() && taxAmountIndex >= 0) allowedHeaderIndices.add(taxAmountIndex);
+  const unexpectedHeaderColumns = hasHeader ? firstParts
+    .map((cell,index) => ({cell:normalizePasteCell(cell),index}))
+    .filter(item => item.cell && !allowedHeaderIndices.has(item.index)) : [];
+  if(unexpectedHeaderColumns.length){
+    return {
+      rows:[],
+      rejected:[{line:physical[0].line,reason:`Paste exactly Account, Description, and Amount. Remove the additional populated column${unexpectedHeaderColumns.length === 1 ? "" : "s"}: ${unexpectedHeaderColumns.map(item => item.cell).join(", ")}.`,text:physical[0].text}],
+      ignored:[],hasHeader:false,headerError:true,net:0,absolute:0,duplicateGroups:0,
+      amountColumnLabel:"Not detected",amountCandidates:[],selectedAmountColumnKey:"",needsAmountSelection:false,
+      taxAmountCandidates:[],selectedTaxAmountColumnKey:"",needsTaxAmountSelection:false,sourceFormat:"Unexpected extra columns",structured:false
+    };
+  }
   const malformedHeader = !hasHeader && detectedIndices.filter(index => index >= 0).length >= 2;
   if(malformedHeader){
     const expectedAmount = state.amountBasis === "book" ? "an explicit Book Total, Book Amount, or Financial Statement Amount" : "an explicit Federal Tax Total, Tax Total, or Tax Amount";
@@ -8237,8 +9128,8 @@ function analyzePastedData(text,options={}){
     const amountText = String(parts[indices.amountIndex] || "").trim();
     if(!account && !description){ rejected.push({line:item.line,reason:"Account number and account name are both blank.",text:item.text}); return; }
     const parsed = parseAmountResult(amountText);
-    if(!parsed.ok){ rejected.push({line:item.line,reason:parsed.blank ? "Source amount is blank." : `Source amount '${amountText}' is not valid.`,text:item.text}); return; }
-    const row = newRow(account,description,amountText,100,true,"","","");
+    const warning = parsed.ok ? "" : (parsed.blank ? "Enter an amount." : `Unreadable amount: '${amountText}'.`);
+    const row = newRow(account,description,amountText,100,parsed.ok,warning,"","");
     row.sourceLineNumber = item.line;
     row.sourceAmountHeader = hasHeader ? String(firstParts[indices.amountIndex] || "Source Amount").trim() : "Positional column 3";
     row.sourceAmountBasis = state.amountBasis;
@@ -8340,24 +9231,9 @@ function renderImportPreview(analysis){
       <select id="previewTaxAmountColumn" onchange="changePreviewTaxAmountColumn(this.value)"><option value="">Choose the federal tax column</option>${taxAmountOptions}</select>
       <p class="small-note">Book and Tax are retained on the same source row. UNIPRO derives Tax less Book only after the row's cost treatment is confirmed.</p>
     </div>` : "";
-  const compactBlockers = [
-    analysis.needsAmountSelection ? `<div class="note warn"><strong>Choose the calculation amount column.</strong></div>` : "",
-    analysis.needsTaxAmountSelection ? `<div class="note warn"><strong>Choose the Federal tax amount column.</strong></div>` : "",
-    analysis.basisConflict ? `<div class="note bad"><strong>Basis mismatch.</strong> The report column is ${esc(analysis.selectedSourceBasis === "book" ? "Book" : "Tax")}, while Step 1 is ${esc(state.amountBasis === "book" ? "Book" : "Tax")}. <button class="secondary" type="button" onclick="useDetectedSourceBasis()">Use ${esc(analysis.selectedSourceBasis === "book" ? "Book" : "Tax")}</button></div>` : "",
-    analysis.periodConflict ? `<div class="note bad"><strong>Date mismatch.</strong> The report is ${esc(analysis.reportPeriod || "for another period")}, while Step 1 is ${esc(state.taxYear || "blank")}. <button class="secondary" type="button" onclick="useDetectedReportPeriod()">Use ${esc(analysis.reportPeriod || "report date")}</button></div>` : "",
-    controlFailures.length ? `<div class="note bad"><strong>${esc(controlFailures.length)} source control(s) do not tie.</strong> Correct the source before importing.</div>` : "",
-    appendOverlaps.length ? `<div class="note bad"><strong>${esc(appendOverlaps.length)} account(s) already exist.</strong> Select Replace the current account list.</div>` : "",
-    rejected.length ? `<div class="note bad"><strong>${esc(rejected.length)} account line(s) could not be read.</strong> ${esc(rejected[0].reason || "Correct the source and paste again.")}</div>` : ""
-  ].filter(Boolean).join("");
-  const compactReady = analysis.rows.length > 0 && !analysis.needsAmountSelection && !analysis.needsTaxAmountSelection && !analysis.basisConflict && !analysis.periodConflict && !controlFailures.length && !appendOverlaps.length;
-  box.classList.remove("hidden");
-  box.innerHTML = `${amountChoice}${taxAmountChoice}${compactBlockers}
-    <div class="note ${compactReady ? "ok" : analysis.rows.length ? "warn" : "bad"}"><strong>${esc(analysis.rows.length || analysis.detectedAccountRows || 0)} accounts recognized.</strong>${ignored.length ? ` ${esc(ignored.length)} report headings and totals will be excluded.` : ""}${analysis.amountColumnLabel ? ` Using ${esc(analysis.amountColumnLabel)}.` : ""}</div>
-    <div class="row-tools import-preview-actions">
-      <button class="primary" type="button" onclick="confirmPastedImport()" ${compactReady ? "" : "disabled"}>Import and continue</button>
-      <button class="secondary" type="button" onclick="cancelImportPreview()">Cancel</button>
-    </div>`;
-  return;
+  // Keep the complete preview below. It shows the recognized account table,
+  // source-line exceptions, controls, and the exact import action instead of
+  // replacing the account population with a summary-only status panel.
   const rejectList = rejected.length
     ? `<details open><summary>${rejected.length} rejected source line(s)</summary><ul>${rejected.slice(0,25).map(item => `<li><strong>Line ${esc(item.line)}</strong>: ${esc(item.reason)} <code>${esc(item.text)}</code></li>`).join("")}</ul>${rejected.length > 25 ? `<p class="small-note">${rejected.length - 25} additional rejected lines are not shown.</p>` : ""}</details>`
     : analysis.needsAmountSelection ? "" : `<p><span class="pill ok">Every account-like source line parsed</span></p>`;
@@ -8411,15 +9287,265 @@ function renderImportPreview(analysis){
     </div>`;
 }
 
-function previewPastedRows(amountColumnKey=null,taxAmountColumnKey=null){
+function step2RowIssue(row){
+  const identity = rowIdentityIssue(row);
+  const amount = rowAmountIssue(row);
+  return {identity,amount,messages:[identity,amount].filter(Boolean)};
+}
+
+function renderStep2ImportedAccounts(){
+  const box = $("step2ImportedAccounts");
+  if(!box) return;
+  if(!state.rows.length){
+    box.classList.add("hidden");
+    box.innerHTML = "";
+    return;
+  }
+
+  const issueRows = state.rows.filter(row => step2RowIssue(row).messages.length);
+  const totalPages = Math.max(1,Math.ceil(state.rows.length / STEP2_IMPORT_PAGE_SIZE));
+  step2ImportPage = Math.max(0,Math.min(Number(step2ImportPage || 0),totalPages - 1));
+  const start = step2ImportPage * STEP2_IMPORT_PAGE_SIZE;
+  const end = Math.min(start + STEP2_IMPORT_PAGE_SIZE,state.rows.length);
+  const visible = state.rows.slice(start,end);
+  const accountWord = state.rows.length === 1 ? "account" : "accounts";
+  const controlRefreshes = sourceControlRefreshCount();
+  const periodMismatches = activeImportPeriodMismatches();
+  const summary = issueRows.length
+    ? `${state.rows.length} ${accountWord} imported. ${issueRows.length} ${issueRows.length === 1 ? "row needs" : "rows need"} correction before Review and Classify opens.`
+    : controlRefreshes
+      ? `${state.rows.length} ${accountWord} remain visible, but an edited source amount no longer has valid source-control support.`
+    : periodMismatches.length
+      ? `${state.rows.length} ${accountWord} remain visible, but their source date does not match the tax year in Step 1.`
+    : `${state.rows.length} ${accountWord} imported and ready for Review and Classify.`;
+  const controlNotice = controlRefreshes ? `<div id="step2ControlRefresh" class="note bad"><strong>Replace the source after correcting it.</strong> An imported amount changed after the report totals were tested. Paste the corrected complete source so UNIPRO can test those controls again. <button class="secondary" type="button" onclick="prepareSourceCorrection()">Replace and paste corrected list</button></div>` : "";
+  const importedPeriods = Array.from(new Set(periodMismatches.map(item => item.reportPeriod || item.workpaperTaxYear).filter(Boolean)));
+  const periodNotice = periodMismatches.length ? `<div id="step2PeriodMismatch" class="note bad"><strong>The source date does not match Step 1.</strong> The active source is ${esc(importedPeriods.join(", ") || "for another period")}; Step 1 is ${esc(state.taxYear || "blank")}. Restore the correct tax year or replace the account list with the matching source. <button class="secondary" type="button" onclick="openStage(1)">Return to Setup</button> <button class="secondary" type="button" onclick="prepareSourceCorrection()">Replace source</button></div>` : "";
+
+  const rowsHtml = visible.map((row,offset) => {
+    const index = start + offset;
+    const displayNumber = index + 1;
+    const issue = step2RowIssue(row);
+    const hasIssue = issue.messages.length > 0;
+    const accountInvalid = !String(row.account || "").trim();
+    const descriptionInvalid = !String(row.description || "").trim();
+    const amountInvalid = !!issue.amount;
+    const messageId = `step2-row-message-${index}`;
+    const describedBy = hasIssue ? ` aria-describedby="${messageId}"` : "";
+    const removeAction = ["manualDraft","manualSupplement"].includes(row.sourceKind)
+      ? `<button class="row-action-link" type="button" onclick="removeStep2DraftRow(${index})">Remove row</button>`
+      : "";
+    const statusText = hasIssue
+      ? `<span class="pill bad">Correction needed</span><p id="${messageId}" class="step2-row-message">${esc(`Row ${displayNumber}: ${issue.messages.join(" ")}`)}</p>`
+      : `<span class="pill ok">Ready</span>`;
+    const status = `${statusText}${removeAction ? `<div>${removeAction}</div>` : ""}`;
+    return `<tr data-step2-row-index="${index}" class="${hasIssue ? "source-row-error" : ""}" tabindex="-1">
+      <td class="row-number-cell" aria-label="Row ${displayNumber}"><span>${displayNumber}</span></td>
+      <td><input type="text" aria-label="Account for Row ${displayNumber}" aria-invalid="${accountInvalid}"${describedBy} value="${esc(row.account)}" onfocus="rememberStep2EditState(this)" oninput="editRowTextLive(${index},'account',this.value)" onblur="finishStep2TextEdit(${index},'account',this)"></td>
+      <td><input type="text" aria-label="Description for Row ${displayNumber}" aria-invalid="${descriptionInvalid}"${describedBy} value="${esc(row.description)}" onfocus="rememberStep2EditState(this)" oninput="editRowTextLive(${index},'description',this.value)" onblur="finishStep2TextEdit(${index},'description',this)"></td>
+      <td><input class="currency-input" type="text" inputmode="decimal" aria-label="Amount for Row ${displayNumber}" aria-invalid="${amountInvalid}"${describedBy} value="${esc(currencyInputValue(row.amount))}" onfocus="rememberStep2EditState(this);focusCurrencyInput(this)" onkeydown="if(event.key==='Enter'){event.preventDefault();this.blur()}" onblur="finishStep2AmountEdit(${index},this)"></td>
+      <td>${status}</td>
+    </tr>`;
+  }).join("");
+
+  box.classList.remove("hidden");
+  box.innerHTML = `<div class="step2-imported-head">
+      <div><h3>Imported accounts</h3><p>${esc(summary)}</p></div>
+      <div class="step2-import-pagination"><span>Showing ${start + 1}-${end} of ${state.rows.length}</span><button class="ghost" type="button" onclick="changeStep2ImportPage(-1)" ${step2ImportPage <= 0 ? "disabled" : ""}>Previous</button><button class="ghost" type="button" onclick="changeStep2ImportPage(1)" ${step2ImportPage >= totalPages - 1 ? "disabled" : ""}>Next</button></div>
+    </div>
+    ${controlNotice}
+    ${periodNotice}
+    <div class="step2-import-table-wrap"><table class="step2-import-table">
+      <thead><tr><th aria-label="Row number">Row</th><th class="step2-account-col">Account</th><th class="step2-description-col">Description</th><th class="step2-amount-col">Amount</th><th class="step2-status-col">Status</th></tr></thead>
+      <tbody>${rowsHtml}</tbody>
+    </table></div>`;
+}
+
+function changeStep2ImportPage(direction){
+  const totalPages = Math.max(1,Math.ceil(state.rows.length / STEP2_IMPORT_PAGE_SIZE));
+  step2ImportPage = Math.max(0,Math.min(totalPages - 1,Number(step2ImportPage || 0) + Number(direction || 0)));
+  renderStep2ImportedAccounts();
+  const box = $("step2ImportedAccounts");
+  if(box) box.scrollIntoView({behavior:"smooth",block:"start"});
+}
+
+function removeStep2DraftRow(index){
+  const row = state.rows[index];
+  if(!row || !["manualDraft","manualSupplement"].includes(row.sourceKind)) return;
+  invalidateCalculationApprovals();
+  clearBookTaxMethodConfirmation();
+  state.rows.splice(index,1);
+  const totalPages = Math.max(1,Math.ceil(state.rows.length / STEP2_IMPORT_PAGE_SIZE));
+  step2ImportPage = Math.min(step2ImportPage,totalPages - 1);
+  renderAll();
+}
+
+function rememberStep2EditState(input){
+  if(!input) return;
+  input.dataset.hadStep2RowIssue = state.rows.some(row => step2RowIssue(row).messages.length) ? "true" : "false";
+}
+
+function rerenderStep2AfterEdit(allowAutoAdvance=false){
+  const active = document.activeElement;
+  const activeRow = active && typeof active.closest === "function" ? active.closest("[data-step2-row-index]") : null;
+  const rowIndex = activeRow ? Number(activeRow.dataset.step2RowIndex) : -1;
+  const controls = activeRow ? Array.from(activeRow.querySelectorAll("input")) : [];
+  const controlIndex = active ? controls.indexOf(active) : -1;
+  const selectionStart = active && typeof active.selectionStart === "number" ? active.selectionStart : null;
+  const selectionEnd = active && typeof active.selectionEnd === "number" ? active.selectionEnd : null;
+  renderAll();
+  const c = calc();
+  if(allowAutoAdvance && Number(state.currentStage) === 2 && completionState(c,buildValidationItems(c)).step2Complete){
+    openStageAutomatically(3);
+    return;
+  }
+  if(Number(state.currentStage) !== 2 || rowIndex < 0 || controlIndex < 0) return;
+  const replacementRow = document.querySelector(`[data-step2-row-index="${rowIndex}"]`);
+  const replacement = replacementRow ? replacementRow.querySelectorAll("input")[controlIndex] : null;
+  if(!replacement) return;
+  replacement.focus({preventScroll:true});
+  if(selectionStart !== null && typeof replacement.setSelectionRange === "function"){
+    const max = String(replacement.value || "").length;
+    replacement.setSelectionRange(Math.min(selectionStart,max),Math.min(selectionEnd ?? selectionStart,max));
+  }
+}
+
+function finishStep2TextEdit(index,field,input){
+  const row = state.rows[index];
+  if(!row || !input) return;
+  const value = input.value;
+  const changed = row._textEditPendingField === field || String(row[field] ?? "") !== String(value ?? "");
+  const allowAutoAdvance = input.dataset.hadStep2RowIssue === "true" && changed;
+  if(String(row[field] ?? "") !== String(value ?? "")){
+    invalidateCalculationApprovals();
+    clearBookTaxMethodConfirmation();
+    row[field] = value;
+    resetRowClassificationAfterSourceTextChange(row);
+  }
+  delete row._textEditPendingField;
+  setTimeout(() => rerenderStep2AfterEdit(allowAutoAdvance),0);
+}
+
+function finishStep2AmountEdit(index,input){
+  if(!state.rows[index]) return;
+  const parsed = parseAmountResult(input.value);
+  const changed = editRowAmountLive(index,input.value);
+  const allowAutoAdvance = input.dataset.hadStep2RowIssue === "true" && changed;
+  if(parsed.ok) input.value = currencyInputValue(parsed.value);
+  setTimeout(() => rerenderStep2AfterEdit(allowAutoAdvance),0);
+}
+
+function focusStep2Issues(){
+  if(Number(state.currentStage) !== 2) openStage(2,true);
+  if(importAnalysisIsBlocked(pendingImportAnalysis)){
+    renderImportPreview(pendingImportAnalysis);
+    const preview = $("importPreview");
+    const analysis = pendingImportAnalysis;
+    let target = null;
+    if(analysis.needsAmountSelection) target = $("previewAmountColumn");
+    else if(analysis.needsTaxAmountSelection) target = $("previewTaxAmountColumn");
+    else if(analysis.basisConflict && preview) target = preview.querySelector('button[onclick="useDetectedSourceBasis()"]');
+    else if(analysis.periodConflict && preview) target = preview.querySelector('button[onclick="useDetectedReportPeriod()"]');
+    else if((analysis.appendIdentityOverlaps || []).length || analysis.confirmationError) target = $("pasteMode");
+    else target = $("pasteBox");
+    const scrollTarget = target || preview;
+    if(scrollTarget) scrollTarget.scrollIntoView({behavior:"smooth",block:"center"});
+    if(target && typeof target.focus === "function") target.focus({preventScroll:true});
+    return;
+  }
+  const rejected = state.lastImport && Array.isArray(state.lastImport.rejected) ? state.lastImport.rejected : [];
+  if(rejected.length){
+    renderSourceImportExceptions();
+    const exceptions = $("sourceImportExceptions");
+    if(exceptions){
+      exceptions.scrollIntoView({behavior:"smooth",block:"center"});
+      const action = exceptions.querySelector("button");
+      if(action) action.focus({preventScroll:true});
+    }
+    return;
+  }
+  if(sourceControlRefreshCount()){
+    renderStep2ImportedAccounts();
+    setTimeout(() => {
+      const notice = $("step2ControlRefresh");
+      if(!notice) return;
+      notice.scrollIntoView({behavior:"smooth",block:"center"});
+      const action = notice.querySelector("button");
+      if(action) action.focus({preventScroll:true});
+    },0);
+    return;
+  }
+  if(activeImportPeriodMismatches().length){
+    renderStep2ImportedAccounts();
+    const notice = $("step2PeriodMismatch");
+    if(notice){
+      notice.scrollIntoView({behavior:"smooth",block:"center"});
+      const action = notice.querySelector("button");
+      if(action) action.focus({preventScroll:true});
+    }
+    return;
+  }
+  if(!state.rows.length){
+    const paste = $("pasteBox");
+    if(paste) paste.focus();
+    return;
+  }
+  const issueIndex = state.rows.findIndex(row => step2RowIssue(row).messages.length);
+  if(issueIndex >= 0) step2ImportPage = Math.floor(issueIndex / STEP2_IMPORT_PAGE_SIZE);
+  renderStep2ImportedAccounts();
+  requestAnimationFrame(() => requestAnimationFrame(() => {
+    const box = $("step2ImportedAccounts");
+    const row = issueIndex >= 0 ? document.querySelector(`[data-step2-row-index="${issueIndex}"]`) : null;
+    const target = row ? (row.querySelector('[aria-invalid="true"]') || row) : box;
+    if(!target) return;
+    target.scrollIntoView({behavior:"smooth",block:"center"});
+    if(typeof target.focus === "function") target.focus({preventScroll:true});
+  }));
+}
+
+function prepareSourceCorrection(){
+  openStage(2,true);
+  if($("pasteMode")) $("pasteMode").value = "replace";
+  const paste = $("pasteBox");
+  if(paste){
+    paste.scrollIntoView({behavior:"smooth",block:"center"});
+    paste.focus({preventScroll:true});
+  }
+}
+
+function previewPastedRows(amountColumnKey=null,taxAmountColumnKey=null,setupOverrides={}){
+  clearTimeout(pasteImportTimer);
+  pasteImportTimer = null;
   const preservedAmountColumnKey = amountColumnKey === null ? ((pendingImportAnalysis && pendingImportAnalysis.selectedAmountColumnKey) || "") : String(amountColumnKey || "");
   const preservedTaxAmountColumnKey = taxAmountColumnKey === null ? ((pendingImportAnalysis && pendingImportAnalysis.selectedTaxAmountColumnKey) || "") : String(taxAmountColumnKey || "");
-  const analysis = analyzePastedData($("pasteBox").value,{amountColumnKey:preservedAmountColumnKey,taxAmountColumnKey:preservedTaxAmountColumnKey});
+  const mode = $("pasteMode").value === "replace" ? "replace" : "append";
+  const baseAmountBasis = state.amountBasis;
+  const baseTaxYear = state.taxYear;
+  const preserveOverrides = mode === "replace";
+  const proposedAmountBasis = preserveOverrides
+    ? String(setupOverrides.amountBasis || (pendingImportAnalysis && pendingImportAnalysis.proposedAmountBasis) || "")
+    : "";
+  const proposedTaxYear = preserveOverrides
+    ? String(setupOverrides.taxYear || (pendingImportAnalysis && pendingImportAnalysis.proposedTaxYear) || "")
+    : "";
+  let analysis;
+  try{
+    if(proposedAmountBasis) state.amountBasis = proposedAmountBasis;
+    if(proposedTaxYear) state.taxYear = proposedTaxYear;
+    analysis = analyzePastedData($("pasteBox").value,{amountColumnKey:preservedAmountColumnKey,taxAmountColumnKey:preservedTaxAmountColumnKey});
+  } finally {
+    state.amountBasis = baseAmountBasis;
+    state.taxYear = baseTaxYear;
+  }
   analysis.previewText = $("pasteBox").value;
-  analysis.previewMode = $("pasteMode").value;
+  analysis.previewMode = mode;
   analysis.previewSuggestionBasis = state.suggestionBasis;
-  analysis.previewAmountBasis = state.amountBasis;
-  analysis.previewTaxYear = state.taxYear;
+  analysis.previewBaseAmountBasis = baseAmountBasis;
+  analysis.previewBaseTaxYear = baseTaxYear;
+  analysis.previewAmountBasis = proposedAmountBasis || baseAmountBasis;
+  analysis.previewTaxYear = proposedTaxYear || baseTaxYear;
+  analysis.proposedAmountBasis = proposedAmountBasis;
+  analysis.proposedTaxYear = proposedTaxYear;
   analysis.previewParserVersion = IMPORT_PARSER_VERSION;
   analysis.batchFingerprint = importBatchFingerprint(analysis.previewText,analysis);
   analysis.sourceFingerprint = importSourceFingerprint(analysis.previewText);
@@ -8427,9 +9553,9 @@ function previewPastedRows(amountColumnKey=null,taxAmountColumnKey=null){
   analysis.duplicateGroups = duplicateRowGroups(proposedRows).length;
   analysis.appendIdentityOverlaps = $("pasteMode").value === "append" ? appendIdentityOverlaps(analysis.rows) : [];
   pendingImportAnalysis = analysis;
-  const blocked = !analysis.rows.length || analysis.needsAmountSelection || analysis.needsTaxAmountSelection || analysis.basisConflict || analysis.periodConflict || (analysis.controlFailures || []).length || (analysis.appendIdentityOverlaps || []).length;
-  if(blocked){
+  if(importAnalysisIsBlocked(analysis)){
     renderImportPreview(analysis);
+    renderAll();
     return;
   }
   confirmPastedImport();
@@ -8439,8 +9565,16 @@ function schedulePastedImport(){
   clearTimeout(pasteImportTimer);
   pendingImportAnalysis = null;
   renderImportPreview(null);
-  if(!$("pasteBox").value.trim()) return;
+  if(!$("pasteBox").value.trim()){
+    renderAll();
+    return;
+  }
   pasteImportTimer = setTimeout(() => previewPastedRows(),250);
+}
+
+function changePasteMode(){
+  if(!$("pasteBox") || !$("pasteBox").value.trim()) return;
+  previewPastedRows(null,null);
 }
 
 function changePreviewAmountColumn(amountColumnKey){
@@ -8456,28 +9590,31 @@ function useDetectedReportPeriod(){
   const detected = canonicalPeriodDate(pendingImportAnalysis.reportPeriod);
   if(!detected) return;
   const [year,month,day] = detected.split("-");
-  state.taxYear = `${Number(month)}/${Number(day)}/${year}`;
-  if($("taxYear")) $("taxYear").value = state.taxYear;
-  invalidateCalculationApprovals();
-  previewPastedRows(null,null);
+  if($("pasteMode")) $("pasteMode").value = "replace";
+  previewPastedRows(null,null,{taxYear:`${Number(month)}/${Number(day)}/${year}`});
 }
 
 function useDetectedSourceBasis(){
   if(!pendingImportAnalysis || !["book","tax"].includes(pendingImportAnalysis.selectedSourceBasis)) return;
   const basis = pendingImportAnalysis.selectedSourceBasis;
-  state.amountBasis = basis;
-  document.querySelectorAll('input[name="amountBasis"]').forEach(input => { input.checked = input.value === basis; });
-  invalidateCalculationApprovals();
-  previewPastedRows(null,null);
+  if($("pasteMode")) $("pasteMode").value = "replace";
+  previewPastedRows(null,null,{amountBasis:basis});
 }
 
 function cancelImportPreview(){
+  clearTimeout(pasteImportTimer);
+  pasteImportTimer = null;
   pendingImportAnalysis = null;
+  if($("pasteBox")) $("pasteBox").value = "";
   renderImportPreview(null);
+  renderAll();
 }
 
 function clearPendingImportUi(clearUndo=true){
+  clearTimeout(pasteImportTimer);
+  pasteImportTimer = null;
   pendingImportAnalysis = null;
+  step2ImportPage = 0;
   if(clearUndo) lastImportSnapshot = null;
   if($("pasteBox")) $("pasteBox").value = "";
   renderImportPreview(null);
@@ -8505,6 +9642,19 @@ function resetSourceDependentInputs(){
   state.srmSharedDepartmentStatusFingerprint = "";
 }
 
+function resetMappingWorkspaceAfterImport(){
+  state.view = "all";
+  state.mappingSearch = "";
+  state.mappingPage = 0;
+  focusedExceptionRowIds = null;
+  activeBreakoutId = null;
+  activeInspectorRowId = null;
+  const display = $("mappingDisplay");
+  if(display) display.value = "all";
+  const search = $("mappingSearch");
+  if(search) search.value = "";
+}
+
 function sameImportDatasetContract(previous,analysis){
   if(!previous || !analysis) return true;
   const priorPeriod = canonicalPeriodDate(previous.reportPeriod || "") || periodYear(previous.reportPeriod || "");
@@ -8521,37 +9671,57 @@ function sameImportDatasetContract(previous,analysis){
     && priorTax === nextTax;
 }
 
+function blockPendingImport(message){
+  if(!pendingImportAnalysis) return;
+  pendingImportAnalysis.confirmationError = String(message || "Finish the highlighted import item before continuing.");
+  renderImportPreview(pendingImportAnalysis);
+  renderAll();
+  setTimeout(() => focusStep2Issues(),0);
+}
+
 function confirmPastedImport(){
   const analysis = pendingImportAnalysis;
   if(!analysis || !analysis.rows.length) return;
   const currentPreviewColumn = $("previewAmountColumn") ? $("previewAmountColumn").value : analysis.selectedAmountColumnKey;
   const currentPreviewTaxColumn = $("previewTaxAmountColumn") ? $("previewTaxAmountColumn").value : analysis.selectedTaxAmountColumnKey;
-  if(analysis.previewText !== $("pasteBox").value || analysis.previewMode !== $("pasteMode").value || analysis.previewSuggestionBasis !== state.suggestionBasis || analysis.previewAmountBasis !== state.amountBasis || analysis.previewTaxYear !== state.taxYear || analysis.previewParserVersion !== IMPORT_PARSER_VERSION || currentPreviewColumn !== analysis.selectedAmountColumnKey || currentPreviewTaxColumn !== analysis.selectedTaxAmountColumnKey){
+  if(analysis.previewText !== $("pasteBox").value || analysis.previewMode !== $("pasteMode").value || analysis.previewSuggestionBasis !== state.suggestionBasis || analysis.previewBaseAmountBasis !== state.amountBasis || analysis.previewBaseTaxYear !== state.taxYear || analysis.previewParserVersion !== IMPORT_PARSER_VERSION || currentPreviewColumn !== analysis.selectedAmountColumnKey || currentPreviewTaxColumn !== analysis.selectedTaxAmountColumnKey){
     alert("The source text, import mode, period, basis, suggestion basis, or amount column changed after preview. Preview the current source again before confirming.");
-    cancelImportPreview();
+    pendingImportAnalysis = null;
+    renderImportPreview(null);
+    previewPastedRows();
     return;
   }
-  if(analysis.needsAmountSelection || analysis.needsTaxAmountSelection || analysis.basisConflict || analysis.periodConflict || (analysis.controlFailures || []).length || (analysis.appendIdentityOverlaps || []).length){
+  if((analysis.rejected || []).length || analysis.needsAmountSelection || analysis.needsTaxAmountSelection || analysis.basisConflict || analysis.periodConflict || (analysis.controlFailures || []).length || (analysis.appendIdentityOverlaps || []).length){
     alert("Finish the highlighted import items before continuing.");
     return;
   }
   const mode = $("pasteMode").value === "replace" ? "replace" : "append";
   if(mode === "append" && state.lastImport){
     if(!sameImportDatasetContract(state.lastImport,analysis)){
-      alert("These accounts do not match the current report. Add accounts only from the same report, or select Replace the current account list.");
+      blockPendingImport("These accounts do not match the active report. Choose Replace the current account list to use this source.");
       return;
     }
   }
-  if(mode === "append" && (state.importHistory || []).some(item => (item.sourceFingerprint && item.sourceFingerprint === analysis.sourceFingerprint) || (item.batchFingerprint && item.batchFingerprint === analysis.batchFingerprint))){
-    alert("This report was already added. Select Replace the current account list if you want to use a different amount column.");
+  const activeImportIds = new Set(state.rows.map(row => String(row.sourceImportId || "")).filter(Boolean));
+  const duplicatesActiveImport = (state.importHistory || []).some(item => activeImportIds.has(String(item.id || "")) && ((item.sourceFingerprint && item.sourceFingerprint === analysis.sourceFingerprint) || (item.batchFingerprint && item.batchFingerprint === analysis.batchFingerprint)));
+  if(mode === "append" && duplicatesActiveImport){
+    blockPendingImport("This report is already in the active account list. Choose Replace the current account list if you intend to rebuild the population.");
     return;
   }
   const resolvesPriorRejections = mode === "append" && !!$("resolvePriorRejections") && $("resolvePriorRejections").checked;
   if(mode === "append" && state.lastImport && Array.isArray(state.lastImport.rejected) && state.lastImport.rejected.length && !analysis.rejected.length && !resolvesPriorRejections){
-    alert("Confirm that this paste corrects every unread line, or select Replace the current account list and paste the complete report again.");
+    blockPendingImport("Choose Replace the current account list and paste the corrected complete report.");
     return;
   }
   const importSnapshot = JSON.parse(JSON.stringify(state));
+  if(mode === "replace" && analysis.proposedTaxYear){
+    state.taxYear = analysis.proposedTaxYear;
+    if($("taxYear")) $("taxYear").value = state.taxYear;
+  }
+  if(mode === "replace" && analysis.proposedAmountBasis){
+    state.amountBasis = analysis.proposedAmountBasis;
+    document.querySelectorAll('input[name="amountBasis"]').forEach(input => { input.checked = input.value === state.amountBasis; });
+  }
   invalidateCalculationApprovals();
   lastImportSnapshot = importSnapshot;
   const importedAt = new Date().toISOString();
@@ -8567,6 +9737,7 @@ function confirmPastedImport(){
       state.bookTaxReference = "";
     }
   }
+  resetMappingWorkspaceAfterImport();
   const priorSummary = mode === "append" && state.lastImport ? state.lastImport : null;
   const priorRejected = priorSummary && Array.isArray(priorSummary.rejected) && !resolvesPriorRejections ? priorSummary.rejected : [];
   const ignoredCounts = (analysis.ignored || []).reduce((counts,item) => {
@@ -8580,6 +9751,7 @@ function confirmPastedImport(){
   state.lastImport = {
     at:importedAt,
     accepted:(priorSummary ? Number(priorSummary.accepted || 0) : 0) + analysis.rows.length,
+    originalAccepted:(priorSummary ? Number(priorSummary.originalAccepted || priorSummary.accepted || 0) : 0) + analysis.rows.length,
     rejected:priorRejected.concat(analysis.rejected),
     net:(priorSummary ? Number(priorSummary.net || 0) : 0) + analysis.net,
     absolute:(priorSummary ? Number(priorSummary.absolute || 0) : 0) + analysis.absolute,
@@ -8594,9 +9766,12 @@ function confirmPastedImport(){
     sourceBasis:analysis.selectedSourceBasis || analysis.reportSourceBasis || state.amountBasis,
     sourceFormat:analysis.sourceFormat || "Delimited source data",
     reportPeriod:analysis.reportPeriod || "",
+    workpaperTaxYear:state.taxYear,
     ignoredStructural:(priorSummary ? Number(priorSummary.ignoredStructural || 0) : 0) + (analysis.ignored || []).length,
     ignoredCounts,
+    controlCount:(analysis.controlChecks || []).length,
     controlsPassed:(analysis.controlChecks || []).length,
+    controlsInvalidatedByEdit:false,
     finalPopulationControls,
     parserVersion:IMPORT_PARSER_VERSION,
     batchFingerprint:analysis.batchFingerprint,
@@ -8605,12 +9780,26 @@ function confirmPastedImport(){
     resolvedPriorRejections:resolvesPriorRejections
   };
   if(!Array.isArray(state.importHistory)) state.importHistory = [];
-  state.importHistory.push({id:importId,at:importedAt,mode,accepted:analysis.rows.length,rejected:analysis.rejected,net:analysis.net,absolute:analysis.absolute,headerDetected:analysis.hasHeader,headerLine:analysis.headerLine || null,secondaryHeaderLine:analysis.secondaryHeaderLine || null,amountColumnLabel:analysis.amountColumnLabel,amountColumnKey:analysis.selectedAmountColumnKey || "",taxAmountColumnLabel:analysis.taxAmountColumnLabel || "",taxAmountColumnKey:analysis.selectedTaxAmountColumnKey || "",amountBasis:state.amountBasis,sourceBasis:analysis.selectedSourceBasis || analysis.reportSourceBasis || state.amountBasis,sourceFormat:analysis.sourceFormat || "Delimited source data",reportPeriod:analysis.reportPeriod || "",ignoredStructural:(analysis.ignored || []).length,ignoredCounts,controlsPassed:(analysis.controlChecks || []).length,finalPopulationControls,parserVersion:IMPORT_PARSER_VERSION,batchFingerprint:analysis.batchFingerprint,sourceFingerprint:analysis.sourceFingerprint,suggestionBasis:state.suggestionBasis,resolvedPriorRejections:resolvesPriorRejections});
+  state.importHistory.push({id:importId,at:importedAt,mode,accepted:analysis.rows.length,originalAccepted:analysis.rows.length,rejected:analysis.rejected,net:analysis.net,absolute:analysis.absolute,headerDetected:analysis.hasHeader,headerLine:analysis.headerLine || null,secondaryHeaderLine:analysis.secondaryHeaderLine || null,amountColumnLabel:analysis.amountColumnLabel,amountColumnKey:analysis.selectedAmountColumnKey || "",taxAmountColumnLabel:analysis.taxAmountColumnLabel || "",taxAmountColumnKey:analysis.selectedTaxAmountColumnKey || "",amountBasis:state.amountBasis,sourceBasis:analysis.selectedSourceBasis || analysis.reportSourceBasis || state.amountBasis,sourceFormat:analysis.sourceFormat || "Delimited source data",reportPeriod:analysis.reportPeriod || "",workpaperTaxYear:state.taxYear,ignoredStructural:(analysis.ignored || []).length,ignoredCounts,controlCount:(analysis.controlChecks || []).length,controlsPassed:(analysis.controlChecks || []).length,controlsInvalidatedByEdit:false,finalPopulationControls,parserVersion:IMPORT_PARSER_VERSION,batchFingerprint:analysis.batchFingerprint,sourceFingerprint:analysis.sourceFingerprint,suggestionBasis:state.suggestionBasis,resolvedPriorRejections:resolvesPriorRejections});
+  refreshActiveImportSummaries();
+  const firstIssueIndex = state.rows.findIndex(row => step2RowIssue(row).messages.length);
+  step2ImportPage = firstIssueIndex >= 0 ? Math.floor(firstIssueIndex / STEP2_IMPORT_PAGE_SIZE) : 0;
   pendingImportAnalysis = null;
   $("pasteBox").value = "";
   renderImportPreview(null);
   renderAll();
-  openStageAutomatically(3);
+  if(firstIssueIndex >= 0) setTimeout(() => focusStep2Issues(),0);
+  else {
+    openStageAutomatically(3);
+    renderRows();
+    requestAnimationFrame(() => {
+      const body = $("rowsBody");
+      if(body && !body.children.length && state.rows.length){
+        resetMappingWorkspaceAfterImport();
+        renderRows();
+      }
+    });
+  }
 }
 
 function changeSuggestionBasis(value){
@@ -8695,7 +9884,8 @@ function rowStats(){
   const suspenseAbsAmount = suspenseRows.reduce((sum,row) => sum + Math.abs(mapped(row)), 0);
   const suggestedCount = state.rows.filter(row => row.confidence !== "Manual").length;
   const manualCount = state.rows.filter(row => row.confirmed === true).length;
-  const parseIssues = state.rows.filter(row => !parseAmountResult(row.amount).ok || row.parseOk === false).length;
+  const parseIssues = state.rows.filter(row => !!rowAmountIssue(row)).length;
+  const sourceIdentityIssues = state.rows.filter(row => !!rowIdentityIssue(row)).length;
   const overlapUnconfirmedCount = overlapRowsNeedingConfirmation().length;
   const duplicateGroups = duplicateRowGroups();
   const duplicateRows = duplicateGroups.reduce((count,group) => count + group.length,0);
@@ -8704,7 +9894,7 @@ function rowStats(){
   const fsaTaxAmountMissingCount = fsaRowsNeedingTaxAmount().length;
   const fsaCharacterizationMissingCount = fsaRowsNeedingAdditionalCostCharacterization().length;
   const fsaNegativeUnconfirmedCount = fsaRowsNeedingNegativeConfirmation().length;
-  return {reviewCount,unconfirmedCount,suggestedCount,manualCount,parseIssues,overlapUnconfirmedCount,duplicateGroups:duplicateGroups.length,duplicateRows,suspenseCount,suspenseAmount,suspenseAbsAmount,mspmReviewCount,mspmBreakoutCount,fsaTaxAmountMissingCount,fsaCharacterizationMissingCount,fsaNegativeUnconfirmedCount};
+  return {reviewCount,unconfirmedCount,suggestedCount,manualCount,parseIssues,sourceIdentityIssues,overlapUnconfirmedCount,duplicateGroups:duplicateGroups.length,duplicateRows,suspenseCount,suspenseAmount,suspenseAbsAmount,mspmReviewCount,mspmBreakoutCount,fsaTaxAmountMissingCount,fsaCharacterizationMissingCount,fsaNegativeUnconfirmedCount};
 }
 
 function hasMixedServiceCosts(){
@@ -8896,9 +10086,10 @@ function renderSourceImportExceptions(){
     return;
   }
   box.classList.remove("hidden");
-  box.innerHTML = `<strong>${esc(rejected.length)} source line exception${rejected.length === 1 ? "" : "s"}.</strong> Valid account rows are included in the live calculation. Correct these lines, then replace the current account list in Step 2 before continuing to Inventory.
-    <ul>${rejected.slice(0,12).map(item => `<li>Line ${esc(item.line)}: ${esc(item.reason)}</li>`).join("")}</ul>
-    ${rejected.length > 12 ? `<p>${esc(rejected.length-12)} additional exception(s) are not shown.</p>` : ""}`;
+  box.innerHTML = `<strong>${esc(rejected.length)} source ${rejected.length === 1 ? "line needs" : "lines need"} correction.</strong> Replace the current account list with a corrected complete paste before continuing.
+    <ul>${rejected.slice(0,12).map(item => `<li><strong>Source line ${esc(item.line)}</strong>: ${esc(item.reason)}${item.text ? ` <code>${esc(item.text)}</code>` : ""}</li>`).join("")}</ul>
+    ${rejected.length > 12 ? `<p>${esc(rejected.length-12)} additional source lines are not shown.</p>` : ""}
+    <button class="secondary" type="button" onclick="prepareSourceCorrection()">Replace and paste corrected list</button>`;
 }
 
 function readinessClass(ok,warn=false){
@@ -9576,9 +10767,17 @@ function completionState(c,validationItems=null){
   const basisMismatchRows = basisSourceMismatchRows();
   const unavailableRows = unavailableInputRows();
   const sourceRejectedCount = state.lastImport && Array.isArray(state.lastImport.rejected) ? state.lastImport.rejected.length : 0;
+  const pendingImportBlocked = importAnalysisIsBlocked(pendingImportAnalysis);
+  const sourceControlRefreshes = sourceControlRefreshCount();
+  const sourcePeriodMismatches = activeImportPeriodMismatches();
   const step1Complete = step1MissingFields().length === 0;
   const step2Complete = state.rows.length > 0
     && stats.parseIssues === 0
+    && stats.sourceIdentityIssues === 0
+    && sourceRejectedCount === 0
+    && !pendingImportBlocked
+    && sourceControlRefreshes === 0
+    && sourcePeriodMismatches.length === 0
     && basisMismatchRows.length === 0;
   const step3MappingComplete = step2Complete
     && stats.reviewCount === 0
@@ -9623,14 +10822,21 @@ function completionState(c,validationItems=null){
   const priorMethodProfileRecorded = priorMethodProfileComplete();
   const methodTransitionComplete = methodTransitionSupportIsCurrent() && priorMethodProfileRecorded;
   const workpaperReady = calculationReady && methodSelectionComplete && methodTransitionComplete;
-  return {stats,requiredMissing,overlapMissing,bookTaxIssues,basisMismatchRows,unavailableRows,sourceRejectedCount,inventoryIssues,step1Complete,step2Complete,step3MappingComplete,step3Complete,step4Complete,hasMixedRows,step5Calculated,step5Issues,step5Complete,coreInputsReady,inputsReady,redItems,overrideValid,calculationReady,methodSelectionComplete,priorMethodProfileRecorded,methodTransitionComplete,workpaperReady};
+  return {stats,requiredMissing,overlapMissing,bookTaxIssues,basisMismatchRows,unavailableRows,sourceRejectedCount,pendingImportBlocked,sourceControlRefreshes,sourcePeriodMismatches,inventoryIssues,step1Complete,step2Complete,step3MappingComplete,step3Complete,step4Complete,hasMixedRows,step5Calculated,methodSelectionComplete,step5Issues,step5Complete,coreInputsReady,inputsReady,redItems,overrideValid,calculationReady,priorMethodProfileRecorded,methodTransitionComplete,workpaperReady};
 }
 
 function setStepStatus(id,textValue,kind="warn"){
   const el = $(id);
   if(!el) return;
   el.textContent = textValue;
-  el.className = `pill ${kind}`;
+  const isStep2Action = id === "step2Status" && el.tagName === "BUTTON";
+  el.className = `pill ${kind}${isStep2Action ? " status-pill-action" : ""}`;
+  if(isStep2Action){
+    const actionable = state.rows.length > 0 || importAnalysisIsBlocked(pendingImportAnalysis) || !!(state.lastImport && Array.isArray(state.lastImport.rejected) && state.lastImport.rejected.length);
+    el.disabled = !actionable;
+    el.title = actionable ? "Show the imported accounts and the first item that needs correction." : "";
+    el.setAttribute("aria-label",actionable ? `${textValue}. Show imported accounts.` : textValue);
+  }
 }
 
 function renderCompletionStatuses(c,validationItems=[]){
@@ -9649,14 +10855,25 @@ function renderCompletionStatuses(c,validationItems=[]){
     || !!state.indirectCostRule;
 
   setStepStatus("step1Status",s.step1Complete ? "Complete" : (anyStep1 ? "Incomplete" : "Not started"),s.step1Complete ? "ok" : "warn");
-  const step2IssueText = s.stats.parseIssues
-    ? `${s.stats.parseIssues} amount issue(s)`
+  const step2IssueText = s.pendingImportBlocked
+    ? pendingImportStatusText()
+    : s.stats.parseIssues
+    ? `${s.stats.parseIssues} ${s.stats.parseIssues === 1 ? "amount needs" : "amounts need"} correction`
+    : s.stats.sourceIdentityIssues
+      ? `${s.stats.sourceIdentityIssues} ${s.stats.sourceIdentityIssues === 1 ? "row needs" : "rows need"} account details`
+    : s.sourceControlRefreshes
+      ? "Source controls need a fresh paste"
+    : s.sourcePeriodMismatches.length
+      ? "Source date does not match Step 1"
+    : s.sourceRejectedCount
+      ? `${s.sourceRejectedCount} ${s.sourceRejectedCount === 1 ? "source line needs" : "source lines need"} correction`
     : s.basisMismatchRows.length
-      ? `${s.basisMismatchRows.length} source-basis mismatch(es)`
+      ? `${s.basisMismatchRows.length} source-basis ${s.basisMismatchRows.length === 1 ? "mismatch" : "mismatches"}`
     : s.stats.duplicateGroups
-      ? `${s.stats.duplicateGroups} duplicate group(s)`
+      ? `${s.stats.duplicateGroups} duplicate ${s.stats.duplicateGroups === 1 ? "group" : "groups"}`
       : "Action required";
-  setStepStatus("step2Status",s.step2Complete ? "Complete" : (state.rows.length ? step2IssueText : "Not started"),s.step2Complete ? "ok" : (state.rows.length ? "bad" : "warn"));
+  const hasStep2Data = state.rows.length > 0 || s.sourceRejectedCount > 0 || s.pendingImportBlocked;
+  setStepStatus("step2Status",s.step2Complete ? "Complete" : (hasStep2Data ? step2IssueText : "Not started"),s.step2Complete ? "ok" : (hasStep2Data ? "bad" : "warn"));
 
   if(!state.rows.length){
     setStepStatus("step3Status","Not started","warn");
@@ -10697,7 +11914,7 @@ function syncScopeUi(c){
   if($("srmEligibilityControls")) $("srmEligibilityControls").classList.toggle("hidden",!srm);
   if($("srmRatioModeControls")) $("srmRatioModeControls").classList.toggle("hidden",!srm);
   if($("srmHistoricFields")) $("srmHistoricFields").classList.toggle("hidden",!setup.srmHistoric);
-  if($("producerDeMinimisControls")) $("producerDeMinimisControls").classList.toggle("hidden",srm);
+  if($("producerDeMinimisControls")) $("producerDeMinimisControls").classList.toggle("hidden",srm || !["producer","producerReseller"].includes(state.activityProfile));
   if($("financialStatementGrossReceiptsControls")) $("financialStatementGrossReceiptsControls").classList.toggle("hidden",!setup.grossReceipts);
   if($("srmCostAllocationPanel")) $("srmCostAllocationPanel").classList.toggle("hidden",!srm);
   if($("producerMixedServicePanel")) $("producerMixedServicePanel").classList.toggle("hidden",srm);
@@ -10755,7 +11972,7 @@ function rowIsUnresolved(row){
   return !!row && (row.review
     || row.inputId === "review"
     || rowNeedsConfirmation(row)
-    || row.parseOk === false
+    || !!rowAmountIssue(row)
     || rowNeedsMspmReview(row)
     || rowNeedsMspmBreakout(row)
     || rowNeedsTaxReconcileAdjustment(row)
@@ -10784,6 +12001,14 @@ function workflowModel(c,validationItems=[]){
     8:{complete:s.workpaperReady,accessible:s.workpaperReady},
     9:{complete:partnerReviewIsCurrent(),accessible:s.workpaperReady}
   };
+  if(c && c.indirectCostRuleApplies){
+    for(let step=2;step<=9;step++) statuses[step] = {complete:false,accessible:false};
+    return {
+      completion:s,
+      statuses,
+      action:{step:1,title:"Producer rule complete",detail:"The $200,000 producer rule applies. No further calculator inputs are required."}
+    };
+  }
   let action = {step:1,title:"Complete taxpayer information",detail:"Enter the taxpayer, tax year, inventory valuation method, Federal tax or Book basis, and producer de minimis conclusion."};
   if(s.step1Complete && !s.step2Complete) action = {step:2,title:"Confirm the imported report",detail:"Confirm that the imported accounts and report total agree to the source."};
   else if(s.step2Complete && !s.step3MappingComplete) action = {step:3,title:"Classify the accounts",detail:`${unresolvedAccountRows().length} account(s) still require classification, confirmation, or a split.`};
@@ -11106,7 +12331,7 @@ function renderManagerSummary(c,validationItems=[]){
   const box = $("managerExceptionSummary");
   if(!box) return;
   const unresolved = unresolvedAccountRows();
-  const parseRows = state.rows.filter(row => row.parseOk === false);
+  const parseRows = state.rows.filter(row => !!rowAmountIssue(row));
   const suspenseRows = state.rows.filter(row => isSuspenseInputId(row.inputId));
   const overlapRows = overlapRowsNeedingConfirmation();
   const mspmRows = state.rows.filter(row => rowNeedsMspmReview(row) || rowNeedsMspmBreakout(row));
@@ -11161,7 +12386,7 @@ function renderReviewSurfaces(c,validationItems=[]){
 }
 
 function inspectorStatusText(row){
-  if(row.parseOk === false) return "Imported amount needs correction";
+  if(rowAmountIssue(row)) return "Imported amount needs correction";
   if(rowNeedsTaxReconcileAdjustment(row)) return "Federal tax amount or Tax less Book adjustment required";
   if(rowNeedsFsaTaxAmount(row)) return fsaBookTaxResponseIssue(row) || fsaManualSupplementIssue(row) || "Federal tax support required";
   if(fsaAdditionalCostCharacterizationIssue(row)) return "Additional-cost characterization required";
@@ -11216,7 +12441,7 @@ function renderAccountInspector(){
       <div class="inspector-field"><span>Current account</span><strong>${esc(row.account || "Blank")}</strong></div>
     </div>
     <div class="inspector-field"><span>Original description</span><strong>${esc(row.originalDescription || "Blank")}</strong></div>
-    <div class="inspector-field"><span>Suggestion</span><strong>${esc(bucketDisplayLabel(row.suggestedInputId))}</strong><p class="small-note"><strong>${esc(row.confidence || "Low")}</strong> confidence</p></div>
+    <div class="inspector-field"><span>Suggestion</span><strong>${esc(bucketDisplayLabel(row.suggestedInputId))}</strong></div>
     ${row.reason ? `<div class="inspector-field"><span>Decision history</span><strong>${esc(row.reason)}</strong></div>` : ""}
     <div class="inspector-field"><label for="inspectorTreatment"><span>User treatment</span></label>${selectInputHtml(row,index)}</div>
     ${fsaInspectorHtml(row)}
@@ -11417,6 +12642,7 @@ function renderAll(){
   readControls();
   renderRows();
   renderCalcOnly();
+  renderStep2ImportedAccounts();
   if(activeInspectorRowId && !$("accountInspectorOverlay").classList.contains("hidden")) renderAccountInspector();
 }
 
@@ -11444,6 +12670,8 @@ function startHowToUse(){
 
 function startNewWorkpaper(withTour=false){
   resetWorkflowAutoAdvanceTracking();
+  setupReviewFamily = "";
+  setupPreviousFamily = "";
   state = JSON.parse(JSON.stringify(CLEAN_STATE_TEMPLATE));
   calculationRevision += 1;
   fingerprintCacheRevision = -1;
@@ -11517,6 +12745,8 @@ function acceptDisclaimer(){
 function resetAll(){
   if(confirm("Reset all inputs?")){
     resetWorkflowAutoAdvanceTracking();
+    setupReviewFamily = "";
+    setupPreviousFamily = "";
     calculationRevision += 1;
     fingerprintCacheRevision = -1;
     state = JSON.parse(JSON.stringify(CLEAN_STATE_TEMPLATE));
@@ -12599,6 +13829,11 @@ document.querySelectorAll("[data-detail]").forEach(button => button.addEventList
       readControls();
       invalidateCalculationApprovals();
       renderCalcOnly();
+      if(id === "taxYear" && pendingImportAnalysis && $("pasteBox") && $("pasteBox").value.trim()){
+        pendingImportAnalysis.proposedTaxYear = "";
+        clearTimeout(pasteImportTimer);
+        pasteImportTimer = setTimeout(() => previewPastedRows(),250);
+      }
     };
     $(id).addEventListener("input", handleCalculationChange);
     $(id).addEventListener("change", handleCalculationChange);
